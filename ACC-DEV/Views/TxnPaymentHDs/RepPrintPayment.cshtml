@@ -1,0 +1,536 @@
+﻿@model ACC_DEV.ViewModel.TxnPaymentViewMode
+@{
+    ViewData["Title"] = "RepPrintPayment";
+
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+              
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h4 class="m-b-0 text-white">Receipt - Create</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" asp-controller="TxnPaymentHDs" id="InvoiceHDForm">
+                        <!-- Hidden field to store selected items -->
+                        <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>
+                                    Payment
+                                </h3>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-2" style="margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Payment No </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().PaymentNo" class="form-control"  />
+                                        <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().PaymentNo" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2" style="margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Date</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="date" asp-for="TxnPaymentHdMulti.FirstOrDefault().Date" class="form-control" value="Date" />
+                                        <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().Date" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5" style="margin-left:30px;">
+                            </div>
+                            <div class="col-md-2" style="margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <label for="Exchange Rate">Exchange Rate</label>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().ExchangeRate" class="form-control" />
+                                        <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().ExchangeRate" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="radio" id="Cheque" name="PaymentMethod" value="Cheque" checked />
+                                        <label for="Cheque">Cheque</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" id="Cash" name="PaymentMethod" value="Cash" />
+                                        <label for="Cash">Cash</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div id="paymentDetails" style="border:1px solid black; padding: 10px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="row" >
+                                                <div class="col-md-6">
+                                                    <label for="ExchangeRate" id="paymentLabel">Cheque No</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeNo" class="form-control" value="" />
+                                                    <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().ChequeNo" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="Customer">Bank</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <select id="ChequeBankID" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeBankID" value="" name="ChequeBankID" class="form-control" asp-items="ViewBag.RefBankList"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label for="Date ">Date </label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="date" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeDate" class="form-control" value="Date" />
+                                            <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().ChequeDate" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="ExchangeRate" id="paymentLabel">Cheque Amount</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeAmount" class="form-control" value="" />
+                                                    <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().ChequeAmount" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="radio" id="Overseas" name="Location" value="Overseas" checked />
+                                        <label for="Overseas">Overseas</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" id="Local" name="Location" value="Local" />
+                                        <label for="Local">Local</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div id="localDropdown" class="row" style="display:none;">
+                                    <div class="col-md-4">
+                                        <label for="Customer">Customer</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <select id="ShippingLine" asp-for="TxnPaymentHdMulti.FirstOrDefault().CustomerID" class="form-control" asp-items="ViewBag.CustomerList"></select>
+                                    </div>
+                                </div>
+                                <div id="overseasDropdown" class="row">
+                                    <div class="col-md-4">
+                                        <label for="Customer">PO Agent</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <select id="POAgent" asp-for="TxnPaymentHdMulti.FirstOrDefault().CustomerID" class="form-control" asp-items="ViewBag.AgentIDNomination"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <input type="button" value="Refresh" id="refreshButton" class="btn btn-primary" />
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="Customer">Debit Acc</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select id="DebitAcc" asp-for="TxnPaymentHdMulti.FirstOrDefault().DebitAcc" value="" name="BankID" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="Customer">Credit Acc</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select id="DebitAcc" asp-for="TxnPaymentHdMulti.FirstOrDefault().CreditAcc" value="" name="BankID" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 style="font-weight:bolder;">Unpaid Payment</h4>
+                                <div class="table-responsive">
+                                    <table class="table color-bordered-table purple-bordered-table" id="tblContainer1">
+                                        <!-- Table 1: Display invoices -->
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Payment No</th>
+                                                <th>Date</th>
+                                                <th>Amount</th>
+                                                <th>Paid</th>
+                                                <th>BlanceAmt</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="ContainerDetailsBody1">
+                                            @foreach (var invoice in Model.PayVoucherMulti)
+                                            {
+                                                <tr>
+                                                    <td><input type="checkbox" name="selectedInvoices" value="@invoice.PayVoucherNo" /></td>
+                                                    <td>@invoice.PayVoucherNo</td>
+                                                    <td>@invoice.Date</td>
+                                                    <td>@invoice.TotalPayVoucherAmountLkr</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-1" style="align-items:center">
+                                <!-- Button to trigger moving selected rows to the second table -->
+                                <input type="button" value="Select" id="selectButton" class="btn btn-primary" onclick="moveSelectedRows()" />
+                            </div>
+                            <div class="col-md-5">
+                                <div class="table color-bordered-table purple-bordered-table">
+                                    <table class="table table-hover border table-striped" id="tblContainer2">
+                                        <!-- Table 2: Display selected invoices -->
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Invoice No</th>
+                                                <th>Date</th>
+                                                <th>Invoice Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="ContainerDetailsBody2">
+                                            <!-- Selected rows will be moved here -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                            <!-- Display and input for total receipt amount -->
+                            <label for="Customer">Total Receipt Amount</label>
+                            </div>
+                                    <div class="col-md-4">
+                            <input type="text" id="totalReceiptAmount" class="form-control" value="" disabled />
+                            <input type="hidden" id="receiptTotalAmt" asp-for="TxnPaymentHdMulti.FirstOrDefault().PaymentTotalAmt" />
+                                        <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().PaymentTotalAmt" class="text-danger"></span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <br />
+                        <!--Remarks Textbox-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <h6 class="box-title">Remarks</h6>
+                                    <div class="col-md-12">
+                                        <textarea asp-for="TxnPaymentHdMulti.FirstOrDefault().Remarks" class="form-control" name="Remarks" type="text" placeholder="Type here your Remarks" rows="5"> </textarea>
+                                        @* <input asp-for="BLTypeID" class="form-control" />*@
+                                        <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().Remarks" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><br />
+                        <!--Save Button-->
+                        <div class="row">
+                            <!--Save Button-->
+                            <div class="form-group">
+                                <input type="hidden" id="selectedInvoices" name="selectedInvoices" />
+                                <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
+                                <input type="hidden" id="isAdjustmentEntryHidden" name="isAdjustmentEntryHidden" />
+                                <input type="submit" value="Save" id="saveButton"  class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Function to set selected items before form submission
+    function setSelectedItems() {
+        var selectedItems = [];
+
+        // Iterate over selected invoices
+        $('#ContainerDetailsBody2 tr').each(function () {
+            var refNo = $(this).find('td:nth-child(2)').text();
+            var amount = $(this).find('td:nth-child(4)').text();
+
+            selectedItems.push({
+                RefNo: refNo,
+                RefType: 'Payment', // or any other value to indicate invoice
+                Amount: amount
+            });
+        });
+
+        // Set the value of dtlItemsList hidden field
+        $('#dtlItemsList').val(JSON.stringify(selectedItems));
+    }
+
+    // Call setSelectedItems before form submission
+    $('form').submit(setSelectedItems);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var overseasRadio = document.getElementById("Overseas");
+        var localRadio = document.getElementById("Local");
+        var locationInput = document.getElementById("locationInput");
+
+        overseasRadio.addEventListener("change", function () {
+            if (overseasRadio.checked) {
+                locationInput.value = overseasRadio.value;
+            }
+        });
+
+        localRadio.addEventListener("change", function () {
+            if (localRadio.checked) {
+                locationInput.value = localRadio.value;
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var overseasRadio = document.getElementById("Overseas");
+        var localRadio = document.getElementById("Local");
+        var overseasDropdown = document.getElementById("overseasDropdown");
+        var localDropdown = document.getElementById("localDropdown");
+        var poAgentDropdown = document.getElementById("POAgent");
+        var shippingLineDropdown = document.getElementById("ShippingLine");
+
+        overseasRadio.addEventListener("change", function () {
+            if (overseasRadio.checked) {
+                overseasDropdown.style.display = "flex";
+                localDropdown.style.display = "none";
+                // Set shipping line dropdown value to null
+                shippingLineDropdown.value = "";
+            }
+        });
+
+        localRadio.addEventListener("change", function () {
+            if (localRadio.checked) {
+                overseasDropdown.style.display = "none";
+                localDropdown.style.display = "flex";
+                // Set PO Agent dropdown value to null
+                poAgentDropdown.value = "";
+            }
+        });
+    });
+</script>
+<script>
+    // Create and submit Charge Items
+    function submitForm(e) {
+
+        const dtlItemsArray = [];
+        const tableRows = $("#tblContainer tbody tr");
+        var chkAmount = "";
+
+        tableRows.each(function (index) {
+            const trRow = $(this);
+            chkAmount = trRow.find('input[name="Amount"]').val();
+
+            if (chkAmount === "" || parseFloat(chkAmount) === 0) {
+                // chkAmount is empty or zero
+                //console.log("chkAmount is empty or zero");
+            } else {
+                // chkAmount is not empty and not zero
+                const dtlItemJson = buildItemsJson(trRow, index);
+                dtlItemsArray.push(dtlItemJson);
+            }
+        });
+
+        $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+        var jobNo = JobHdMulti.FirstOrDefault().JobNo;
+        alert("jobNo: " + jobNo);
+
+        // Assign the value to the hidden input field using jQuery
+        $('#invoiceJobNo').val(jobNo);
+    }
+
+    // Json Var create
+    function buildItemsJson(trRow, id) {
+        return {
+            SerialNo: id,
+            Description: trRow.find('input[name="Description"]').val(),
+            Amount: trRow.find('input[name="Amount"]').val(),
+        };
+    }
+    </script>
+<script>
+    // Function to move selected rows to the second table
+    function moveSelectedRows() {
+        var table1 = document.getElementById("tblContainer1");
+        var table2 = document.getElementById("tblContainer2");
+        var checkboxes = table1.querySelectorAll('input[type="checkbox"]:checked');
+
+        checkboxes.forEach(function (checkbox) {
+            var row = checkbox.parentNode.parentNode.cloneNode(true);
+            table2.querySelector("tbody").appendChild(row);
+
+            // Store the selected invoice number in hidden field
+            document.getElementById("selectedInvoices").value += checkbox.value + ",";
+
+            // Remove the selected row from table1
+            checkbox.parentNode.parentNode.remove();
+        });
+
+        // Update total invoice amount after moving selected rows
+        updateTotalInvoiceAmount();
+    }
+
+
+    function moveSelectedDebitNotes() {
+        var table1 = document.getElementById("tblDebitContainer");
+        var table2 = document.getElementById("tblDebitContainer2");
+        var checkboxes = table1.querySelectorAll('input[type="checkbox"]:checked');
+
+        checkboxes.forEach(function (checkbox) {
+            var row = checkbox.parentNode.parentNode.cloneNode(true);
+            table2.querySelector("tbody").appendChild(row);
+
+            // Store the selected debit note number in hidden field
+            document.getElementById("selectedDebitNotes").value += checkbox.value + ",";
+
+            // Remove the selected row from table1
+            checkbox.parentNode.parentNode.remove();
+        });
+    }
+
+</script>
+<script>
+    function updateTotalInvoiceAmount() {
+        var totalInvoiceAmount = 0;
+
+        // Iterate over rows in the second table
+        $('#tblContainer2 tbody tr').each(function () {
+            var invoiceAmount = parseFloat($(this).find('td:nth-child(4)').text());
+            totalInvoiceAmount += isNaN(invoiceAmount) ? 0 : invoiceAmount;
+        });
+
+        // Update the total invoice amount field
+        $('#totalReceiptAmount').val(totalInvoiceAmount.toFixed(2));
+        $('#receiptTotalAmt').val(totalInvoiceAmount.toFixed(2));
+    }
+
+</script>
+
+<script>
+    // Function to update the caption based on the selected radio button
+    function updateCaption() {
+        if ($("input[name='PaymentMethod']:checked").val() === "Cheque") {
+            // Change the label text to "Cheque No" when Cheque is selected
+            $("#paymentLabel").text("Cheque No");
+        } else if ($("input[name='PaymentMethod']:checked").val() === "BankTransfer") {
+            // Change the label text to "Reference No" when Bank Transfer is selected
+            $("#paymentLabel").text("Reference No");
+        }
+    }
+
+    // Wait for the document to be ready
+    $(document).ready(function () {
+        // Initially, show the payment details div
+        $("#paymentDetails").show();
+
+        // Update the caption when the page loads
+        updateCaption();
+
+        // Listen for changes in the radio buttons
+        $("input[name='PaymentMethod']").change(function () {
+            if ($("input[name='PaymentMethod']:checked").val() === "Cash") {
+                $("#paymentDetails").hide();
+            } else {
+                $("#paymentDetails").show();
+                // Update the caption when a radio button is selected
+                updateCaption();
+            }
+        });
+    });
+</script>
+<script>
+
+    // Wait for the document to be ready
+    $(document).ready(function () {
+        // Initially, show the payment details div
+        $("#paymentDetails").show();
+
+        // Listen for changes in the radio buttons
+        $("input[name='paymentMethod']").change(function () {
+            if ($("input[name='paymentMethod']:checked").val() === "Cash") {
+                $("#paymentDetails").hide(); // Hide the payment details
+            } else {
+                $("#paymentDetails").show(); // Show the payment details
+            }
+        });
+    });
+</script>

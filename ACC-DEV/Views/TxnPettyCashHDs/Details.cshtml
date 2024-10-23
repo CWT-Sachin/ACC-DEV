@@ -1,0 +1,361 @@
+﻿@model ACC_DEV.ViewModel.TxnPettyCashViewModel
+@{
+    ViewData["Title"] = "PettyCash";
+
+}
+
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h4 class="m-b-0 text-white">Purchas Voucher - DETAILS</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>
+                                Purchas Voucher
+                            </h3>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-9">
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <form asp-action="Create" asp-controller="TxnPettyCashHDs" id="TxnPurchasVoucherHDForm">
+                        @* <form asp-action="Create" asp-controller="TxnPurchasVoucherHDs" id="TxnPurchasVoucherHDForm">*@
+                        <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="Job No"> Petty Cash No.</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span id="jobno">
+                                            <b>  @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().PettyCashNo) </b>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Date</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().Date)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <!--Select Supplier /Creditor-->
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div id="paymentvocherDetails" style="border: 1px solid black; padding: 10px;">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="searchType" id="searchBySuppliers/Creditors" value="Suppliers/Creditors" checked disabled>
+                                                    <label class="form-check-label" for="searchBySuppliers/Creditors">Suppliers / Creditors</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <label for="ExchangeRate" id="paymentLabel">Suppliers/Creditors</label>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <select id="Supplier" name="Supplier" class="form-control" asp-items="ViewBag.Suppliers" disabled></select>
+                                                            <span class="text-danger"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <!--Job Selction-->
+                        <div class="row">
+                            <div class="col-md-2">
+                                <input type="radio" id="JobRelated" name="DocType" value="PurchasVRelated" checked disabled />
+                                <label for="Cash">PurchasV Related</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="radio" id="Other" name="DocType" value="Other" disabled />
+                                <label for="Cheque">Other</label>
+                            </div>
+                        </div>
+
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="row" id="JobSelection" style="border: 1px solid black; padding: 10px;">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <input type="radio" id="Import" name="VoucherType" value="Import" checked />
+                                                    <label for="Import">Import</label>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="radio" id="Export" name="VoucherType" value="Export" />
+                                                    <label for="Export">Export</label>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="radio" id="Additional" name="VoucherType" value="Additional" />
+                                                    <label for="Additional">Additional</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label for="ExchangeRate">PV Number</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="text" id="JobNoInput" asp-for="TxnPettyCashHDMulti.FirstOrDefault().VoucherNo" class="form-control" readonly />
+                                                        <span asp-validation-for="TxnPettyCashHDMulti.FirstOrDefault().VoucherNo" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span id="jobNoError" class="text-danger"></span>
+                                            <span id="jobNoSuccess" class="text-info"></span>
+                                        </div>
+                                        <div class="col-md-7" style="background-color:lightgray">
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="ExchangeRate" id="">Supplier/Creditor</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="CreditorName" asp-for="TxnPettyCashHDMulti.FirstOrDefault().CreditorName" class="form-control" readonly />
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label for="ExchangeRate" id="paymentLabel">Total Amt:</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <input type="text" id="TotalAmt" class="form-control" value="" readonly />
+                                                            <span class="text-danger"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label for="ExchangeRate" id="paymentLabel">Paid Amt:</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <input type="text" id="PaidAmt" class="form-control" value="" readonly />
+                                                            <span class="text-danger"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label for="ExchangeRate" id="paymentLabel">Balance Amt:</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <input type="text" id="BalanceAmt" class="form-control" value="" readonly />
+                                                            <span class="text-danger"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <!--Main Accoun And narration -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="ExchangeRate" id="paymentLabel">Credit A/C</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select id="selectedAccount" asp-for="TxnPettyCashHDMulti.FirstOrDefault().MainAcc" name="MainAcc" class="form-control" asp-items="ViewBag.AccountsCodes" disabled></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="ExchangeRate" id="paymentLabel">Narration</label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <input type="text" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Narration" class="form-control" readonly/>
+                                        <span asp-validation-for="TxnPettyCashHDMulti.FirstOrDefault().Narration" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="ExchangeRate" id="paymentLabel">Amount LKR</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" id="MainAmount" asp-for="TxnPettyCashHDMulti.FirstOrDefault().MainAccAmount" class="form-control" readonly />
+                                        <span asp-validation-for="TxnPettyCashHDMulti.FirstOrDefault().MainAccAmount" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br />
+                        <!--Table for Charge Items --><br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-hover border table-striped" id="tblContainer">
+                                        <thead>
+                                            <tr>
+                                                <th>Debit Acc/No</th>
+                                                <th>Description</th>
+                                                <th>Amount LKR</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="ContainerDetailsBody">
+                                            <tr id="tablerow0" hidden>
+                                                <td style="width:30%;">  <select id="LineAccNo" name="LineAccNo" class="form-control" asp-items="ViewBag.AccountsCodes"></select> </td>
+                                                <td style="width:40%;"> <input type="text" id="DescrRW" value="" name="DescrRW" class="form-control"></input> </td>
+                                                <td> <input type="text" id="Amount" name="Amount" value="" class="form-control" style="text-align: right;"></td>
+                                                <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td>
+                                            </tr>
+                                            @foreach (var item in Model.TxnPettyCashDtlMulti)
+                                            {
+                                                <tr id="tablerow0">
+                                                    <td style="width:30%;">
+                                                        <select asp-for="@item.LineAccNo" asp-items="ViewBag.AccountsCodes" class="form-control" disabled>
+                                                        </select>
+                                                    </td>
+                                                    <td style="width:40%;">
+                                                        <input type="text" asp-for="@item.Description" value="@item.Description" class="form-control" readonly></input>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" asp-for="@item.Amount" value="@item.Amount" class="form-control" style="text-align: right;" readonly>
+                                                    </td>
+                                                    @* <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td> *@
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!--Add button Charge Items-->
+                            <div class="col-md-4">
+                                <div class="form-group">
+@*
+                                    <input id="add" type="button" value="+ Line" onclick="AddRow(this)"
+                                           class="btn btn-success" />*@
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <!--Total LKR-->
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="TotalAmount">Total Pay Amount LKR</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" id="LineTotalAmount" asp-for="TxnPettyCashHDMulti.FirstOrDefault().TotalAmountLKR" class="form-control" style="text-align: right; font-weight:bold" readonly />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <br />
+                        <br />
+                        <!--Remarks Textbox-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group row">
+                                    <h6 class="box-title">Remarks</h6>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Remarks" name="Remarks" type="text" placeholder="Type here your Remarks" rows="5" readonly> </textarea>
+                                        @* <input asp-for="BLTypeID" class="form-control" />*@
+                                        <span class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><br />
+
+                    </form>
+                </div>
+                <div>
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!--Set Doc type and Job Type on lloading -->
+<script>
+    $(document).ready(function () {
+        // Assuming the values are passed from the controller to the view
+        var docType = '@(Model.TxnPettyCashHDMulti.FirstOrDefault().DocType)';
+        var jobType = '@(Model.TxnPettyCashHDMulti.FirstOrDefault().VoucherType)';
+
+        if (docType === 'PurchasVRelated') {
+            $('#JobRelated').prop('checked', true);
+            $('#JobSelection').show();
+
+            if (jobType === 'Import') {
+                $('#Import').prop('checked', true);
+            } else if (jobType === 'Export') {
+                $('#Export').prop('checked', true);
+            } else if (jobType === 'Additional') {
+                $('#Additional').prop('checked', true);
+            }
+        } else if (docType === 'Other') {
+            $('#Other').prop('checked', true);
+            $('#JobSelection').hide();
+        }
+    });
+</script>

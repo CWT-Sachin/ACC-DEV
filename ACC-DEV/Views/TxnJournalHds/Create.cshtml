@@ -1,0 +1,472 @@
+﻿@model ACC_DEV.ViewModel.AccountsViewModel
+@{
+    ViewData["Title"] = "RepPrintPaymentVoucher";
+
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h4 class="m-b-0 text-white">Journal Entry - Create</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post" onsubmit="submitForm(event)">
+
+                        <br />
+                        <div class="row">
+                            <div class="col-md-2" style="margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Date</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="date" asp-for="TxnJournalHdMulti.FirstOrDefault().Date" class="form-control" value="Date" style="background-color:#b8b8b8;" />
+                                        <span asp-validation-for="TxnJournalHdMulti.FirstOrDefault().Date" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="margin-left: 30px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Adjustment entry">Adjustment entry</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- Apply style directly within the input tag -->
+                                        <input type="checkbox" asp-for="TxnJournalHdMulti.FirstOrDefault().IsAdjustmentEntry" class="form-control" style="transform: scale(1.5); margin-right: 5px;" />
+                                        <span asp-validation-for="TxnJournalHdMulti.FirstOrDefault().IsAdjustmentEntry" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2" style="margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Ref No</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" asp-for="TxnJournalHdMulti.FirstOrDefault().RefNo" class="form-control" style="background-color:#b8b8b8;" />
+                                        <span asp-validation-for="TxnJournalHdMulti.FirstOrDefault().RefNo" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="margin-left: 30px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Adjustment entry">Is This Job Related</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- Apply style directly within the input tag -->
+                                        <input type="checkbox" id="jobRelatedCheckbox" asp-for="TxnJournalHdMulti.FirstOrDefault().IsJobRelated" class="form-control" style="transform: scale(1.5); margin-right: 5px;" />
+                                        <span asp-validation-for="TxnJournalHdMulti.FirstOrDefault().IsJobRelated" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jobType" id="importRadio" value="Import" disabled>
+                                        <label class="form-check-label" for="importRadio">Import</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jobType" id="exportRadio" value="Export" disabled>
+                                        <label class="form-check-label" for="exportRadio">Export</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Job Number</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" asp-for="TxnJournalHdMulti.FirstOrDefault().JobNo" class="form-control" style="background-color:#b8b8b8;" />
+                                        <span asp-validation-for="TxnJournalHdMulti.FirstOrDefault().JobNo" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-hover border table-striped" id="tblContainer">
+                                        <thead>
+                                            <tr>
+                                                <th>Account</th>
+                                                <th>Description </th>
+                                                <th>Debit</th>
+                                                <th>Credit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="ContainerDetailsBody">
+                                            <tr id="tablerow0" hidden>
+                                                <td style="width:30%;">
+                                                    <select id="AccNo" asp-for="TxnJournalDtlMulti.FirstOrDefault().AccNo" value="" name="AccNo" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                                </td>
+                                                <td style="width:40%;">
+                                                    <!-- Increase width for the description input -->
+                                                    <input type="text" id="Description" asp-for="TxnJournalDtlMulti.FirstOrDefault().Description" name="Description" value="" class="form-control">
+                                                </td>
+                                                <td style="width:15%;">
+                                                    <!-- Decrease width for the debit input -->
+                                                    <input type="text" id="Debit" asp-for="TxnJournalDtlMulti.FirstOrDefault().Debit" name="Debit" value="" class="form-control" oninput="toggleInput(this)">
+                                                </td>
+                                                <td style="width:15%;">
+                                                    <!-- Decrease width for the credit input -->
+                                                    <input type="text" id="Credit" asp-for="TxnJournalDtlMulti.FirstOrDefault().Credit" name="Credit" value="" class="form-control" oninput="toggleInput(this)">
+                                                </td>
+                                                <td>
+                                                    <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" />
+                                                </td>
+                                            </tr>
+                                            @foreach (var item in Model.TxnJournalDtlMulti)
+                                            {
+                                                <tr class="tablerow">
+                                                    <td>
+                                                        <select asp-for="TxnJournalDtlMulti.FirstOrDefault().AccNo" value="@item.AccNo" name="AccNo" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                                    </td>
+                                                    <td style="width:40%;">
+                                                        <!-- Increase width for the description input -->
+                                                        <input type="text" asp-for="TxnJournalDtlMulti.FirstOrDefault().Description" name="Description" value="@item.Description" class="form-control unit">
+                                                    </td>
+                                                    <td style="width:15%;">
+                                                        <!-- Decrease width for the debit input -->
+                                                        <input type="text" asp-for="TxnJournalDtlMulti.FirstOrDefault().Debit" name="Debit" value="@item.Debit" class="form-control rate" style="text-align: right;" oninput="toggleInput(this)">
+                                                    </td>
+                                                    <td style="width:15%;">
+                                                        <!-- Decrease width for the credit input -->
+                                                        <input type="text" asp-for="TxnJournalDtlMulti.FirstOrDefault().Credit" name="Credit" value="@item.Credit" class="form-control qty" style="text-align: right;" oninput="toggleInput(this)">
+                                                    </td>
+                                                    <td>
+                                                        <input type="button" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" />
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <!-- Your existing content goes here -->
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="TotalAmount">Total </label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" readonly id="totalDebitAmount" />
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" readonly id="totalCreditAmount" />
+                                    </div>
+                                    <div class="col-md-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!--Add button Charge Items-->
+                            <div class="col-md-4">
+                                <div class="form-group">
+
+                                    <input id="add" type="button" value="+ ADD" onclick="AddRow(this)"
+                                           class="btn btn-success" />
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <!--Total LKR-->
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4" style="margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Note</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <textarea asp-for="TxnJournalHdMulti.FirstOrDefault().Note" class="form-control" name="Note" type="text" placeholder="Type here your Remarks" rows="5"></textarea>
+                                        <span asp-validation-for="TxnJournalHdMulti.FirstOrDefault().Note" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Save Button-->
+                        <div class="row">
+                            <!--Save Button-->
+                            <div class="form-group">
+                                <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
+                                <input type="hidden" id="isAdjustmentEntryHidden" name="isAdjustmentEntryHidden" />
+                                <input type="submit" value="Save" id="saveButton" disabled class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function calculateAmount(input) {
+            var inputValue = parseFloat(input.value) || 0;
+            var totalDebitInput = document.getElementById("totalDebitAmount");
+            var totalCreditInput = document.getElementById("totalCreditAmount");
+
+            if (input.id.includes("Debit")) {
+                totalDebitInput.value = (parseFloat(totalDebitInput.value) || 0) + inputValue;
+            } else if (input.id.includes("Credit")) {
+                totalCreditInput.value = (parseFloat(totalCreditInput.value) || 0) + inputValue;
+            }
+        }
+
+        // Function to recalculate totals
+        function recalculateTotals() {
+            var totalDebitInput = document.getElementById("totalDebitAmount");
+            var totalCreditInput = document.getElementById("totalCreditAmount");
+
+            var totalDebit = 0;
+            var totalCredit = 0;
+
+            document.querySelectorAll('input[name^="Debit"]').forEach(function (debitInput) {
+                totalDebit += parseFloat(debitInput.value) || 0;
+            });
+
+            document.querySelectorAll('input[name^="Credit"]').forEach(function (creditInput) {
+                totalCredit += parseFloat(creditInput.value) || 0;
+            });
+
+            totalDebitInput.value = totalDebit.toFixed(2);
+            totalCreditInput.value = totalCredit.toFixed(2);
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Call the function on page load to initialize the state
+            updateJobType();
+
+            // Attach a change event handler to the checkbox
+            $('#jobRelatedCheckbox').change(function () {
+                updateJobType();
+            });
+
+            // Function to update radio button state based on checkbox
+            function updateJobType() {
+                var jobRelatedCheckbox = $('#jobRelatedCheckbox');
+                var importRadio = $('#importRadio');
+                var exportRadio = $('#exportRadio');
+
+                if (jobRelatedCheckbox.prop('checked')) {
+                    importRadio.prop('disabled', false);
+                    exportRadio.prop('disabled', false);
+                } else {
+                    importRadio.prop('disabled', true);
+                    exportRadio.prop('disabled', true);
+                }
+            }
+        });
+    </script>
+
+    <script>
+        function submitForm(e) {
+            const dtlItemsArray = [];
+            const tableRows = $("#tblContainer tbody tr");
+            var chkAmount = "";
+
+            tableRows.each(function (index) {
+                const trRow = $(this);
+                const serialNo = trRow.find('input[name="SerialNo"]').val();
+
+                if (serialNo !== "0") {
+                    chkAmount = trRow.find('input[name="Amount"]').val();
+
+                    if (chkAmount === "" || parseFloat(chkAmount) === 0) {
+                        // chkAmount is empty or zero
+                    } else {
+                        const dtlItemJson = buildItemsJson(trRow, index);
+                        dtlItemsArray.push(dtlItemJson);
+                    }
+                }
+            });
+
+            $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+            checkSaveButton();  // Check save button status
+        }
+
+        function buildItemsJson(trRow, id) {
+            return {
+                SerialNo: id,
+                AccNo: trRow.find('select[name="AccNo"]').val(),
+                Description: trRow.find('input[name="Description"]').val(),
+                Debit: trRow.find('input[name="Debit"]').val(),
+                Credit: trRow.find('input[name="Credit"]').val(),
+            };
+        }
+    </script>
+
+    <script>
+        // Enter key blocking from submitig
+        document.getElementById("CreditNoteHDForm").onkeypress = function (e) {
+
+            preventEnterSubmit(e);
+        }
+
+    </script>
+
+    <script>
+        function preventEnterSubmit(e) {
+            // Enter Key
+            if (e.which == 13) {
+                var $targ = $(e.target);
+                // alert(" Enter Key !" );
+                if (!$targ.is("textarea") && !$targ.is(":button,:submit")) {
+                    //alert(" Not Textarea !");
+                    e.preventDefault();
+                }
+
+            }
+        }
+    </script>
+    <script>
+        function AddRow() {
+            var newRow = $("#tablerow0").clone();
+            newRow.removeAttr("hidden");
+
+            var NoOfRows = $("#tblContainer tbody tr").length;
+            var counter = NoOfRows + 1; // Start serial number from 1
+
+            var removeBtn = newRow.find('input[name="RemoveBttn"]');
+            var RemoveBtnVal = 'RemoveRow(' + counter + ')';
+            removeBtn.attr('onclick', RemoveBtnVal);
+
+            var RowID = "tablerow" + counter;
+            newRow.attr("id", RowID);
+
+            // Clear input values in the new row
+            newRow.find('input[type="text"]').val('');
+
+            $("tbody").append(newRow);
+
+            // Bind the event handler for the new remove button
+            removeBtn.click(function () {
+                RemoveRow(counter);
+                recalculateTotals();
+            });
+
+            // Recalculate totals after adding a new row
+            recalculateTotals();
+
+            return false;
+        }
+
+
+        // Function to remove a row from the table
+        function RemoveRow(index) {
+            $('#tablerow' + index).remove();
+
+            // Update the serial numbers of the remaining rows
+            $('#tblContainer tbody tr').each(function (i, row) {
+                var newRowID = 'tablerow' + (i + 1);
+                $(row).attr('id', newRowID);
+                var removeBtn = $(row).find('input[name="RemoveBttn"]');
+                var newRemoveBtnVal = 'RemoveRow(' + (i + 1) + ')';
+                removeBtn.attr('onclick', newRemoveBtnVal);
+            });
+
+            recalculateTotals();
+            return false;
+        }
+
+    </script>
+    <script>
+        function updateJobType() {
+            var selectedRadio = document.querySelector('input[name="jobType"]:checked');
+            if (selectedRadio) {
+                var jobTypeField = document.getElementById('jobTypeField'); // replace 'jobTypeField' with the actual ID of the field
+                if (jobTypeField) {
+                    jobTypeField.value = selectedRadio.value;
+                }
+            }
+        }
+    </script>
+
+    <script>
+        // Function to toggle the readonly attribute of input fields
+        function toggleInput(input) {
+            var debitInput = input.parentElement.parentElement.querySelector('input[name^="Debit"]');
+            var creditInput = input.parentElement.parentElement.querySelector('input[name^="Credit"]');
+
+            if (input.value.trim() !== '') {
+                debitInput.readOnly = input.name === 'Debit' ? false : true;
+                creditInput.readOnly = input.name === 'Credit' ? false : true;
+
+                // Set opposite field to 0
+                if (input.name === 'Debit') {
+                    creditInput.value = 0;
+                } else if (input.name === 'Credit') {
+                    debitInput.value = 0;
+                }
+
+                // Live update totals when user enters values
+                recalculateTotals();
+                checkSaveButton();
+            } else {
+                debitInput.readOnly = false;
+                creditInput.readOnly = false;
+
+                // Live update totals when user removes values
+                recalculateTotals();
+                checkSaveButton();
+            }
+        }
+    </script>
+
+    <script>
+        // Function to check if the totals match and enable/disable the save button accordingly
+        function checkSaveButton() {
+            var totalDebitInput = document.getElementById("totalDebitAmount");
+            var totalCreditInput = document.getElementById("totalCreditAmount");
+            var saveButton = document.getElementById("saveButton");
+
+            var totalDebit = parseFloat(totalDebitInput.value) || 0;
+            var totalCredit = parseFloat(totalCreditInput.value) || 0;
+
+            // Enable save button if totals match and both totals are greater than or equal to 0
+            saveButton.disabled = totalDebit !== totalCredit || totalDebit < 0 || totalCredit < 0;
+        }
+    </script>
+
+
+            }

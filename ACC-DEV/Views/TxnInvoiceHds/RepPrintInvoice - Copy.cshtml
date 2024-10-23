@@ -1,0 +1,377 @@
+﻿@*@model IEnumerable<ACC_DEV.ViewModel.InvoiceViewModel>*@
+@model ACC_DEV.ViewModel.InvoiceViewModel
+@{
+    ViewData["Title"] = "RepPrintInvoice";
+
+}
+
+
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid" id="printArea">
+
+            <!--header row with logo-->
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <img src="\assets\images\logo-icon.png" alt="FTL LOGO" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <p>
+                                <b>FTL COLOMBO (PVT) LTD</b><br />
+                                46/38,03RD FLOOR<br />
+                                FORBES & WALKER REAR BUILDING,<br />
+                                NAWAM MAWATHA,COLOMBO 02.<br />
+                                Tel: +94 112 378500-19 /Fax: +94 114 641910<br />
+                                <b>VAT REG : 114759783-7000</b>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 ">
+
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row ">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <h3><b>Invoice</b></h3>
+                        </div>
+
+                    </div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+
+                </div>
+
+            </div>
+
+            <div style="border:1px  solid black; padding: 0px ; ">
+                <!--main part-->
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p>To :</p>
+                        <p>
+                            SWAT COLOMBO PVT LTD<br />
+                            2ND FLOOR,FORBES & WALKER<br />
+                            MAIN BUILDING,<br />
+                            NAWAM MAWATHA,COLOMBO 02
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+
+                                <div class="row"><p>No</p></div>
+                                <div class="row"><p>Date</p></div>
+                                <div class="row"><p>Exchange Rate</p></div>
+                                <div class="row"><p>File No</p></div>
+                                <div class="row"><p>Vessel/Voyage</p></div>
+                                <div class="row"><p>ETD</p></div>
+                                <div class="row"><p>Final Destination</p></div>
+                                <div class="row"><p>House B/L</p></div>
+                                <div class="row"><p>Shipper</p></div>
+                                <div class="row"><p>Consignee</p></div>
+                                <div class="row"><p>Notify</p></div>
+
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="row"><p>: @Html.DisplayFor(m => Model.ImportJobHdMulti.FirstOrDefault().JobNo)</p></div>
+                                <div class="row"><p>:@Html.DisplayFor(m => Model.ImportJobHdMulti.FirstOrDefault().JobDate)</p></div>
+                                <div class="row"><p>:308.55</p></div>
+                                <div class="row"><p>:E23/JUN/12147</p></div>
+                                <div class="row"><p>:XIN HONG KONG/062E</p></div>
+                                <div class="row"><p>:01/06/2023</p></div>
+                                <div class="row"><p>:SYDNEY AUSTRALIA</p></div>
+                                <div class="row"><p>:FTL/AUSYD/L39755</p></div>
+                                <div class="row"><p>:</p></div>
+                                <div class="row"><p>:NATIONAL SHIPPING MANAGER</p></div>
+                                <div class="row"><p>:NATIONAL SHIPPING MANAGER</p></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--Pkg,Weight,CBM-->
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <p><b>Pkg/Weight/CBM :</b></p>
+                                <p>Container/s :</p>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <p>47 BAGS/654.7/2.9</p>
+                                <p>OOLU6823718/HC40</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6"></div>
+
+                </div>
+
+
+
+                @* <div style="border: 1px solid black; padding: 0; background-color: #f3f3f3;">
+                <!-- ============================================================== -->
+                <!-- Second Border -->
+                <!-- ============================================================== -->
+                <!--Description and Amount Table-->
+                <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                <th style="border-bottom: 1px solid black; border-right: 1px solid black; padding: 5px;">Charges</th>
+                <th style="border-bottom: 1px solid black;border-left: 1px solid black; padding: 5px;">Amount in USD</th>
+                </tr>
+                <tr>
+                <td style="border-right: 1px solid black; padding: 5px;">:@Html.DisplayFor(m => Model.ImportJobHdMulti.FirstOrDefault().JobNo)</td>
+                <td style="border-left: 1px solid black; padding: 5px;">12,000.00</td>
+                </tr>
+                <tr>
+                <td style="border-right: 1px solid black; padding: 5px;"></td>
+                <td style="border-left: 1px solid black; padding: 5px;"></td>
+                </tr>
+                <tr>
+                <td style="border-right: 1px solid black; padding: 5px;"></td>
+                <td style="border-left: 1px solid black; padding: 5px;"></td>
+                </tr>
+                <tr>
+                <td style="border-right: 1px solid black; padding: 5px;"></td>
+                <td style="border-left: 1px solid black; padding: 5px;"></td>
+                </tr>
+                <tr>
+                <td style="border-right: 1px solid black; padding: 5px;"></td>
+                <td style="border-left: 1px solid black; padding: 5px;"></td>
+                </tr>
+                <tr>
+                <td style="border-right: 1px solid black; padding: 5px;">TOTAL</td>
+                <td style="border-left: 1px solid black; padding: 5px; border-top: 2px solid black;">12,000.00</td>
+                </tr>
+                </table>
+                <!-- ============================================================== -->
+                <!-- End of Second Border -->
+                <!-- ============================================================== -->
+                </div>*@
+
+                @*                <!-- Table for Invoice Items -->
+                <div style="border: 1px solid black; padding: 0; background-color: #f3f3f3;">
+                <div class="table">
+                <table class="container table" id="tblContainer" style="border: 1px solid black;">
+                <thead>
+                <tr>
+                <th style="border-bottom: 1px solid black; border-right: 1px solid black; padding: 5px; border-top: 1px solid black;">Charges</th>
+                <th style="border-bottom: 1px solid black;border-left: 1px solid black; padding: 5px; border-top: 1px solid black; text-align:center;">AMOUNT </th>
+                </tr>
+                </thead>
+                <tbody id="ContainerDetailsBody">
+                @foreach (var item in Model.InvoiceDtMulti)
+                {
+                <tr id="tablerow0" style="height: 30px;">
+                <td style="padding: 3px; margin: 0;">
+                @item.ChargeItem
+                <!-- <input type="text" id="Description" name="Description" value="@item.ChargeItem" class="form-control" style="width: 80%" /> -->
+                </td>
+                <td style="text-align:right; border-left: 1px solid black; padding: 3px; margin: 0;">
+                @string.Format("{0:#,##0.00}", item.Amount)
+                <!-- <input type="text" id="Amount" name="Amount" asp-for="InvoiceDtMulti.FirstOrDefault().Amount" value="@item.Amount" class="form-control" style="width: 40%" /> -->
+                </td>
+                </tr>
+                }
+                <tr>
+                <td style="border-top: 2px solid black; font-weight:bold;">
+                Total Amount in LKR:
+                <td style="border-top: 2px solid black; border-left: 1px solid black; text-align:right; font-weight:bold;">
+                <span style="color:black;">@string.Format("{0:#,##0.00}", Model.InvoiceHdMulti.FirstOrDefault().TotalInvoiceAmountLkr)</span>
+                </td>
+                </tr>
+                <tr>
+                <td style="border-top: 2px solid black; font-weight:bold;">
+                Total Amount in USD:
+                <td style="border-top: 2px solid black; border-left: 1px solid black; text-align:right; font-weight:bold;">
+                <span style="color:black;">@string.Format("{0:#,##0.00}", Model.InvoiceHdMulti.FirstOrDefault().TotalInvoiceAmountUsd)</span>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                </div>*@
+
+
+                <div style="border: 1px solid black; padding: 0; background-color: #f3f3f3;">
+                    <!-- ============================================================== -->
+                    <!-- Second Border -->
+                    <!-- ============================================================== -->
+                    <!--Description and Amount Table-->
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="border-bottom: 1px solid black; border-right: 1px solid black; padding: 5px; border-top: 1px solid black;">Charges</th>
+                                <th style="border-bottom: 1px solid black;border-left: 1px solid black; padding: 5px; border-top: 1px solid black; text-align:center;">AMOUNT </th>
+                            </tr>
+                        </thead>
+                        <tbody id="ContainerDetailsBody">
+                            @foreach (var item in Model.InvoiceDtMulti)
+                            {
+                                <tr id="tablerow0" style="height: 30px;">
+                                    <td style="padding: 3px; margin: 0;">
+                                        @item.ChargeItemNavigation.Description
+                                        <!-- <input type="text" id="Description" name="Description" value="@item.ChargeItemNavigation" class="form-control" style="width: 80%" /> -->
+                                    </td>
+                                    <td style="text-align:right; border-left: 1px solid black; padding: 3px; margin: 0;">
+                                        @string.Format("{0:#,##0.00}", item.Amount)
+                                        <!-- <input type="text" id="Amount" name="Amount" asp-for="InvoiceDtMulti.FirstOrDefault().Amount" value="@item.Amount" class="form-control" style="width: 40%" /> -->
+                                    </td>
+                                </tr>
+                            }
+                            <tr>
+                                <td style="border-top: 2px solid black; font-weight:bold;">
+                                    Total Amount in LKR:
+                                <td style="border-top: 2px solid black; border-left: 1px solid black; text-align:right; font-weight:bold;">
+                                    <span style="color:black;">@string.Format("{0:#,##0.00}", Model.InvoiceHdMulti.FirstOrDefault().TotalInvoiceAmountLkr)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: 2px solid black; font-weight:bold;">
+                                    Total Amount in USD:
+                                <td style="border-top: 2px solid black; border-left: 1px solid black; text-align:right; font-weight:bold;">
+                                    <span style="color:black;">@string.Format("{0:#,##0.00}", Model.InvoiceHdMulti.FirstOrDefault().TotalInvoiceAmountUsd)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ============================================================== -->
+                    <!-- End of Second Border -->
+                    <!-- ============================================================== -->
+                </div>
+
+            </div>
+
+
+            <!--last body-->
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+
+                            <div class="row"><p>BENEFICIARY NAME</p></div>
+                            <div class="row"><p>BANK A/C NO</p></div>
+                            <div class="row"><p>BANK NAME</p></div>
+                            <div class="row"><p>BANK CODE</p></div>
+                            <div class="row"><p>BRANCH CODE</p></div>
+                            <div class="row"><p>BRANCH NAME</p></div>
+                            <div class="row"><p>BANK ADDRESS</p></div>
+                            <div class="row"><p>SWIFT CODE</p></div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="row"><p>:FTL COLOMBO(PVT) LTD</p></div>
+                            <div class="row"><p>:4484986546548498</p></div>
+                            <div class="row"><p>:COM BANK</p></div>
+                            <div class="row"><p>:7056</p></div>
+                            <div class="row"><p>:259</p></div>
+                            <div class="row"><p>:NAWAM MAWATHA</p></div>
+                            <div class="row"><p>:COLOMBO 02</p></div>
+                            <div class="row"><p>:CCEYLKLX</p></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <p>
+                        All Cheques should be
+                        payable FIT. COLOMBO PVB
+                        or THE INVOICE COMMUNICATED TO
+                        IN 1'.AYS INVOICE
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- Container fluid  END -->
+        <!-- ============================================================== -->
+
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-Center">
+        </div>
+        <div class="col-md-3 text-Center">
+            <button id="printButton" onclick="submitForm(this)" class="btn btn-warning"><i class="fa  fa-print"></i>Print - Invoice</button>
+        </div>
+        <div class="col-md-3 text-Center">
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+
+    <script>
+        $(document).ready(function () {
+            // Print button click event handler
+            $('#printButton').click(function () {
+                var printContents = $('#printArea').html(); // Get the HTML content of the selected area
+                var originalContents = document.body.innerHTML; // Store the original body content
+
+                // Replace the body content with the selected area content
+                document.body.innerHTML = printContents;
+
+                // Trigger the browser's print dialog
+                window.print();
+
+                // Restore the original body content
+                document.body.innerHTML = originalContents;
+            });
+        });
+    </script>
+}

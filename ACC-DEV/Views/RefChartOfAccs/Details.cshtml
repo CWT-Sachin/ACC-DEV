@@ -1,0 +1,114 @@
+﻿@model ACC_DEV.Models.RefChartOfAcc
+@{
+    ViewData["Title"] = "RepPrintPaymentVoucher";
+
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+
+            <div class="card">
+                <div class="card-header bg-success">
+                    <h4 class="m-b-0 text-white">Chart Of Accounts - Detail</h4>
+                </div>
+
+                <div class="card-body">
+                    <form asp-action="Edit" method="post">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Account Name</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" asp-for="AccName" class="form-control" style="background-color:#b8b8b8;" readonly />
+                                            <span asp-for="AccName" class="text-danger"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Account Code</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" asp-for="AccCode" class="form-control" style="background-color:#b8b8b8;" readonly />
+                                            <span asp-for="AccName" class="text-danger"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Description</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" asp-for="Description" class="form-control" style="background-color:#b8b8b8;" readonly />
+                                            <span asp-for="AccName" class="text-danger"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Note</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <textarea asp-for="Note" class="form-control" name="Note" type="text" rows="3" style="background-color:#b8b8b8;" readonly> </textarea>
+                                            <span asp-for="Note" class="text-danger"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Accounts Types</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <select id="AccTypeName" asp-for="AccType" class="form-control" asp-items="ViewBag.AccountsTypes" style="background-color:#b8b8b8;" disabled></select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

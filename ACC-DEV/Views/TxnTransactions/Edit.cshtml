@@ -1,0 +1,249 @@
+﻿@model ACC_DEV.ViewModel.TxnTransactionsViewMode
+
+@{
+    ViewData["Title"] = "Edit";
+    //Pager pager = new Pager();
+    //int pageNo = 0;
+    //if (ViewBag.Pager != null)
+    //{
+    //    pager = ViewBag.Pager;
+    //    pageNo = pager.CurrentPage;
+    //}
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h4 class="m-b-0 text-white">Transactions Edit</h4>
+                </div>
+                <form asp-action="Edit" id="txnTransactions">
+                    <input type="hidden" asp-for="TxnTransactionHdMulti.FirstOrDefault().TxnNo" />
+                    <input type="hidden" asp-for="TxnTransactionHdMulti.FirstOrDefault().TxnSNo" />
+                    <input type="hidden" asp-for="TxnTransactionHdMulti.FirstOrDefault().DocType" />
+                    <input type="hidden" asp-for="TxnTransactionHdMulti.FirstOrDefault().RefNo" />
+                    <input type="hidden" asp-for="TxnTransactionHdMulti.FirstOrDefault().Description" />
+                    <input type="hidden" asp-for="TxnTransactionHdMulti.FirstOrDefault().Dr" />
+                    <input type="hidden" asp-for="TxnTransactionHdMulti.FirstOrDefault().Cr" />
+                <div class="card-body">
+                    <div style="border:1px  solid black; padding: 10px 10px 10px 10px; background-color:#E5F2FB; border-radius:10px;">
+
+                        <!--Job No & Date-->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Job No">Transaction No</label>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <span id="jobno">
+                                            @Html.DisplayFor(m => Model.TxnTransactionHdMulti.FirstOrDefault().TxnNo)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Date">Date (orginal)</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                            <div class="col-md-12">
+                                                @Html.DisplayFor(m => Model.TxnTransactionHdMulti.FirstOrDefault().DateOrginal)
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4"></div>
+
+                        </div><br />
+
+                            <!--Job No & Date-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Job No">Documnet Type</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <span id="jobno">
+                                                @Html.DisplayFor(m => Model.TxnTransactionHdMulti.FirstOrDefault().DocType)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Date">Document No</label>
+                                        </div>
+                                        <div class="col-md-5">
+                                            @Html.DisplayFor(m => Model.TxnTransactionHdMulti.FirstOrDefault().RefNo)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4"></div>
+
+                            </div><br />
+</div>
+<br />
+                        <br />
+
+                        <div class="row">
+                            
+                            <div class="col-md-2" style="margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Date">Date</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="col-md-12">
+                                            <input type="date" asp-for="TxnTransactionHdMulti.FirstOrDefault().Date" name="TxnTransactionHdMulti[0].Date" class="form-control" asp-format="{0:yyyy-MM-dd}" />
+
+                                            <span asp-validation-for="TxnTransactionHdMulti.FirstOrDefault().Date" name="TxnTransactionHdMulti[0].Date"  class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <br />
+                        <br />
+                        <!--Table for Charge Items --><br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-hover border table-striped" id="tblContainer">
+                                        <thead>
+                                            <tr>
+                                                <th>Trans S/N</th>
+                                                <th>Acc Code</th>
+                     
+                                                <th>Description </th>
+                                                <th>Dr</th>
+                                                <th>Cr</th>
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody id="ContainerDetailsBody">
+                                            @foreach (var txnTransaction in Model.TxnTransactionHdMulti)
+                                            {
+                                                <tr>
+                                                    <td>@Html.DisplayFor(m => txnTransaction.TxnSNo)</td>
+                                                    <td>
+                                                        <select id="ChargeItemRw_@txnTransaction.TxnSNo" asp-for="@txnTransaction.TxnAccCode" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                                    </td>
+                                                    <td>@Html.DisplayFor(m => txnTransaction.Description)</td>
+                                                    <td>@Html.DisplayFor(m => txnTransaction.Dr)</td>
+                                                    <td>@Html.DisplayFor(m => txnTransaction.Cr)</td>
+                                                </tr>
+                                            }
+
+
+
+                                        </tbody>
+
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Remarks Textbox-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <h6 class="box-title">Note</h6>
+                                    <div class="col-md-12">
+                                        <textarea asp-for="TxnTransactionHdMulti.FirstOrDefault().Note" class="form-control" name="Remarks" type="text" placeholder="Leave Your Note Here" rows="5"> </textarea>
+                                        @* <input asp-for="BLTypeID" class="form-control" />*@
+                                        <span asp-validation-for="TxnTransactionHdMulti.FirstOrDefault().Note" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><br />
+
+                        <!--Save Button-->
+                        <div class="row">
+                            <div class="form-group">
+                                <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
+                                <input type="submit" value="Save" onclick="submitForm(this)" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Orginal details End -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- Container fluid  END -->
+    <!-- ============================================================== -->
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Create and submit Charge Items
+
+    function submitForm(e) {
+
+        const dtlItemsArray = [];
+        const tableRows = $("#tblContainer tbody tr");
+        var chkAmount = "";
+
+        tableRows.each(function (index) {
+            const trRow = $(this);
+            chkAmount = trRow.find('input[name="Amount"]').val();
+
+            if (chkAmount === "" || parseFloat(chkAmount) === 0) {
+                // chkAmount is empty or zero
+                //console.log("chkAmount is empty or zero");
+            } else {
+                // chkAmount is not empty and not zero
+                const dtlItemJson = buildItemsJson(trRow, index);
+                dtlItemsArray.push(dtlItemJson);
+            }
+        });
+
+        $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+        var jobNo = JobHdMulti.FirstOrDefault().JobNo;
+        alert("jobNo: " + jobNo);
+
+        // Assign the value to the hidden input field using jQuery
+        $('#invoiceJobNo').val(jobNo);
+    }
+
+    // Json Var create
+    function buildItemsJson(trRow, id) {
+        return {
+            SerialNo: id,
+            Description: trRow.find('input[name="Description"]').val(),
+            Amount: trRow.find('input[name="Amount"]').val(),
+        };
+    }
+</script>
+

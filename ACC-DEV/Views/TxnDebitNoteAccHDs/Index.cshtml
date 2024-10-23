@@ -1,0 +1,96 @@
+﻿@model ACC_DEV.ViewModel.DebitNoteAccViewModel
+@{
+
+
+    ViewData["Title"] = "Index";
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h4 class="text-themecolor">Transactions</h4>
+                </div>
+                <div class="col-md-7 align-self-center text-right">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Transaction</li>
+                        </ol>
+                        <button type="button" onclick="location.href='@Url.Action("Create", "TxnDebitNoteAccHDs")'" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New DebitNote Additional</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h1 class="text-themecolor">Debit Note Additional</h1>
+                </div>
+                <div class="col-md-3 align-self-center text-right">
+                </div>
+                <!-- Search-->
+@*                 <div class="col-md-4 align-self-center text-right">
+                    @using (Html.BeginForm("Index", "TxnPaymentHDs", new { searchString = "" }, FormMethod.Post))
+                    {
+                        <div class="input-group">
+
+                            <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search by Payment No..." />
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-info"> <i class="fas fa-search-plus"></i> Go!</button>
+                            </div>
+                        </div>
+                    }
+                </div> *@
+                <!-- End Search-->
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                @if (pager.TotalPages > 0)
+                {
+                    <ul class="pagination justify-content-end">
+                        @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
+                        {
+                            <li class="page-item @(pge == pager.CurrentPage ? "active" : "")">
+                                <a class="page-link" aps-controller="RefPorts" asp-action="Index" asp-route-pg="@pge"> @pge </a>
+                            </li>
+                        }
+                    </ul>
+                    <ul class="pagination justify-content-end">
+                        <p> Page @(pager.TotalPages < pager.CurrentPage ? 0 : pager.CurrentPage) of @pager.TotalPages </p>
+                    </ul>
+                }
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Container fluid  END -->
+        <!-- ============================================================== -->
+
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper -  END style you can find in pages.scss -->
+<!-- ============================================================== -->

@@ -1,0 +1,421 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ACC-DEV
+build_property.RootNamespace = ACC-DEV
+build_property.ProjectDir = G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/CancellationPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuY2VsbGF0aW9uUGFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/DashBrdExports/DashBrdExportForPlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJyZEV4cG9ydHNcRGFzaEJyZEV4cG9ydEZvclBsYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/FileUploadPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVVwbG9hZFBhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/ProfitandLost/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZml0YW5kTG9zdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAccountsType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAccountsType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAccountsType/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAccountsType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAccountsType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAgents/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWdlbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAgents/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWdlbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAgents/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWdlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAgents/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWdlbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefAgents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWdlbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChargeItems/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcmdlSXRlbXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChargeItems/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcmdlSXRlbXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChargeItems/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcmdlSXRlbXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChargeItems/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcmdlSXRlbXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChargeItems/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcmdlSXRlbXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChartOfAccs/COATreeview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcQ09BVHJlZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChartOfAccs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChartOfAccs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChartOfAccs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefChartOfAccs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefCustomers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefCustomers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefCustomers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefCustomers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ3VzdG9tZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefCustomers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefPorts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmUG9ydHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefPorts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmUG9ydHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefPorts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmUG9ydHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefPorts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmUG9ydHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefPorts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmUG9ydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefShippingLines/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmU2hpcHBpbmdMaW5lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefShippingLines/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmU2hpcHBpbmdMaW5lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefShippingLines/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmU2hpcHBpbmdMaW5lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefShippingLines/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmU2hpcHBpbmdMaW5lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/RefShippingLines/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmU2hpcHBpbmdMaW5lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TransshipmentLoading/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNzaGlwbWVudExvYWRpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TreeView/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZVZpZXdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TreeView/TreeViewPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZVZpZXdcVHJlZVZpZXdQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnBLStatus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQkxTdGF0dXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnBLStatus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQkxTdGF0dXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnBLStatus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQkxTdGF0dXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnBLStatus/TrackingStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQkxTdGF0dXNcVHJhY2tpbmdTdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnBookingExps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQm9va2luZ0V4cHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnBookingExps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQm9va2luZ0V4cHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnBookingExps/RepPrintBL.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQm9va2luZ0V4cHNcUmVwUHJpbnRCTC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnCreditNoteHds/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xBcHByb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnCreditNoteHds/Create Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xDcmVhdGUgQ29weS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnCreditNoteHds/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnCreditNoteHds/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnCreditNoteHds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnCreditNoteHds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnCreditNoteHds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnCreditNoteHds/RepPrintCreditNote.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xSZXBQcmludENyZWRpdE5vdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnDebitNoteHds/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXEFwcHJvdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnDebitNoteHds/Create Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXENyZWF0ZSBDb3B5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnDebitNoteHds/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnDebitNoteHds/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnDebitNoteHds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnDebitNoteHds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnDebitNoteHds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnDebitNoteHds/RepPrintDebitNote.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXFJlcFByaW50RGViaXROb3RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnExportJobHds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRXhwb3J0Sm9iSGRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnExportJobHds/JobDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRXhwb3J0Sm9iSGRzXEpvYkRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnImportJobDtls/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW1wb3J0Sm9iRHRsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnImportJobDtls/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW1wb3J0Sm9iRHRsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnInvoiceHds/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xBcHByb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnInvoiceHds/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnInvoiceHds/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnInvoiceHds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnInvoiceHds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnInvoiceHds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnInvoiceHds/RepPrintInvoice - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xSZXBQcmludEludm9pY2UgLSBDb3B5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnInvoiceHds/RepPrintInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xSZXBQcmludEludm9pY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnJournalHds/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSm91cm5hbEhkc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnJournalHds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSm91cm5hbEhkc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnPaymentVoucherHds/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcQXBwcm92ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnPaymentVoucherHds/Create Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcQ3JlYXRlIENvcHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnPaymentVoucherHds/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnPaymentVoucherHds/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnPaymentVoucherHds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnPaymentVoucherHds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnPaymentVoucherHds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnPaymentVoucherHds/RepPrintPaymentVoucher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcUmVwUHJpbnRQYXltZW50Vm91Y2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnReceipt/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUmVjZWlwdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnReceipt/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUmVjZWlwdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnStuffingPlanHds/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuU3R1ZmZpbmdQbGFuSGRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnStuffingPlanHds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuU3R1ZmZpbmdQbGFuSGRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnStuffingPlanHds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuU3R1ZmZpbmdQbGFuSGRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnStuffingPlanHds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuU3R1ZmZpbmdQbGFuSGRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/TxnStuffingPlanHds/RepPrintStaffingPlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuU3R1ZmZpbmdQbGFuSGRzXFJlcFByaW50U3RhZmZpbmdQbGFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Accounts/From Sheron/FMS-DEV-2024-01-30 Version - 058- ACC/FMS-DEV/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kqror9vd6y

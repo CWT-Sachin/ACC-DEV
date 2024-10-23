@@ -1,0 +1,720 @@
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\appsettings.Development.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\appsettings.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\ACC-DEV.exe
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\ACC-DEV.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Azure.Core.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Azure.Identity.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\staticwebassets.build.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\staticwebassets.development.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CopyComplete
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\FMS-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\appsettings.Development.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\appsettings.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\ACC-DEV.exe
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\ACC-DEV.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Azure.Core.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Azure.Identity.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\staticwebassets.build.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\staticwebassets.development.json
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CopyComplete
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+G:\Accounts\From Sheron\FMS-DEV-2024-01-30 Version - 058- ACC\ACC-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.Development.json
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.json
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.exe
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Core.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Identity.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.build.json
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.development.json
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CopyComplete
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+G:\Accounts\From Sheron\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.Development.json
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.json
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.exe
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Core.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Identity.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.build.json
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.development.json
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CopyComplete
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+D:\DEV-Projects\ACC-DEV-2024-01-31-Ver 00\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.Development.json
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.json
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.exe
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Core.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Identity.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.build.json
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.development.json
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CopyComplete
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+G:\Developers-ACC\From Sheron\ACC-DEV-2024-02-07-v03\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.json
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.exe
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CopyComplete
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+C:\Users\User\Downloads\ACC-DEV-2024-01-08-1855-with FMS andACC\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.Development.json
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.json
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.exe
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Core.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Identity.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.build.json
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.development.json
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll
+D:\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.Up2Date
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.Development.json
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.json
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.exe
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Core.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Identity.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.build.json
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.development.json
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.Up2Date
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+D:\Last Year 2023\DEV-Projects\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.Development.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\appsettings.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.exe
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.deps.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Core.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Azure.Identity.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Memory.Data.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.build.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.development.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\staticwebassets.pack.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\refint\ACC-DEV.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net6.0\ref\ACC-DEV.dll

@@ -1,0 +1,163 @@
+﻿@model IEnumerable<ACC_DEV.Models.TxnTransactions>
+
+@{
+    ViewData["Title"] = "Index";
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h4 class="m-b-0 text-white">Transaction Ledger</h4>
+                </div>
+                <br />
+                <br />
+                <hr />
+            <div class="row page-titles">
+                <div class="col-md-5">
+                        <h1 class="text-themecolor" style="margin-left:20px; font-weight:bold;">Transaction Ledger</h1>
+                </div>
+                <div class="col-md-3 align-self-center text-right">
+                </div>
+            </div>
+                <div class="row page-titles">
+                    <div class="col-md-12">
+                        <form asp-action="TransactionLedger" method="get">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <label for="Customer">A/C No</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select id="selectedAccount" name="selectedAccount" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label for="Customer">From</label>
+                                    </div>
+                                    <div class="col-md-2">
+                                 <input type="date" id="fromDate" name="fromDate" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label for="Customer">To</label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="date" type="date" id="toDate" name="toDate" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="searchType" id="searchByAll" value="All" checked>
+                                            <label class="form-check-label" for="searchByAll">All</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="searchType" id="searchByDocNo" value="DocNo">
+                                            <label class="form-check-label" for="searchByDocNo">Doc No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="searchType" id="searchByDocType" value="Doc Type">
+                                            <label class="form-check-label" for="searchByDocType">Doc Type</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="searchType" id="searchByDescription" value="Description">
+                                            <label class="form-check-label" for="searchByDescription">Description</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="searchType" id="searchByDrAmount" value="Dr Amount">
+                                            <label class="form-check-label" for="searchByDrAmount">Dr Amount</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="searchType" id="searchByCrAmount" value="Cr Amount">
+                                            <label class="form-check-label" for="searchByCrAmount">Cr Amount</label>
+                                        </div>
+                                        <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search..." style="width: 5px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="col-md-12">
+                            <br />
+                            <label for="Customer"><h4><b>Selected date range From: @ViewBag.FromDate  To:  @ViewBag.ToDate</b></h4></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table color-bordered-table purple-bordered-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>TxnNo</th>
+                                        <th>Doc No</th>
+                                        <th>Doc Type</th>
+                                        <th>Description</th>
+                                        <th>Dr</th>
+                                        <th>Cr</th>
+                                        <th style="display:none;">ACCNo</th>
+                                        <th ></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.TxnNo)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.RefNo)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.DocType)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.Dr)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.Cr)</td>
+                                            <td style="display:none;">@Html.DisplayFor(modelItem => item.TxnAccCode)</td>
+                                            <td></td>
+                                        </tr>
+                                    }
+                                    <!-- Display total Dr and Cr -->
+                                    <tr>
+                                        <td colspan="4" style="font-weight:bold; background-color:darkgray"></td>
+                                        <td style="font-weight:bold; background-color:darkgray; text-align:center;">Total</td>
+                                        <td style="font-weight:bold; background-color:darkgray"><input type="text" readonly value="@Model.Sum(m => m.Dr)" /></td>
+                                        <td style="font-weight:bold; background-color:darkgray"><input type="text" readonly value="@Model.Sum(m => m.Cr)" /></td>
+                                        <td style="font-weight:bold; background-color:darkgray"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        <!-- ============================================================== -->
+        <!-- Container fluid  END -->
+        <!-- ============================================================== -->
+    </div>
+</div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper -  END style you can find in pages.scss -->
+<!-- ============================================================== -->

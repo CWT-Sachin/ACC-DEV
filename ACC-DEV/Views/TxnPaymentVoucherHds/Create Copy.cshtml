@@ -1,0 +1,93 @@
+﻿@model ACC_DEV.Models.TxnPaymentVoucherHd
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TxnPaymentVoucherHd</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PayVoucherNo" class="control-label"></label>
+                <input asp-for="PayVoucherNo" class="form-control" />
+                <span asp-validation-for="PayVoucherNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobNo" class="control-label"></label>
+                <input asp-for="JobNo" class="form-control" />
+                <span asp-validation-for="JobNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer" class="control-label"></label>
+                <input asp-for="Customer" class="form-control" />
+                <span asp-validation-for="Customer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExchangeRate" class="control-label"></label>
+                <input asp-for="ExchangeRate" class="form-control" />
+                <span asp-validation-for="ExchangeRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PayCurrency" class="control-label"></label>
+                <input asp-for="PayCurrency" class="form-control" />
+                <span asp-validation-for="PayCurrency" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPayVoucherAmountLkr" class="control-label"></label>
+                <input asp-for="TotalPayVoucherAmountLkr" class="form-control" />
+                <span asp-validation-for="TotalPayVoucherAmountLkr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPayVoucherAmountUsd" class="control-label"></label>
+                <input asp-for="TotalPayVoucherAmountUsd" class="form-control" />
+                <span asp-validation-for="TotalPayVoucherAmountUsd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Remarks" class="control-label"></label>
+                <input asp-for="Remarks" class="form-control" />
+                <span asp-validation-for="Remarks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedBy" class="control-label"></label>
+                <input asp-for="CreatedBy" class="form-control" />
+                <span asp-validation-for="CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDateTime" class="control-label"></label>
+                <input asp-for="CreatedDateTime" class="form-control" />
+                <span asp-validation-for="CreatedDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastUpdatedBy" class="control-label"></label>
+                <input asp-for="LastUpdatedBy" class="form-control" />
+                <span asp-validation-for="LastUpdatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastUpdatedDateTime" class="control-label"></label>
+                <input asp-for="LastUpdatedDateTime" class="form-control" />
+                <span asp-validation-for="LastUpdatedDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

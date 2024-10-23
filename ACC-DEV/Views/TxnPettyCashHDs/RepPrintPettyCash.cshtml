@@ -1,0 +1,238 @@
+﻿@model ACC_DEV.ViewModel.TxnPettyCashViewModel
+@{
+    ViewData["Title"] = "RepPrintPettyCash";
+
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid" id="printArea">
+              
+            <div class="Container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-4">                               
+                            </div>
+                            <div class="col-md-8"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+
+                        <br />
+                        <div class="row ">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6"><h3><b>Petty Cash</b></h3></div>
+                            <div class="col-md-3">
+                                
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+               
+            </div>
+            <div class="container">
+                <hr style="border: 1px solid black; margin: 0;" /> <!--hr Border-->
+                <br />
+                <!--main part-->
+                <div class="row">
+
+                    <div class="col-md-6"></div>
+
+                    <div class="col-md-6" style="margin-bottom: 0px;">
+                        <div class="row">
+                            <div class="col-md-3 p-0">
+                                <span>Document </span>
+                                <br />
+                                <span>Date</span>
+                                <br />
+
+
+                            </div>
+                            <div class="col-md-4 p-0">
+                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().PettyCashNo)</span>
+                                <br />
+                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().Date) </span>
+                                <br />
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" style="margin-bottom: 0px;">
+                        <div class="row">
+                            <div class="col-md-3 p-0">
+
+
+                                <span>Description</span>
+                                <br />
+                                <span>Creditor Code</span>
+                                <br />
+
+                                <span>Amount</span>
+                                <br />
+
+                            </div>
+                            <div class="col-md-4 p-0">
+
+
+                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().Narration) </span>
+                                <br />
+                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().MainAcc) </span>
+                                <br />
+
+                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().AmountToBePaid)</span>
+                                <br />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <!-- ============================================================== -->
+                <!-- Second Border -->
+                <!-- ============================================================== -->
+                <!--Description and Amount Table-->
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="border-bottom: 1px solid black;border-left: 1px solid black; border-right: 1px solid black; padding: 5px; border-top: 1px solid black;">Account No</th>
+                            <th style="border-bottom: 1px solid black;border-left: 1px solid black; border-right: 1px solid black; padding: 5px; border-top: 1px solid black;">Description</th>
+                            <th style="border-bottom: 1px solid black;border-right: 1px solid black; border-left: 1px solid black; padding: 5px; border-top: 1px solid black; text-align:center;">AMOUNT </th>
+                        </tr>
+                    </thead>
+                    <tbody id="ContainerDetailsBody">
+                        @foreach (var item in Model.TxnPettyCashDtlMulti)
+                        {
+                            <tr id="tablerow0" style="height: 30px; ">
+                                <td style="padding: 3px; margin: 0;border-left: 1px solid black;">
+                                    @item.LineAccNo
+                                </td>
+                                <td style="text-align:right; border-left: 1px solid black; padding: 3px; margin: 0; border-left: 1px solid black; border-right: 1px solid black;">
+                                    @item.Description
+                                </td>
+                                <td style="text-align:right; border-left: 1px solid black; padding: 3px; margin: 0; border-left: 1px solid black;border-right: 1px solid black;">
+                                    @string.Format("{0:#,##0.00}", item.Amount)
+                                </td>
+                            </tr>
+                        }
+
+                        <tr>
+                            <td style="border-top: 2px solid black; font-weight:bold; border-left: 1px solid black; border-bottom: 1px solid black;">
+                                Total Amount:
+                            </td>
+                            <td style="border-top: 2px solid black; font-weight:bold; border-left: 1px solid black; border-bottom: 1px solid black;">
+                                <span style="color:black;">@string.Format("{0:#,##0.00}", Model.TxnPettyCashHDMulti.FirstOrDefault().TotAmtWord)</span>
+                            </td>
+                            <td style="border-top: 2px solid black; text-align:right;border-right: 1px solid black;border-bottom: 1px solid black; font-weight:bold; border-left: 1px solid black;">
+                                <span style="color:black;">@string.Format("{0:#,##0.00}", Model.TxnPettyCashHDMulti.FirstOrDefault().AmountToBePaid)</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- ============================================================== -->
+                <!-- End of Second Border -->
+                <!-- ============================================================== -->
+                <br />
+                <br />
+                <br />
+                <div class="container">
+                    <!-- Adding Container -->
+                    <div class="row" style="margin: 0;">
+
+                        <div class="col-md-3" style="padding: 0; display: flex; flex-direction: column; align-items: flex-start;">
+                            <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 2px;">
+                                <hr style="border: none; border-top: 1px dotted black; margin: 0; width: 100%;" /> <!-- Dotted hr Border (inline CSS) -->
+                                <span style="margin: 0; text-align: center;">Prepared By</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3" style="padding: 0; display: flex; flex-direction: column; align-items: flex-start;">
+                            <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 2px;">
+                                <hr style="border: none; border-top: 1px dotted black; margin: 0; width: 100%;" /> <!-- Dotted hr Border (inline CSS) -->
+                                <span style="margin: 0; text-align: center;">Checked By</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 2px;">
+                                <hr style="border: none; border-top: 1px dotted black; margin: 0; width: 100%;" /> <!-- Dotted hr Border (inline CSS) -->
+                                <span style="margin: 0; text-align: center;">Authorized By </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-3">
+                            <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 2px;">
+                                <hr style="border: none; border-top: 1px dotted black; margin: 0; width: 100%;" /> <!-- Dotted hr Border (inline CSS) -->
+                                <span style="margin: 0; text-align: center;">Received By </span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Container Ending -->
+                <!-- ============================================================== -->
+                <!-- Container fluid  END -->
+                <!-- ============================================================== -->
+            </div>
+            <br />
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 text-Center">
+    </div>
+    <div class="col-md-3 text-Center">
+        <button id="printButton" onclick="submitForm(this)" class="btn btn-warning"><i class="fa  fa-print"></i>Print Petty Cash</button>
+    </div>
+    <div class="col-md-3 text-Center">
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</div>
+@section Scripts {
+
+    <script>
+        $(document).ready(function () {
+            // Print button click event handler
+            $('#printButton').click(function () {
+                var printContents = $('#printArea').html(); // Get the HTML content of the selected area
+                var originalContents = document.body.innerHTML; // Store the original body content
+
+                // Replace the body content with the selected area content
+                document.body.innerHTML = printContents;
+
+                // Trigger the browser's print dialog
+                window.print();
+
+                // Restore the original body content
+                document.body.innerHTML = originalContents;
+            });
+        });
+    </script>
+}

@@ -1,0 +1,994 @@
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts Versions\ACC DEV V1\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts Versions\ACC DEV V2\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts Versions\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts Ver\ACC DEV V3\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts Ver\ACC DEV V4\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+C:\Users\User\Downloads\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\Project\ACC DEV V5\ACC DEV V5\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts\ACC DEV V14\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts\ACC DEV V15\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts\ACC DEV V16\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\FTL Accounts\ACC DEV V17\ACC-DEV\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\appsettings.Development.json
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\appsettings.json
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\ACC-DEV.staticwebassets.runtime.json
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\ACC-DEV.exe
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\ACC-DEV.deps.json
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\ACC-DEV.runtimeconfig.json
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\ACC-DEV.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\ACC-DEV.pdb
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Azure.Core.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Azure.Identity.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\System.Memory.Data.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.AssemblyReference.cache
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfoInputs.cache
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.AssemblyInfo.cs
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.CoreCompileInputs.cache
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.MvcApplicationPartsAssemblyInfo.cache
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cache
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.RazorAssemblyInfo.cs
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\staticwebassets.build.json
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\staticwebassets.development.json
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.ACC-DEV.Microsoft.AspNetCore.StaticWebAssets.props
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.build.ACC-DEV.props
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ACC-DEV.props
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ACC-DEV.props
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\staticwebassets.pack.json
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\scopedcss\bundle\ACC-DEV.styles.css
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\scopedcss\projectbundle\ACC-DEV.bundle.scp.css
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.csproj.Up2Date
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\refint\ACC-DEV.dll
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.pdb
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ACC-DEV.genruntimeconfig.cache
+D:\ACC DEV\ACC DEV V18\ACC-DEV\obj\Debug\net8.0\ref\ACC-DEV.dll

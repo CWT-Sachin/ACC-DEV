@@ -1,0 +1,280 @@
+﻿@model ACC_DEV.ViewModel.ChartOfAllAccViewModel
+@{
+    ViewData["Title"] = "ChartOfAllAcc";
+
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h4 class="m-b-0 text-white">Chart Of Accounts - Create</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Account Name</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" asp-for="refChartOfAccsMulti.FirstOrDefault().AccName" class="form-control" style="background-color:#b8b8b8;" />
+                                            <span asp-validation-for="refChartOfAccsMulti.FirstOrDefault().AccName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Account Code</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" asp-for="refChartOfAccsMulti.FirstOrDefault().AccCode" class="form-control" style="background-color:#b8b8b8;" />
+                                            <span asp-validation-for="refChartOfAccsMulti.FirstOrDefault().AccCode" class="text-danger"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Description</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" asp-for="refChartOfAccsMulti.FirstOrDefault().Description" class="form-control" style="background-color:#b8b8b8;" />
+                                            <span asp-validation-for="refChartOfAccsMulti.FirstOrDefault().Description" class="text-danger"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Note</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <textarea asp-for="refChartOfAccsMulti.FirstOrDefault().Note" class="form-control" name="Note" type="text" rows="3" style="background-color:#b8b8b8;"> </textarea>
+                                            <span asp-validation-for="refChartOfAccsMulti.FirstOrDefault().Note" class="text-danger"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-left:30px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="Exchange Rate">Accounts Types</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <select id="IntendedVessel" asp-for="refChartOfAccsMulti.FirstOrDefault().AccType" class="form-control" asp-items="ViewBag.RefAccountsTypes" style="background-color:#b8b8b8;"></select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <hr />
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-8" style="margin-left:30px;">
+                                <div class="row">
+                                    <div class="col-md-2" >
+                                        <label for="Exchange Rate">Parent Account</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                <div id="treeview">
+                                            <ul id="tree">
+                                                @if (Model.ChartOfAccViewModelMulti != null)
+                                                {
+                                                    @foreach (var node in Model.ChartOfAccViewModelMulti)
+                                                    {
+                                                        <li id="@node.AccNo" class="parent-node">
+                                                            <span class="toggle-node">@node.AccName</span>
+                                                            @if (node.Children != null && node.Children.Any())
+                                                            {
+                                                                <ul class="nested">
+                                                                    @foreach (var childNode in node.Children)
+                                                                    {
+                                                                        <li id="@childNode.AccNo">
+                                                                            <span class="toggle-node">@childNode.AccName</span>
+                                                                            @if (childNode.Children != null && childNode.Children.Any())
+                                                                            {
+                                                                                <ul class="nested">
+                                                                                    @foreach (var grandChildNode in childNode.Children)
+                                                                                    {
+                                                                                        <li id="@grandChildNode.AccNo">
+                                                                                            <span class="toggle-node">@grandChildNode.AccName</span>
+                                                                                        </li>
+                                                                                    }
+                                                                                </ul>
+                                                                            }
+                                                                        </li>
+                                                                    }
+                                                                </ul>
+                                                            }
+                                                        </li>
+                                                    }
+                                                }
+                                            </ul>
+                                </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-2">
+                                <div id="selectedNodeInfo">
+                                    <!-- Display selected node info here -->
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="form-group">
+                            <input type="hidden" id="selectedNode" name="selectedNode" />
+                            <input type="submit" value="Save" class="btn btn-primary" onclick="submitForm(event)" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI/tZ1ZqjMzl2Al9F2k7tC5Uqq9pMsBzA7Foz/TI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.11/jstree.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.11/themes/default/style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+    <script>
+        // Modify your jstree initialization
+        $('#treeview').jstree({
+            'core': {
+                'themes': {
+                    'variant': 'large'
+                }
+            },
+            'checkbox': false,
+            'plugins': ['wholerow']
+        }).on('select_node.jstree', async function (e, data) {
+            var selectedNode = data.node;
+            $('#selectedNode').val(data.node.id);
+
+            try {
+                const response = await getParentInfo(selectedNode.id);
+                console.log('AJAX Response:', response); // Add this line for debugging
+
+                var parentInfo = response;
+                var accNo = parentInfo.accNo || "N/A";
+
+                // Customize the rendering based on your preference
+                var selectedNodeInfo = "<strong>Account No:</strong> " + (accNo === "N/A" ? "Not available" : accNo);
+                $('#selectedNodeInfo').html(selectedNodeInfo);
+            } catch (error) {
+                console.error('AJAX Error:', error); // Add this line for debugging
+                $('#selectedNodeInfo').html("Error fetching account number.");
+            }
+        });
+
+        // Function to get AccNo based on AccNo
+        async function getParentInfo(accNo) {
+            try {
+                const response = await $.ajax({
+                    url: '/RefChartOfAccs/GetParentInfo',
+                    type: 'GET',
+                    data: { accNo: accNo }
+                });
+                return response;
+            } catch (error) {
+                console.error("Error fetching account number:", error);
+                return { accNo: "N/A" };
+            }
+        }
+    </script>
+
+}
+
+
+<script>
+    // Create and submit Charge Items
+
+    function submitForm(e) {
+
+        const dtlItemsArray = [];
+        const tableRows = $("#tblContainer tbody tr");
+        var chkAmount = "";
+
+        tableRows.each(function (index) {
+            const trRow = $(this);
+            chkAmount = trRow.find('input[name="Amount"]').val();
+
+            if (chkAmount === "" || parseFloat(chkAmount) === 0) {
+                // chkAmount is empty or zero
+                //console.log("chkAmount is empty or zero");
+            } else {
+                // chkAmount is not empty and not zero
+                const dtlItemJson = buildItemsJson(trRow, index);
+                dtlItemsArray.push(dtlItemJson);
+            }
+        });
+
+        $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+        var jobNo = JobHdMulti.FirstOrDefault().JobNo;
+        alert("jobNo: " + jobNo);
+
+        // Assign the value to the hidden input field using jQuery
+        $('#invoiceJobNo').val(jobNo);
+    }
+
+    // Json Var create
+    function buildItemsJson(trRow, id) {
+        return {
+            SerialNo: id,
+            Description: trRow.find('input[name="Description"]').val(),
+            Amount: trRow.find('input[name="Amount"]').val(),
+        };
+    }
+
+</script>
+<style>
+    #treeview {
+        max-height: 300px; /* Set the maximum height for the treeview */
+        overflow-y: auto; /* Enable vertical scrolling */
+        border: 1px solid #ccc; /* Optional: Add a border for a visual distinction */
+    }
+</style>

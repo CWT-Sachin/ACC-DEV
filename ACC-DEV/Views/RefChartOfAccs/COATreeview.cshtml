@@ -1,0 +1,83 @@
+﻿@* @model List<ACC_DEV.ViewModel.ChartOfAccViewModel>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.11/themes/default/style.min.css" />
+
+<div class="row">
+    <div class="col-md-10">
+<div id="treeview">
+    <ul id="tree">
+        @foreach (var node in Model)
+        {
+            <li id="@node.AccNo">
+                @node.AccName
+                @if (node.Children.Any())
+                {
+                    <ul>
+                        @foreach (var childNode in node.Children)
+                        {
+                            <li id="@childNode.AccNo">
+                                @childNode.AccName
+                                @if (childNode.Children.Any())
+                                {
+                                    <ul>
+                                        @foreach (var grandChildNode in childNode.Children)
+                                        {
+                                            <li id="@grandChildNode.AccNo">@grandChildNode.AccName</li>
+                                            <!-- We can add more if we want. not only AccName. also when updating, please make sure to update the Controller -->
+                                        }
+                                    </ul>
+                                }
+                            </li>
+                        }
+                    </ul>
+                }
+            </li>
+        }
+    </ul>
+</div>
+</div>
+    <div class="col-md-2">
+        <div id="selectedNodeInfo">
+            <!-- Display selected node info here -->
+        </div>
+        </div>
+</div>
+@section scripts {
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.11/jstree.min.js"></script>
+    <script type="text/javascript">
+        // Function to get Description based on AccNo
+        async function getDescription(accNo) {
+            try {
+                const response = await $.ajax({
+                    url: '/RefChartOfAccs/GetDescription',
+                    type: 'GET',
+                    data: { accNo: accNo }
+                });
+
+                return response;
+            } catch (error) {
+                console.error("Error fetching description:", error);
+                return "Description not available";
+            }
+        }
+
+        $(document).ready(async function () {
+            $('#treeview').jstree({
+                'core': {
+                    'themes': {
+                        'variant': 'large'
+                    }
+                },
+                'checkbox': false, // in this, you can disable and enable the checkbox. I did this; this would be helpful
+                'plugins': ['wholerow']
+            }).on('select_node.jstree', async function (e, data) {
+                var selectedNode = data.node;
+                var description = await getDescription(selectedNode.id);
+                var selectedNodeInfo = "AccNo: " + selectedNode.id + "<br/>Description: " + description;
+                $('#selectedNodeInfo').html(selectedNodeInfo);
+            });
+        });
+    </script>
+}
+ *@
