@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using ACC_DEV.Models;
 
 namespace ACC_DEV.ModelsOperation;
 
@@ -91,6 +92,12 @@ public partial class RefShippingLine
 
     [InverseProperty("ColoaderNavigation")]
     public virtual ICollection<TxnStuffingPlanHd> TxnStuffingPlanHdsCoLoad { get; } = new List<TxnStuffingPlanHd>();
+
+    [InverseProperty("ShippingLineDbitNoteImpNavigation")]
+    public virtual ICollection<TxnDebitNoteImportHd> TxnDebitNoteImportHd { get; } = new List<TxnDebitNoteImportHd>();
+
+    [InverseProperty("ShippingLineDbitNoteExpNavigation")]
+    public virtual ICollection<TxnDebitNoteExportHd> TxnDebitNoteExportHd { get; } = new List<TxnDebitNoteExportHd>();
 
 
 }

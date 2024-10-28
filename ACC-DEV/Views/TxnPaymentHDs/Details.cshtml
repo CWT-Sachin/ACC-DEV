@@ -1,0 +1,271 @@
+﻿@model ACC_DEV.ViewModel.TxnPaymentViewMode
+@{
+    ViewData["Title"] = "Payment";
+
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>
+                                Payment - DETAILS
+                            </h3>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4 style="font-weight:bolder; color: darkblue;">@ViewBag.CustomerType: @ViewBag.Customer </h4>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <form asp-action="Create" asp-controller="TxnPaymentHDs" id="PaymentHDForm">
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Receipt">Receipt No:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().PaymentNo" class="form-control" readonly />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Date</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.DisplayFor(m => Model.TxnPaymentHdMulti.FirstOrDefault().Date)
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="Narration">Narration</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().Narration" class="form-control" readonly />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="Customer"> Debit A/C No</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <select id="CreditAcc" asp-for="TxnPaymentHdMulti.FirstOrDefault().DebitAcc"   class="form-control" asp-items="ViewBag.AccountsCodes" readonly></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="radio" id="Cheque" name="PaymentMethod" value="Cheque" checked />
+                                        <label for="Cheque">Cheque</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" id="Cash" name="PaymentMethod" value="Cash" />
+                                        <label for="Cash">Cash</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div id="paymentDetails" style="border:1px solid black; padding: 10px;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="ExchangeRate" id="paymentLabel">Cheque No</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="ChequeNo" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeNo" class="form-control" readonly />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label for="Date "> Chq Date </label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            @Html.DisplayFor(m => Model.TxnPaymentHdMulti.FirstOrDefault().ChequeDate)
+                                        </div>
+
+                                        <div class="col-md-4">
+                                                                                        @{
+                                                var isAcPayeeOnlyChecked = Model.TxnPaymentHdMulti.FirstOrDefault()?.IsAcPayeeOnly == true;
+                                                var isChecked = isAcPayeeOnlyChecked ? "checked" : "";
+                                            }
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="ExchangeRate" id="paymentLabel">ACC PAYEE ONLY</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" asp-for="TxnPaymentHdMulti.FirstOrDefault().IsAcPayeeOnly" class="form-control"  isChecked readonly/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Debit Acc No: -->
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="Bank">Credit A/C No</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <select id="DebitAcc" asp-for="TxnPaymentHdMulti.FirstOrDefault().CreditAcc"  class="form-control" asp-items="ViewBag.AccountsCodes" readonly></select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 style= color: darkblue;">Payment Details</h4>
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-responsive" style="height: 200px; overflow-y: auto;">
+                                    <table class="table color-bordered-table purple-bordered-table" id="tblContainer1" style="margin-bottom: 0;">
+                                        <!-- Table 1: Display invoices -->
+                                        <thead style="position: sticky; top: 0; background-color: #fff;">
+                                            <tr>
+                                                <th>Doc No</th>
+                                                <th>Doc Type</th>
+                                                <th>Amountt</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="ContainerDetailsBody1">
+                                            @foreach (var PaymentItem in Model.TxnPaymentDtMulti)
+                                            {
+                                                <tr>
+                                                    <td>@PaymentItem.PaymentNo</td>
+                                                    <td>@PaymentItem.DocType</td>
+                                                    <td>@PaymentItem.Amount</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <!-- Display and input for total receipt amount -->
+                                        <label for="Customer">Other Amount</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().OtherAmountDescr" class="form-control" placeholder="Other Amount Details" readonly />
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input id="otherAmountInput" type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().OtherAmount" class="form-control" readonly />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <!-- Display and input for total receipt amount -->
+                                        <label for="Customer" style="font-weight:bolder;">Total Amount</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                    </div>
+                                    <div class="col-md-3">
+@*                                        <input style="font-weight:bolder;" type="text" id="totalReceiptAmount" class="form-control" value="" disabled />
+*@                                        <input type="text" id="receiptTotalAmt" asp-for="TxnPaymentHdMulti.FirstOrDefault().PaymentTotalAmt" readonly />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <!--Remarks Textbox-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <h6 class="box-title">Remarks</h6>
+                                    <div class="col-md-12">
+                                        <textarea asp-for="TxnPaymentHdMulti.FirstOrDefault().Remarks" class="form-control" name="Remarks" type="text" placeholder="Type here your Remarks" rows="5" readonly> </textarea>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </form>
+                </div>
+
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var paymentMethod = '@(Model.TxnPaymentHdMulti.FirstOrDefault()?.PaymentMethod ?? "")';
+        if (paymentMethod === "Cheque") {
+            document.getElementById("Cheque").checked = true;
+            $("#paymentDetails").show();
+        } else if (paymentMethod === "Cash") {
+            document.getElementById("Cash").checked = true;
+            $("#paymentDetails").hide();
+        } 
+    };
+</script>
+
+

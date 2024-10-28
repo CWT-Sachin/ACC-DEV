@@ -1,0 +1,369 @@
+﻿@model ACC_DEV.ViewModel.TxnReceiptViewModel
+@{
+    ViewData["Title"] = "RepPrintReceipt";
+
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .receipt-container {
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+
+    .receipt-header {
+        margin-bottom: 20px;
+    }
+
+    .receipt-title {
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: underline;
+        float: left;
+    }
+
+    .receipt-original {
+        float: right;
+        font-weight: bold;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .receipt-info {
+        margin-bottom: 20px;
+    }
+
+    .info-row {
+        margin-bottom: 10px;
+    }
+
+    .label {
+        color: #000080;
+        display: inline-block;
+        min-width: 120px;
+        font-weight: bold;
+    }
+
+    .receipt-table {
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: collapse;
+    }
+
+        .receipt-table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+    .amount-cell {
+        text-align: right;
+    }
+
+    .total-row {
+        font-weight: bold;
+    }
+
+    .amount-words {
+        margin: 20px 0;
+        font-weight: bold;
+    }
+
+    .validity-note {
+        margin: 20px 0;
+        font-style: italic;
+    }
+
+    .signature-line {
+        margin-top: 40px;
+        text-align: right;
+    }
+
+    .signature-text {
+        border-top: 1px solid #000;
+        padding-top: 5px;
+        display: inline-block;
+        min-width: 200px;
+        text-align: center;
+    }
+</style>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid" id="printArea">
+            <div class="container">
+                <!--header row with logo-->
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="\assets\images\logo-icon.png" alt="FTL LOGO" width="120" height="120" />
+                            </div>
+                            <div class="col-md-8">
+                                <span style="font-size:25px"><b>FTL COLOMBO (PVT) LTD</b></span>
+                                <br />
+                                <span style="font-size:12px">NO 9, BARNES PLACE </span>
+                                <br />
+                                <span style="font-size:12px">COLOMBO 07</span>
+                                <br />
+                                <span style="font-size:12px"> SRI LANKA. </span>
+                                <br />
+                                <span style="font-size:12px"> Tel: +94 112 378500-19 /Fax: +94 114 641910</span>
+                                <br />
+                                <span style="font-size:12px"> Email:</span>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="container">
+                
+                <br />
+     
+
+                    <div class="receipt-container">
+                        <div class="receipt-header clearfix">
+                            <div class="receipt-title">RECEIPT</div>
+                            <div class="receipt-original">ORIGINAL</div>
+                        </div>
+
+                        <div class="receipt-info">
+                            <div class="info-row">
+                            <span class="label">ReceiptNo</span>: @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().ReceiptNo)
+                            </div>
+                            <div class="info-row">
+                            <span class="label">Bank</span>:@Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().ChequeBankID)
+                            </div>
+                            <div class="info-row">
+                            <span class="label">Cash/Cheque</span>: @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().PaymentMethod)
+                            </div>
+                            <div class="info-row">
+                            <span class="label">Date</span>: @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().Date)
+                            </div>
+                            <div class="info-row">
+                            <span class="label">Cheque No</span>: @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().ChequeNo)
+                            </div>
+                            <div class="info-row">
+                            <span class="label">Received From</span>: 
+
+                            @if (Model.TxnReceiptHdMulti.FirstOrDefault().CustomerType == "Agent")
+
+                            {
+                                @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().RefAgentNavigation.AgentName)
+                            }
+
+                            else if (Model.TxnReceiptHdMulti.FirstOrDefault().CustomerType == "Customer")
+
+                            {
+                                @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().RefCustomerNavigation.Name)
+                            }
+                            </div>
+                        </div>
+
+  
+
+
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="border: 1px solid black; padding: 5px; text-align: left;">DOCTYPE/DOCNO</th>
+                                <th style="border: 1px solid black; padding: 5px; text-align: right;">AMOUNT</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ContainerDetailsBody">
+                            @if (Model.ReceiptDocMulti != null && Model.ReceiptDocMulti.Any())
+
+                            {
+
+                                // Iterate through ReceiptDocMulti and create rows
+
+                                foreach (var item in Model.ReceiptDocMulti)
+
+                                {
+                                    <tr style="height: 30px;">
+                                        <td style="padding: 8px; border-left: 1px solid black; border-right: 1px solid black;">
+                                            @item.DocNo + " / " + @item.DocType
+                                        </td>
+                                        <td style="text-align: right; padding: 8px; border-left: 1px solid black; border-right: 1px solid black;">
+                                            @string.Format("{0:#,##0.00}", item.AmountPaid)
+                                        </td>
+                                    </tr>
+                                }
+
+                            }
+
+                            else
+
+                            {
+                                <tr>
+                                    <td colspan="2" style="text-align: center; padding: 10px; border: 1px solid black;">No Records Found</td>
+                                </tr>
+                            }
+
+                            <!-- Total Row -->
+                      @*       <tr>
+                                <td style="border-top: 2px solid black; font-weight: bold; padding: 8px; text-align: left; border-left: 1px solid black;">
+                                    TOTAL
+                                </td>
+                                <td style="border-top: 2px solid black; text-align: right; font-weight: bold; padding: 8px; border-right: 1px solid black;">
+                                    @string.Format("{0:#,##0.00}", Model.ReceiptDtlTableMulti?.FirstOrDefault()?.TotalAmountLkr ?? 0)
+                                </td>
+                            </tr> *@
+                            <tr>
+                                <td style="text-align: center; padding: 10px; border: 1px solid black;">
+                                    TOTAL
+                                </td>
+                                <td style="text-align: center; padding: 10px; border: 1px solid black;">
+                                    @string.Format("{0:#,##0.00}", Model.ReceiptDtlTableMulti?.FirstOrDefault()?.TotalAmountLkr ?? 0)
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+                   @*  <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="border-bottom: 1px solid black;border-left: 1px solid black; border-right: 1px solid black; padding: 5px; border-top: 1px solid black;">doctype/docno</th>
+                                <th style="border-bottom: 1px solid black;border-right: 1px solid black; border-left: 1px solid black; padding: 5px; border-top: 1px solid black; text-align:center;">AMOUNT </th>
+                            </tr>
+                        </thead>
+                        <tbody id="ContainerDetailsBody">
+                            @foreach (var item in Model.ReceiptDocMulti)
+
+                            {
+                                <tr id="tablerow0" style="height: 30px; ">
+                                    <td style="padding: 3px; margin: 0;border-left: 1px solid black;">
+                                        @item.DocNo + @item.DocType
+                                    </td>
+                                    <td style="text-align:right; border-left: 1px solid black; padding: 3px; margin: 0; border-left: 1px solid black;border-right: 1px solid black;">
+                                        @string.Format("{0:#,##0.00}", item.AmountPaid)
+                                    </td>
+                                </tr>
+                            }
+                            <tr>
+                                <td style="border-top: 2px solid black; font-weight:bold;border-left: 1px solid black;">
+                                    Total Amount in LKR:
+                                </td>
+                            
+                                <td style="border-top: 2px solid black; text-align:right; font-weight:bold; border-right: 1px solid black; border-left: 1px solid black;">
+                                    <span style="color:black;">@string.Format("{0:#,##0.00}", Model.ReceiptDtlTableMulti.FirstOrDefault().TotalAmountLkr)</span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table> *@
+
+                        <div class="amount-words">
+                        Tot al RS. : @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().TotAmtWord)
+                        </div>
+
+                        <div class="validity-note">
+                            Validity subject to realisation of cheque
+                        </div>
+
+                        <div class="signature-line">
+                            <div class="signature-text">Authorised Signature</div>
+                        </div>
+                    </div>
+
+           
+
+
+  
+                <!-- ============================================================== -->
+                <!-- Container fluid  END -->
+                <!-- ============================================================== -->
+            </div>
+            
+            <br />
+          
+        
+        </div>
+    </div>
+</div>
+
+@* 
+<div class="row">
+    <div class="col-md-6 text-Center">
+    </div>
+    <div class="col-md-3 text-Center">
+        <button id="printButton" onclick="submitForm(this)" class="btn btn-warning"><i class="fa  fa-print"></i>Print Receipt</button>
+    </div>
+    <div class="col-md-3 text-Center">
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</div> *@
+
+
+<!-- Buttons container with no-print class -->
+<div class="row mt-4 no-print">
+    <div class="col-md-6 text-center">
+    </div>
+    <div class="col-md-3 text-center">
+        <button id="printButton" class="btn btn-warning">
+            <i class="fa fa-print"></i> Print Receipt
+        </button>
+    </div>
+
+</div>
+
+
+@section Scripts {
+
+@*     <script>
+        $(document).ready(function () {
+            // Print button click event handler
+            $('#printButton').click(function () {
+                var printContents = $('#printArea').html(); // Get the HTML content of the selected area
+                var originalContents = document.body.innerHTML; // Store the original body content
+
+                // Replace the body content with the selected area content
+                document.body.innerHTML = printContents;
+
+                // Trigger the browser's print dialog
+                window.print();
+
+                // Restore the original body content
+                document.body.innerHTML = originalContents;
+            });
+        });
+    </script> *@
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+            $(document).ready(function () {
+                $('#printButton').click(function () {
+            window.print();
+        });
+            });
+    </script>
+}

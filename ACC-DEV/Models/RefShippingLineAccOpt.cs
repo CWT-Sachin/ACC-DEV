@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ACC_DEV.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace PowerAcc.Models;
+namespace ACC_DEV.Models;
 
 [Table("Ref_ShippingLineAccOpt")]
 public partial class RefShippingLineAccOpt
@@ -69,6 +68,7 @@ public partial class RefShippingLineAccOpt
     [InverseProperty("ShippingLineNavigation")] // from Accounts 
     public virtual ICollection<TxnPurchasVoucherHD> TxnPurchasVoucherHD { get; } = new List<TxnPurchasVoucherHD>();
 
-
+    [InverseProperty("RefShippingLineNavigation")] // from Accounts 
+    public virtual ICollection<TxnPaymentHDs> TxnPaymentHDs { get; } = new List<TxnPaymentHDs>();
 
 }

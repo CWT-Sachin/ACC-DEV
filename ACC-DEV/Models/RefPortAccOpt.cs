@@ -2,24 +2,25 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ACC_DEV.ModelsOperation;
-using ACC_DEV.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ACC_DEV.Models;
 
-[Table("Ref_BankAcc")]
-public partial class Ref_BankAcc
+[Table("Ref_PortsAccOpt")]
+public partial class RefPortAccOpt
 {
     [Key]
     [StringLength(20)]
-    public string ID { get; set; } = null!;
-
-    [StringLength(20)]
-    public string? BankCode { get; set; }
+    public string PortCode { get; set; } = null!;
 
     [StringLength(300)]
-    public string? Description { get; set; }
+    public string PortName { get; set; } = null!;
+
+    [StringLength(250)]
+    public string Country { get; set; } = null!;
+
+    [StringLength(100)]
+    public string? Custom { get; set; }
 
     public bool IsActive { get; set; }
 
@@ -29,16 +30,13 @@ public partial class Ref_BankAcc
     [Column(TypeName = "datetime")]
     public DateTime? CreatedDateTime { get; set; }
 
-    [StringLength(20)]
+    [StringLength(1)]
     public string? LastUpdatedBy { get; set; }
 
     [Column(TypeName = "datetime")]
     public DateTime? LastUpdatedDateTime { get; set; }
 
-    [InverseProperty("RefBankNavigation")]
-    public virtual ICollection<TxnReceiptHD> TxnReceiptHDs { get; } = new List<TxnReceiptHD>();
-
-    [InverseProperty("RefBankPayNavigation")]
-    public virtual ICollection<TxnPaymentHDs> TxnPaymentHDs { get; } = new List<TxnPaymentHDs>();
+    [InverseProperty("Port")]
+    public virtual ICollection<RefAgentAccOpt> RefAgents { get; } = new List<RefAgentAccOpt>();
 
 }

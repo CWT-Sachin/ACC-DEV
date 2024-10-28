@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,74 +13,61 @@ using ACC_DEV.DataOperation;
 using ACC_DEV.CommonMethods;
 using Microsoft.AspNetCore.Authorization;
 
-
-namespace ACC_DEV.Views
+namespace ACC_DEV.Controllers
 {
-    //[Authorize]
-    public class TxnDebitNoteAccHDsController : Controller
+    public class TxnDebitNoteAccHdsController : Controller
     {
         private readonly FtlcolomboAccountsContext _context;
         private readonly FtlcolombOperationContext _operationcontext;
 
-        public string jobNo { get; private set; }
-
-        public TxnDebitNoteAccHDsController(FtlcolomboAccountsContext context, FtlcolombOperationContext operationcontext)
+        public TxnDebitNoteAccHdsController(FtlcolomboAccountsContext context, FtlcolombOperationContext operationcontext)
         {
             _context = context;
             _operationcontext = operationcontext;
         }
-
-        //public async Task<IActionResult> ConvertToWord(string searchString)
-        //{
-        //    if (!String.IsNullOrEmpty(searchString))
-        //    {
-        //        var CommonMethodClass = new CommonMethodClass(); // to calll the convert to word 
-        //        var Amount = Convert.ToDecimal(searchString);
-        //        // Check if results are found
-
-        //            ViewData["Amount"] = Amount;
-
-        //        ViewData["AmountInword"] = CommonMethodClass.ConvertToWords(Amount);
-                
-        //    }
-
-        //    return View();
-        //}
         public async Task<IActionResult> Index(string searchString, string searchType, int pg = 1)
         {
-            var txnDebitNoteACCHDs = await _context.TxnDebitNoteAccHDs.OrderByDescending(p => p.DebitNoteNo).ToListAsync();
+            var txnDebitNoteACCHDs = _context.TxnDebitNoteAccHDs
+                .Include(t => t.AgentNavigation).OrderByDescending(p => p.DebitNoteNo).ToList();
 
-            var viewModel = new DebitNoteAccViewModel
+
+
+            if (!String.IsNullOrEmpty(searchString))
             {
-                TxnDebitNoteAccHDMulti = txnDebitNoteACCHDs,
-            };
+                txnDebitNoteACCHDs = txnDebitNoteACCHDs.Where(t => t.DebitNoteNo.Contains(searchString)).OrderByDescending(t => t.DebitNoteNo).ToList();
+            }
 
-            return View(viewModel);
+            const int pageSize = 7;
+            if (pg < 1)
+                pg = 1;
+            int recsCount = txnDebitNoteACCHDs.Count();
+            var pager = new Pager(recsCount, pg, pageSize);
+            int recSkip = (pg - 1) * pageSize;
+            var data = txnDebitNoteACCHDs.Skip(recSkip).Take(pager.PageSize).ToList();
+
+            this.ViewBag.Pager = pager;
+            return View(data);
         }
-
 
         // GET: txnInvoiceExportHds/Create
         public IActionResult Create(string searchType, string customerType, string ShippingLine, string POAgent, string Supplier)
         {
 
-
             var txnDebitNoteHDs = _context.TxnDebitNoteAccHDs.Where(t => t.DebitNoteNo == "xxx");
 
-
-            var tables = new DebitNoteAccViewModel
+            var tables = new TxnDebitNoteAccViewModel
             {
                 TxnDebitNoteAccHDMulti = _context.TxnDebitNoteAccHDs.Where(t => t.DebitNoteNo == "xxx"),
                 TxnDebitNoteAccDtlMulti = _context.TxnDebitNoteAccDtls.Where(t => t.DebitNoteNo == "xxx"),
-
             };
 
-            ViewData["ShippingLine"] = new SelectList(_context.RefShippingLineAccOpts.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+            ViewData["ShippingLine"] = new SelectList(_context.RefShippingLineAccOpt.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
             ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
 
-            ViewData["ChargeItemsList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
+            ViewData["ChargeItemsList"] = new SelectList(_context.RefChargeItems.OrderBy(c => c.Description), "ChargeId", "Description", "ChargeId");
 
             ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
-            ViewData["RefBankList"] = new SelectList(_context.Set<Ref_BankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
             ViewData["AccountsCodes"] = new SelectList(
                                                _context.Set<RefChartOfAcc>()
                                                    .Where(a => a.IsInactive.Equals(false))
@@ -105,9 +92,11 @@ namespace ACC_DEV.Views
 
         }
 
+
+        // POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(string dtlItemsList, string customerType, [Bind("DebitNoteNo,Date,ExchangeRate,Agent,DocType,JobNo,BLNo,MainAcc,Narration,MainAccAmount,TotalInvoiceAmountLKR,TotalInvoiceAmountUSD,Remarks,CreatedBy,CreatedDateTime,LastUpdatedBy,LastUpdatedDateTime,Canceled,CanceledBy,CanceledDateTime,CanceledReason,Approved,ApprovedBy,ApprovedDateTime,AmountPaid,AmountToBePaid")] TxnDebitNoteAccHD txnDebitNoteHd)
+        public async Task<IActionResult> Create(string dtlItemsList, [Bind("DebitNoteNo,Date,ExchangeRate,Agent,DocType,JobNo,BLNo,MainAcc,Narration,MainAccAmount,TotalAmountLKR,TotalAmountUSD,Remarks,CreatedBy,CreatedDateTime,LastUpdatedBy,LastUpdatedDateTime,Canceled,CanceledBy,CanceledDateTime,CanceledReason,Approved,ApprovedBy,ApprovedDateTime,AmountPaid,AmountToBePaid,TotAmtWord,TotAmtWordUSD,JobType")] TxnDebitNoteAccHD txnDebitNoteAccHD)
         {
             // Next RefNumber for txnImportJobDtl
             var nextRefNo = "";
@@ -117,8 +106,8 @@ namespace ACC_DEV.Views
             {
                 var nextNumber = refLastNumber.LastNumber + 1;
                 refLastNumber.LastNumber = nextNumber;
-                nextRefNo = "DBACC" + DateTime.Now.Year.ToString() + nextNumber.ToString().PadLeft(5, '0');
-                txnDebitNoteHd.DebitNoteNo = nextRefNo;
+                nextRefNo = "DTA" + DateTime.Now.Year.ToString() + nextNumber.ToString().PadLeft(5, '0');
+                txnDebitNoteAccHD.DebitNoteNo = nextRefNo;
 
                 // _context.RefLastNumbers.Remove(refLastNumber);
             }
@@ -127,46 +116,55 @@ namespace ACC_DEV.Views
                 return NotFound();
                 //return View(tables);
             }
-            txnDebitNoteHd.Canceled = false;
-            txnDebitNoteHd.CreatedBy = "Admin";
-            txnDebitNoteHd.CreatedDateTime = DateTime.Now;
 
+            txnDebitNoteAccHD.AmountPaid = 0;
+            txnDebitNoteAccHD.AmountToBePaid = txnDebitNoteAccHD.TotalAmountLKR;
+            txnDebitNoteAccHD.Approved = false;
 
-            ModelState.Remove("DebitNoteNo");
-            ModelState.Remove("CreatedBy");
-            ModelState.Remove("ApprovedBy");
-            ModelState.Remove("CanceledBy");
-            ModelState.Remove("LastUpdatedBy");
-            ModelState.Remove("CanceledReason"); 
-            ModelState.Remove("BLNo");
-            ModelState.Remove("customerType");
+            txnDebitNoteAccHD.Canceled = false;
+            txnDebitNoteAccHD.CreatedBy = "Admin";
+            txnDebitNoteAccHD.CreatedDateTime = DateTime.Now;
+
+            // Amt LKR to word 
+            var TotalAmount = txnDebitNoteAccHD.TotalAmountLKR;
+            var CommonMethodClass = new CommonMethodClass(); // to calll the convert to word 
+
+            txnDebitNoteAccHD.TotAmtWord = CommonMethodClass.ConvertToWords((decimal)TotalAmount);
+
+            // Amt USD to word 
+            var TotalAmountUSd = txnDebitNoteAccHD.TotalAmountUSD;
+            txnDebitNoteAccHD.TotAmtWordUSD = CommonMethodClass.ConvertToWords((decimal)TotalAmountUSd);
+
+            ModelState.Remove("DebitNoteNo");  // Auto generated
+            ModelState.Remove("BLNo");  // Not in use
+            ModelState.Remove("CreatedBy");  // Assigned
+            ModelState.Remove("CanceledReason");  // Not in use
+            ModelState.Remove("CanceledBy");  // Not in use
+            ModelState.Remove("ApprovedBy");  // Not in use
+            ModelState.Remove("LastUpdatedBy");  // Not in use
+
             if (ModelState.IsValid)
             {
-                // Create Var for Additional Payment Voucher
-                // swith 
-                var voucherNo = "xxx";
-                var DebitNoteTable = await _context.TxnDebitNoteHds.FindAsync(voucherNo);
-
                 // Adding TxnPaymentDtl records
-
                 if (!string.IsNullOrWhiteSpace(dtlItemsList))
                 {
-                    var detailItemList = JsonConvert.DeserializeObject<List<TxnDebitNoteAccDtl>>(dtlItemsList);
+                    var detailItemList = JsonConvert.DeserializeObject<List<SelectedDebitNoteAccItem>>(dtlItemsList);
                     if (detailItemList != null)
                     {
+
                         foreach (var item in detailItemList)
                         {
                             var detailItem = new TxnDebitNoteAccDtl
                             {
                                 DebitNoteNo = nextRefNo, // Set PaymentNo to nextRefNo
-                                SerialNo = item.SerialNo,
+                                SerialNo = item.SerialNo,// (decimal)item.SerialNo,
                                 LineAccNo = item.LineAccNo,
                                 ChargeItem = item.ChargeItem,
                                 Description = item.Description,
-                                Amount = item.Amount,
+                                Amount = (decimal)item.Amount,
                                 CreatedDateTime = DateTime.Now,
 
-                        };
+                            };
                             _context.TxnDebitNoteAccDtls.Add(detailItem);
                         }
                     }
@@ -174,7 +172,7 @@ namespace ACC_DEV.Views
                 try
                 {
 
-                    _context.Add(txnDebitNoteHd);
+                    _context.Add(txnDebitNoteAccHD);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
@@ -187,46 +185,228 @@ namespace ACC_DEV.Views
             }
 
 
-            var tables = new DebitNoteAccViewModel
+            var tables = new TxnDebitNoteAccViewModel
             {
                 TxnDebitNoteAccHDMulti = _context.TxnDebitNoteAccHDs.Where(t => t.DebitNoteNo == "xxx"),
                 TxnDebitNoteAccDtlMulti = _context.TxnDebitNoteAccDtls.Where(t => t.DebitNoteNo == "xxx"),
 
             };
 
-            List<SelectListItem> Currency = new List<SelectListItem>
-                {
-                    new SelectListItem { Value = "USD", Text = "USD" },
-                    new SelectListItem { Value = "LKR", Text = "LKR" }
-                };
-                ViewData["CurrencyList"] = new SelectList(Currency, "Value", "Text", "CurrencyList");
-                List<SelectListItem> Unit = new List<SelectListItem>
-                {
-                    new SelectListItem { Value = "CBM", Text = "CBM" },
-                    new SelectListItem { Value = "BL", Text = "BL" },
-                    new SelectListItem { Value = "CNT", Text = "CNT" }
-                };
-                ViewData["UnitList"] = new SelectList(Unit, "Value", "Text", "UnitList");
-                ViewData["ChargeItemsList"] = new SelectList(_context.Set<RefChargeItem>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ChargeId", "Description", "ChargeId");
+            ViewData["ShippingLine"] = new SelectList(_context.RefShippingLineAccOpt.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
 
-                ViewData["RefBankList"] = new SelectList(_context.Set<Ref_BankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
-                ViewData["AccountsCodes"] = new SelectList(
-                                                   _context.Set<RefChartOfAcc>()
-                                                       .Where(a => a.IsInactive.Equals(false))
-                                                       .OrderBy(p => p.AccCode)
-                                                       .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
-                                                   "AccNo",
-                                                   "DisplayValue",
-                                                   "AccNo"
-                );
-            ViewData["ChargeItemsList"] = new SelectList(_context.Set<RefChargeItem>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ChargeId", "Description", "ChargeId");
+            ViewData["ChargeItemsList"] = new SelectList(_context.RefChargeItems.OrderBy(c => c.Description), "ChargeId", "Description", "ChargeId");
+
+            ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["AccountsCodes"] = new SelectList(
+                                               _context.Set<RefChartOfAcc>()
+                                                   .Where(a => a.IsInactive.Equals(false))
+                                                   .OrderBy(p => p.AccCode)
+                                                   .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
+                                               "AccNo",
+                                               "DisplayValue",
+                                               "AccNo"
+            );
+
+            ViewData["AgentIDNomination"] = new SelectList(_operationcontext.RefAgents.Join(_operationcontext.RefPorts,
+                             a => a.PortId,
+                             b => b.PortCode,
+                             (a, b) => new
+                             {
+                                 AgentId = a.AgentId,
+                                 AgentName = a.AgentName + " - " + b.PortName,
+                                 IsActive = a.IsActive
+                             }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
 
             return View(tables);
-            }
         }
 
-   
+        // GET: Credit Sales/Details/5
+        public async Task<IActionResult> Details(string id)
+        {
+            var VoucherNo = "";
+
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                return View("Error");
+            }
+            else
+            {
+                VoucherNo = id;
+            }
+
+            var tables = new TxnDebitNoteAccViewModel
+            {
+                TxnDebitNoteAccHDMulti = _context.TxnDebitNoteAccHDs.Where(t => t.DebitNoteNo == id),
+                TxnDebitNoteAccDtlMulti = _context.TxnDebitNoteAccDtls.Where(t => t.DebitNoteNo == id),
+
+            };
+
+            ViewData["ShippingLine"] = new SelectList(_context.RefShippingLineAccOpt.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
+
+            ViewData["ChargeItemsList"] = new SelectList(_context.RefChargeItems.OrderBy(c => c.Description), "ChargeId", "Description", "ChargeId");
+
+            ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["AccountsCodes"] = new SelectList(
+                                               _context.Set<RefChartOfAcc>()
+                                                   .Where(a => a.IsInactive.Equals(false))
+                                                   .OrderBy(p => p.AccCode)
+                                                   .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
+                                               "AccNo",
+                                               "DisplayValue",
+                                               "AccNo"
+            );
+
+            ViewData["AgentIDNomination"] = new SelectList(_operationcontext.RefAgents.Join(_operationcontext.RefPorts,
+                             a => a.PortId,
+                             b => b.PortCode,
+                             (a, b) => new
+                             {
+                                 AgentId = a.AgentId,
+                                 AgentName = a.AgentName + " - " + b.PortName,
+                                 IsActive = a.IsActive
+                             }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
+
+            return View(tables);
+        }
+
+        public async Task<IActionResult> Approve(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var txnDebitNoteAccHDs = await _context.TxnDebitNoteAccHDs
+                .FirstOrDefaultAsync(m => m.DebitNoteNo == id);
+
+
+            if (txnDebitNoteAccHDs == null)
+            {
+                return NotFound();
+            }
+
+            var jobNo = txnDebitNoteAccHDs.JobNo; // Set the jobNo property
+
+            var tables = new TxnDebitNoteAccViewModel
+            {
+                TxnDebitNoteAccHDMulti = _context.TxnDebitNoteAccHDs.Where(t => t.DebitNoteNo == id),
+                TxnDebitNoteAccDtlMulti = _context.TxnDebitNoteAccDtls.Where(t => t.DebitNoteNo == id),
+
+            };
+
+            return View(tables);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Approve(string id, bool approved)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var txnDebitNoteAccHDs = await _context.TxnDebitNoteAccHDs
+                .FirstOrDefaultAsync(m => m.DebitNoteNo == id);
+
+            if (txnDebitNoteAccHDs == null)
+            {
+                return NotFound();
+            }
+
+            // Inserting Transaction Data to Acccounts 
+            var txnDebitNoteAccDtls = await _context.TxnDebitNoteAccDtls
+                                .Where(m => m.DebitNoteNo == id)
+                                .ToListAsync();
+
+            // Next RefNumber for Txn_Transactions
+            var nextAccTxnNo = "";
+            var TableIDAccTxn = "Txn_Transactions";
+            var refLastNumberAccTxn = await _context.RefLastNumbers.FindAsync(TableIDAccTxn);
+            if (refLastNumberAccTxn != null)
+            {
+                var nextNumberAccTxn = refLastNumberAccTxn.LastNumber + 1;
+                refLastNumberAccTxn.LastNumber = nextNumberAccTxn;
+                nextAccTxnNo = "TXN" + DateTime.Now.Year.ToString() + nextNumberAccTxn.ToString().PadLeft(5, '0');
+
+                // _context.RefLastNumbers.Remove(refLastNumber);
+            }
+            else
+            {
+                return NotFound();
+                //return View(tables);
+            }
+
+            if (txnDebitNoteAccHDs != null)
+            {
+                var SerialNo_AccTxn = 1;
+                var AccTxnDescription = txnDebitNoteAccHDs.Narration;
+                // First Acc transaction 
+                TxnTransactions NewRowAccTxnFirst = new TxnTransactions();
+                NewRowAccTxnFirst.TxnNo = nextAccTxnNo;
+                NewRowAccTxnFirst.TxnSNo = SerialNo_AccTxn;
+                NewRowAccTxnFirst.Date = txnDebitNoteAccHDs.Date; //  Jurnal Date 
+                NewRowAccTxnFirst.Description = AccTxnDescription;
+                NewRowAccTxnFirst.TxnAccCode = txnDebitNoteAccHDs.MainAcc;
+                NewRowAccTxnFirst.Dr = (decimal)txnDebitNoteAccHDs.TotalAmountLKR;
+                NewRowAccTxnFirst.Cr = (decimal)0;
+                NewRowAccTxnFirst.RefNo = txnDebitNoteAccHDs.DebitNoteNo; // Invoice No
+                NewRowAccTxnFirst.Note = "";
+                NewRowAccTxnFirst.Reconciled = false;
+                NewRowAccTxnFirst.DocType = "DebitNTAdd";
+                NewRowAccTxnFirst.IsMonthEndDone = false;
+                NewRowAccTxnFirst.CreatedBy = "Admin";
+                NewRowAccTxnFirst.CreatedDateTime = DateTime.Now;
+                NewRowAccTxnFirst.Canceled = false;
+
+                NewRowAccTxnFirst.JobNo = txnDebitNoteAccHDs.JobNo;
+                NewRowAccTxnFirst.JobType = txnDebitNoteAccHDs.JobType;
+
+                _context.TxnTransactions.Add(NewRowAccTxnFirst);
+
+                foreach (var item in txnDebitNoteAccDtls)
+                {
+                    // Transaction table Insert 
+                    TxnTransactions NewRowAccTxn = new TxnTransactions();
+
+                    var lineLKRAmt = (decimal)item.Amount * txnDebitNoteAccHDs.ExchangeRate;
+                    SerialNo_AccTxn = SerialNo_AccTxn + 1;
+                    NewRowAccTxn.TxnNo = nextAccTxnNo;
+                    NewRowAccTxn.TxnSNo = SerialNo_AccTxn;
+                    NewRowAccTxn.Date = txnDebitNoteAccHDs.Date; //  Jurnal Date 
+                    NewRowAccTxn.Description = item.Description;
+                    NewRowAccTxn.TxnAccCode = item.LineAccNo;
+                    NewRowAccTxn.Dr = (decimal)0;
+                    NewRowAccTxn.Cr = (decimal)lineLKRAmt; // amount 8 exchange rate 
+                    NewRowAccTxn.RefNo = txnDebitNoteAccHDs.DebitNoteNo; // Invoice No
+                    NewRowAccTxn.Note = "";
+                    NewRowAccTxn.Reconciled = false;
+                    NewRowAccTxn.DocType = "DebitNTAdd";
+                    NewRowAccTxn.IsMonthEndDone = false;
+                    NewRowAccTxn.CreatedBy = "Admin";
+                    NewRowAccTxn.CreatedDateTime = DateTime.Now;
+                    NewRowAccTxn.Canceled = false;
+                    NewRowAccTxn.JobNo = txnDebitNoteAccHDs.JobNo;
+                    NewRowAccTxn.JobType = txnDebitNoteAccHDs.JobType;
+
+                    _context.TxnTransactions.Add(NewRowAccTxn);
+                }
+            }
+            // END Inserting Transaction Data to Acccounts 
+
+            /// Update the Approved property based on the form submission
+            txnDebitNoteAccHDs.Approved = approved;
+            txnDebitNoteAccHDs.ApprovedBy = "CurrentUserName"; // Replace with the actual user name
+            txnDebitNoteAccHDs.ApprovedDateTime = DateTime.Now;
+
+            _context.Update(txnDebitNoteAccHDs);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index)); // Redirect to the appropriate action
+        }
 
     }
-
-
+} 

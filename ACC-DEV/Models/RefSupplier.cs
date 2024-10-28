@@ -66,9 +66,13 @@ public partial class RefSupplier
     [Column(TypeName = "datetime")]
     public DateTime? LastUpdatedDateTime { get; set; }
 
-    [InverseProperty("SupplierNavigation")]
+
+    [InverseProperty("SupplierNavigation")] // from Accounts 
     public virtual ICollection<TxnPurchasVoucherHD> TxnPurchasVoucherHD { get; } = new List<TxnPurchasVoucherHD>();
 
-    [InverseProperty("SupplierPettyNavigation")]
+    [InverseProperty("SupplierPettyNavigation")] // from Accounts 
     public virtual ICollection<TxnPettyCashHD> TxnPettyCashHD { get; } = new List<TxnPettyCashHD>();
+
+    [InverseProperty("RefSupplierNavigation")] // from Accounts 
+    public virtual ICollection<TxnPaymentHDs> TxnPaymentHDs { get; } = new List<TxnPaymentHDs>();
 }

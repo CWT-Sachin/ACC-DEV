@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ACC_DEV.Models;
 
 [PrimaryKey("TxnNo", "TxnSNo")]
-[Table("Txn_Transactions")]
+[Table("Txn_Transactions")] 
 public class TxnTransactions
 {
 
@@ -20,6 +20,8 @@ public class TxnTransactions
     public decimal TxnSNo { get; set; }
 
     [Column(TypeName = "datetime")]
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+
     public DateTime? Date { get; set; }
 
     [StringLength(500)]
@@ -29,9 +31,11 @@ public class TxnTransactions
     public string? TxnAccCode { get; set; }
 
     [Column(TypeName = "numeric(18, 2)")]
+    [DisplayFormat(DataFormatString = "{0:N2}")]
     public decimal Dr { get; set; }
 
     [Column(TypeName = "numeric(18, 2)")]
+    [DisplayFormat(DataFormatString = "{0:N2}")]
     public decimal Cr { get; set; }
 
     [StringLength(100)]
@@ -81,6 +85,12 @@ public class TxnTransactions
 
     [StringLength(50)]
     public string? TxnAccCodeOrginal { get; set; }
+
+    [StringLength(50)]
+    public string? JobNo { get; set; }
+
+    [StringLength(50)]
+    public string? JobType { get; set; }
 
     [ForeignKey("TxnAccCode")]
     [InverseProperty("TxnTransaction")]

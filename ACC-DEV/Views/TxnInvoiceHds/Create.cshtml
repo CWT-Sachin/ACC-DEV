@@ -22,56 +22,14 @@
 
             <div class="card">
                 <div class="card-header bg-info">
-                    <h4 class="m-b-0 text-white">ADDITIONAL INVOICE </h4>
+                    <h3 class="m-b-0 text-white">ADDITIONAL INVOICE- CREATE</h3>
                 </div>
 
                 <div class="card-body">
-                    <!-- Radio buttons for JobType -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <!-- Radio button for Import -->
-                                <div class="col-md-2">
-                                    <input type="radio" id="Import" name="JobType" value="Import" checked />
-                                    <label for="Import">Import</label>
-                                </div>
-                                <!-- Radio button for Export -->
-                                <div class="col-md-2">
-                                    <input type="radio" id="Export" name="JobType" value="Export" />
-                                    <label for="Export">Export</label>
-                                </div>
-                                <!-- Radio button for Other -->
-                                <div class="col-md-2">
-                                    <input type="radio" id="Other" name="JobType" value="Other" />
-                                    <label for="Other">Other</label>
-                                </div>
-                                <!-- Radio button for Clearance -->
-                                <div class="col-md-2">
-                                    <input type="radio" id="Clearance" name="JobType" value="Clearance" />
-                                    <label for="Clearance">Clearance</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add a hidden field to capture the selected radio button value -->
-                        <input type="hidden" id="jobType" name="JobType" value="" />
-                    </div>
-
-                    <br />
                     <!--Job No.-->
                     <div class="row">
-                        <div class="col-md-2">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <input type="radio" id="Sea" name="JobMode" value="Sea" checked />
-                                    <label for="Sea">Sea</label>
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="radio" id="Air" name="JobMode" value="Air" />
-                                    <label for="Air">Air</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4" id="seaJobBox">
+
+                        <div class="col-md-4">
                             <div class="row">
                                 <div class="col-2">
                                     <label for="JobNo">Job No.</label>
@@ -79,7 +37,7 @@
                                 <div class="col-5">
                                     <!-- Search-->
                                     <div class="row align-self-center text-right">
-                                        @using (Html.BeginForm("Create", "TxnInvoiceHds", new { searchString = "", jobType = "" }, FormMethod.Get))
+                                        @using (Html.BeginForm("Create", "TxnInvoiceHds", new { searchString = "" }, FormMethod.Get))
                                         {
                                             <div class="input-group">
                                                 <input type="text" id="searchString" name="searchString" class="form-control" />
@@ -89,24 +47,17 @@
                                             </div>
                                         }
                                     </div>
+                                    
                                     <!-- End Search-->
                                 </div>
                                 <label class="control-label text-right col-md-4" style="color: red;">@ViewBag.JobFound</label>
                             </div>
+
                         </div>
-                        <div class="col-md-4" id="airJobBox" style="display: none;">
-                            <div class="row">
-                                <div class="col-2">
-                                    <label for="JobNo">Air</label>
-                                </div>
-                                <div class="col-md-5">
-                                    <input type="text" asp-for="InvoiceHdMulti.FirstOrDefault().JobMode" class="form-control" value="" />
-                                    <span asp-validation-for="InvoiceHdMulti.FirstOrDefault().JobMode" class="text-danger"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
+
+                        <div class="col-md-8"></div>
+
+                    </div><br />
 
                     <!--Job Details-->
                     <div class="row">
@@ -116,7 +67,7 @@
                         <div class="col-md-6"></div>
                     </div>
 
-                    <div id="importDetailsSection" style="border:1px  solid black; padding: 10px 10px 10px 10px; background-color:#E5F2FB; border-radius:10px;">
+                    <div style="border:1px  solid black; padding: 10px 10px 10px 10px; background-color:#E5F2FB; border-radius:10px;">
 
                         <!--Job No & Date-->
                         <div class="row">
@@ -127,13 +78,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <span id="jobno">
-                                            <b>
-                                                @if (Model != null && Model.ImportJobHdMulti != null && Model.ImportJobHdMulti.Any())
-                                                {
-                                                    @Html.DisplayFor(m => m.ImportJobHdMulti.FirstOrDefault().JobNo)
-                                                }
-
-                                            </b>
+                                            <b>  @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().JobNo) </b>
                                         </span>
                                     </div>
                                 </div>
@@ -145,10 +90,7 @@
                                         <label for="Date">Date</label>
                                     </div>
                                     <div class="col-md-6">
-                                        @if (Model != null && Model.ImportJobHdMulti != null && Model.ImportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ImportJobHdMulti.FirstOrDefault().JobDate)
-                                        }
+                                        @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().JobDate)
                                     </div>
                                 </div>
                             </div>
@@ -165,10 +107,7 @@
                                         <label for="Vessel">Vessel</label>
                                     </div>
                                     <div class="col-md-6">
-                                        @if (Model != null && Model.ImportJobHdMulti != null && Model.ImportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ImportJobHdMulti.FirstOrDefault().VesselImportJobDtlNavigation.VesselName)
-                                        }
+                                        @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().VesselExportJobDtlNavigation.VesselName)
                                     </div>
                                 </div>
                             </div>
@@ -185,10 +124,7 @@
                                         <label for="Vessel">Voyage</label>
                                     </div>
                                     <div class="col-md-6">
-                                        @if (Model != null && Model.ImportJobHdMulti != null && Model.ImportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ImportJobHdMulti.FirstOrDefault().Voyage)
-                                        }
+                                        @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().Voyage)
                                     </div>
                                 </div>
                             </div>
@@ -199,10 +135,7 @@
                                         <label for="ETD (Date)">Agent</label>
                                     </div>
                                     <div class="col-md-6">
-                                        @if (Model != null && Model.ImportJobHdMulti != null && Model.ImportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ImportJobHdMulti.FirstOrDefault().AgentNavigation.AgentName)
-                                        }
+                                        @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().AgentExportNavigation.AgentName)
 
                                     </div>
                                 </div>
@@ -214,117 +147,7 @@
                                         <label for="Shipper">Shipper</label>
                                     </div>
                                     <div class="col-md-6">
-                                        @if (Model != null && Model.ImportJobHdMulti != null && Model.ImportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ImportJobHdMulti.FirstOrDefault().ShippingLineNavigation.Name)
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div><br />
-
-                    </div>
-
-                    <div id="exportDetailsSection" style="border:1px  solid black; padding: 10px 10px 10px 10px; background-color:#E5F2FB; border-radius:10px;">
-
-                        <!--Job No & Date-->
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="Job No">Job No.</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <span id="jobno">
-                                            @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                            {
-                                                <b>  @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().JobNo) </b>
-                                            }
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="Date">Date</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().JobDate)
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4"></div>
-
-                        </div><br />
-
-                        <!--Sales Person-->
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="Vessel">Vessel</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().VesselExportJobDtlNavigation.VesselName)
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6"></div>
-                        </div>
-
-                        <br />
-                        <!--Vessel ,ETD (Date) & Shipper-->
-                        <div class="row">
-
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="Vessel">Voyage</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().Voyage)
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="ETD (Date)">Agent</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().AgentExportNavigation.AgentName)
-                                        }
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="Shipper">Shipper</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().ShippingLineExportNavigation.Name)
-                                        }
+                                        @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().ShippingLineExportNavigation.Name)
                                     </div>
                                 </div>
                             </div>
@@ -340,10 +163,7 @@
                                         <label for="Final Destination">Final Destination</label>
                                     </div>
                                     <div class="col-md-6">
-                                        @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().FDNExportJobNavigation.PortName)
-                                        }
+                                        @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().FDNExportJobNavigation.PortName)
                                     </div>
                                 </div>
                             </div>
@@ -354,10 +174,7 @@
                                         <label for="Final Destination">Coloader</label>
                                     </div>
                                     <div class="col-md-6">
-                                        @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().ColoaderExportNavigation.Name)
-                                        }
+                                        @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().ColoaderExportNavigation.Name)
                                     </div>
                                 </div>
                             </div>
@@ -367,78 +184,77 @@
                                         <label for="Consignee">Coload</label>
                                     </div>
                                     <div class="col-md-6">
-                                        @if (Model.ExportJobHdMulti != null && Model.ExportJobHdMulti.Any())
-                                        {
-                                            @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().IsCoLoad)
-                                        }
+                                        @Html.DisplayFor(m => Model.ExportJobHdMulti.FirstOrDefault().IsCoLoad)
                                     </div>
                                 </div>
                             </div>
                         </div><br />
                     </div>
-                    <hr>
+                <hr>
                     <form asp-action="Create" asp-controller="TxnInvoiceHds" id="InvoiceHDForm">
-                        <!--Invoice-->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4>
-                                    Invoice
-                                </h4>
-                            </div>
-                            <div class="col-md-6"></div>
+                    <!--Invoice-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>
+                                Invoice
+                            </h4>
                         </div>
+                        <div class="col-md-6"></div>
+                    </div>
 
-                        <!--Invoice NO,Date,Customer & Exchange Rate-->
-                        <div class="row">
+                    <!--Invoice NO,Date,Customer & Exchange Rate-->
+                    <div class="row">
 
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="Date ">Date </label>
-                                    </div>
-                                    @{
-                                        // Get the current date
-                                        var currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-                                    }
-                                    <div class="col-md-8">
-                                        <input type="date" asp-for="InvoiceHdMulti.FirstOrDefault().Date" class="form-control" value="@currentDate" />
-                                        <span asp-validation-for="InvoiceHdMulti.FirstOrDefault().Date" class="text-danger"></span>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Date ">Date </label>
+                                </div>
+                                @{
+                                    // Get the current date
+                                    var currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+                                }
+                                <div class="col-md-8">
+                                    <input type="date" asp-for="InvoiceHdMulti.FirstOrDefault().Date" class="form-control" value="@currentDate" />
+                                    <span asp-validation-for="InvoiceHdMulti.FirstOrDefault().Date" class="text-danger"></span>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="Customer">Customer</label>
-                                    </div>
-                                    <div class="col-md-8">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Customer">Customer</label>
+                                </div>
+                                <div class="col-md-8">
                                         <select id="Customer" asp-for="InvoiceHdMulti.FirstOrDefault().Customer" value="" name="Customer" class="form-control" asp-items="ViewBag.Customer"></select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="Exchange Rate">Exchange Rate</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" asp-for="InvoiceHdMulti.FirstOrDefault().ExchangeRate" class="form-control" value="0.00" />
-                                        <span asp-validation-for="InvoiceHdMulti.FirstOrDefault().ExchangeRate" class="text-danger"></span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!--Invoice NO,Date,Customer & Exchange Rate-->
 
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="Exchange Rate">Exchange Rate</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" asp-for="InvoiceHdMulti.FirstOrDefault().ExchangeRate" class="form-control" value="0.00" />
+                                    <span asp-validation-for="InvoiceHdMulti.FirstOrDefault().ExchangeRate" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--Invoice NO,Date,Customer & Exchange Rate-->
+                        
                         <br />
                         <div class="row">
 
                             <div class="col-md-4">
+                                
                             </div>
 
                             <div class="col-md-4">
+                                 
                             </div>
 
                             <div class="col-md-4">
@@ -447,7 +263,7 @@
                                         <label for="Customer">Debit Acc</label>
                                     </div>
                                     <div class="col-md-8">
-                                        <select id="IntendedVessel" asp-for="InvoiceHdMulti.FirstOrDefault().DebitAcc" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                        <select id="IntendedVessel"  asp-for="InvoiceHdMulti.FirstOrDefault().DebitAcc" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
                                     </div>
                                 </div>
                             </div>
@@ -463,40 +279,40 @@
 
                             <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-md-4">
+@*                                    <div class="col-md-4">
                                         <label for="Customer">Credit Acc</label>
                                     </div>
                                     <div class="col-md-8">
                                         <select id="IntendedVessel" asp-for="InvoiceHdMulti.FirstOrDefault().CreditAcc" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
-                                    </div>
+                                    </div>*@
                                 </div>
                             </div>
                         </div>
-                        <!--Table for Charge Items --><br />
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="table-responsive">
-                                    <table class="table table-hover border table-striped" id="tblContainer">
-                                        <thead>
-                                            <tr>
-                                                <th>Charge Item</th>
-                                                <th>Unit</th>
-                                                <th>Rate </th>
-                                                <th>Currency</th>
-                                                <th>Qty</th>
-                                                <th>Amount</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="ContainerDetailsBody">
-                                            <tr id="tablerow0" hidden>
+                    <!--Table for Charge Items --><br />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-hover border table-striped" id="tblContainer">
+                                    <thead>
+                                        <tr>
+                                            <th>Charge Item</th>
+                                            <th>Unit</th>
+                                            <th>Rate </th>
+                                            <th>Currency</th>
+                                            <th>Qty</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ContainerDetailsBody">
+                                        <tr id="tablerow0" hidden>
                                                 <td style="width:30%;"> <select id="ChargeItemRw" asp-for="InvoiceDtMulti.FirstOrDefault().ChargeItem" value="" name="ChargeItemRw" class="form-control" asp-items="ViewBag.ChargeItemsList"></select> </td>
-                                                <td style="width:10%;"> <select id="Unit" asp-for="InvoiceDtMulti.FirstOrDefault().Unit" value="" name="Unit" class="form-control" asp-items="ViewBag.UnitList"></select> </td>
-                                                <td style="width:10%;"> <input type="text" id="Rate" asp-for="InvoiceDtMulti.FirstOrDefault().Rate" name="Rate" value="" class="form-control" onchange="calculateAmount(this)"></td>
-                                                <td> <select id="Currency" asp-for="InvoiceDtMulti.FirstOrDefault().Currency" value="" name="Currency" class="form-control" asp-items="ViewBag.CurrencyList"></select> </td>
-                                                <td> <input type="text" id="Qty" asp-for="InvoiceDtMulti.FirstOrDefault().Qty" name="Qty" value="" class="form-control" onchange="calculateAmount(this)"></td>
-                                                <td> <input type="text" id="Amount" asp-for="InvoiceDtMulti.FirstOrDefault().Amount" name="Amount" value="" class="form-control" readonly></td>
-                                                <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td>
-                                            </tr>
+                                            <td style="width:10%;"> <select id="Unit" asp-for="InvoiceDtMulti.FirstOrDefault().Unit" value="" name="Unit" class="form-control" asp-items="ViewBag.UnitList"></select> </td>
+                                            <td style="width:10%;"> <input type="text" id="Rate" asp-for="InvoiceDtMulti.FirstOrDefault().Rate" name="Rate" value="" class="form-control" onchange="calculateAmount(this)"></td>
+                                            <td> <select id="Currency" asp-for="InvoiceDtMulti.FirstOrDefault().Currency" value="" name="Currency" class="form-control" asp-items="ViewBag.CurrencyList"></select> </td>
+                                            <td> <input type="text" id="Qty" asp-for="InvoiceDtMulti.FirstOrDefault().Qty" name="Qty" value="" class="form-control" onchange="calculateAmount(this)"></td>
+                                            <td> <input type="text" id="Amount" asp-for="InvoiceDtMulti.FirstOrDefault().Amount" name="Amount" value="" class="form-control" readonly></td>
+                                            <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td>
+                                        </tr>
                                             @foreach (var item in Model.InvoiceDtMulti)
                                             {
                                                 <tr class="tablerow">
@@ -526,82 +342,78 @@
                                                     </td>
                                                 </tr>
                                             }
-                                        </tbody>
-                                    </table>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--Add button Charge Items-->
+                        <div class="col-md-4">
+                            <div class="form-group">
+
+                                <input id="add" type="button" value="+ Charge Item" onclick="AddRow(this)"
+                                       class="btn btn-success" />
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                        <!--Total LKR-->
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="TotalAmount">Total Amount LKR:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" asp-for="InvoiceHdMulti.FirstOrDefault().TotalInvoiceAmountLkr" class="form-control" id="TotalAmtLKR" readonly />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="TotalAmount">Total Amount USD:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" asp-for="InvoiceHdMulti.FirstOrDefault().TotalInvoiceAmountUsd" class="form-control" id="TotalAmtUSD" readonly />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <!--Remarks Textbox-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <h6 class="box-title">Remarks</h6>
+                                <div class="col-md-12">
+                                    <textarea asp-for="InvoiceHdMulti.FirstOrDefault().Remarks" class="form-control" name="Remarks" type="text" placeholder="Type here your Remarks" rows="5"> </textarea>
+                                    <span asp-validation-for="InvoiceHdMulti.FirstOrDefault().Remarks" class="text-danger"></span>
+
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <!--Add button Charge Items-->
-                            <div class="col-md-4">
-                                <div class="form-group">
+                    </div><br />
 
-                                    <input id="add" type="button" value="+ Charge Item" onclick="AddRow(this)"
-                                           class="btn btn-success" />
-                                </div>
-                            </div>
-                            <div class="col-md-3"></div>
-                            <!--Total LKR-->
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="TotalAmount">Total Amount LKR:</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" asp-for="InvoiceHdMulti.FirstOrDefault().TotalInvoiceAmountLkr" class="form-control" id="TotalAmtLKR" readonly />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="TotalAmount">Total Amount USD:</label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" asp-for="InvoiceHdMulti.FirstOrDefault().TotalInvoiceAmountUsd" class="form-control" id="TotalAmtUSD" readonly />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-1"></div>
-                        </div>
-
-                        <!--Remarks Textbox-->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <h6 class="box-title">Remarks</h6>
-                                    <div class="col-md-12">
-                                        <textarea asp-for="InvoiceHdMulti.FirstOrDefault().Remarks" class="form-control" name="Remarks" type="text" placeholder="Type here your Remarks" rows="5"> </textarea>
-                                        <span asp-validation-for="InvoiceHdMulti.FirstOrDefault().Remarks" class="text-danger"></span>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div><br />
-
-                        <!--Save Button-->
-                        <div class="row">
-                            <div class="col-md-4">
-                                <input hidden id="invoiceExportJobNo" type="text" asp-for="InvoiceHdMulti.FirstOrDefault().JobNo"
-                                       value="@Model.ExportJobHdMulti?.FirstOrDefault()?.JobNo" class="form-control" />
-                                <input hidden id="invoiceImportJobNo" type="text" asp-for="InvoiceHdMulti.FirstOrDefault().JobNo"
-                                       value="@Model.ImportJobHdMulti?.FirstOrDefault()?.JobNo" class="form-control" />
-
-                                <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
-                                <div class="form-group">
+                    <!--Save Button-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input hidden id="invoiceJobNo" type="text" asp-for="InvoiceHdMulti.FirstOrDefault().JobNo" value="@Model.ExportJobHdMulti.FirstOrDefault()?.JobNo" class="form-control" />
+                            <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
+                            <div class="form-group">
                                     <input type="submit" id="saveButton" value="Save" onclick="submitForm(this)" class="btn btn-primary" />
-                                </div>
                             </div>
                         </div>
+                    </div>
 
 
 
-                    </form>
-
-                </div>
-
+                </form>
 
             </div>
+
+
+        </div>
         </div>
 
         <div>
@@ -615,167 +427,76 @@
     <!-- Container fluid  END -->
     <!-- ============================================================== -->
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    // Create and submit Charge Items
+
+    function submitForm(e) {
+
+        const dtlItemsArray = [];
+        const tableRows = $("#tblContainer tbody tr");
+        var chkAmount = "";
+
+        tableRows.each(function (index) {
+            const trRow = $(this);
+            chkAmount = trRow.find('input[name="Amount"]').val();
+
+            if (chkAmount === "" || parseFloat(chkAmount) === 0) {
+                // chkAmount is empty or zero
+                //console.log("chkAmount is empty or zero");
+            } else {
+                // chkAmount is not empty and not zero
+                const dtlItemJson = buildItemsJson(trRow, index);
+                dtlItemsArray.push(dtlItemJson);
+            }
+        });
+
+        $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+        var jobNo = JobHdMulti.FirstOrDefault().JobNo;
+        alert("jobNo: " + jobNo);
+
+        // Assign the value to the hidden input field using jQuery
+        $('#invoiceJobNo').val(jobNo);
+    }
+
+    // Json Var create
+    function buildItemsJson(trRow, id) {
+        return {
+            SerialNo: id,
+            Description: trRow.find('input[name="Description"]').val(),
+            Amount: trRow.find('input[name="Amount"]').val(),
+        };
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var seaRadio = document.getElementById('Sea');
-            var airRadio = document.getElementById('Air');
-            var seaJobBox = document.getElementById('seaJobBox');
-            var airJobBox = document.getElementById('airJobBox');
-
-            // Show sea job box and hide air job box initially since Sea is checked
-            seaJobBox.style.display = 'block';
-            airJobBox.style.display = 'none';
-
-            // Event listener for Sea radio button
-            seaRadio.addEventListener('change', function () {
-                if (seaRadio.checked) {
-                    seaJobBox.style.display = 'block';
-                    airJobBox.style.display = 'none';
-                }
-            });
-
-            // Event listener for Air radio button
-            airRadio.addEventListener('change', function () {
-                if (airRadio.checked) {
-                    seaJobBox.style.display = 'none';
-                    airJobBox.style.display = 'block';
-                }
-            });
-        });
-    </script>
-    <script>
-        function updateJobType() {
-            var selectedJobType = document.querySelector('input[name="JobType"]:checked').value;
-            document.getElementById('jobType').value = selectedJobType;
-        }
-
-        var radioButtons = document.querySelectorAll('input[name="JobType"]');
-        radioButtons.forEach(function (radioButton) {
-            radioButton.addEventListener('change', updateJobType);
-        });
-
-        updateJobType(); // Call the function initially to set the initial value
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var importRadio = document.getElementById("Import");
-            var exportRadio = document.getElementById("Export");
-            var importDetailsSection = document.getElementById("importDetailsSection");
-            var exportDetailsSection = document.getElementById("exportDetailsSection");
-
-            // Function to show import details and hide export details
-            function showImportDetails() {
-                importDetailsSection.style.display = "block";
-                exportDetailsSection.style.display = "none";
-            }
-
-            // Function to show export details and hide import details
-            function showExportDetails() {
-                importDetailsSection.style.display = "none";
-                exportDetailsSection.style.display = "block";
-            }
-
-            // Event listener for import radio button
-            importRadio.addEventListener("change", function () {
-                if (importRadio.checked) {
-                    showImportDetails();
-                    localStorage.setItem('selectedRadioButton', 'import');
-                }
-            });
-
-            // Event listener for export radio button
-            exportRadio.addEventListener("change", function () {
-                if (exportRadio.checked) {
-                    showExportDetails();
-                    localStorage.setItem('selectedRadioButton', 'export');
-                }
-            });
-
-            // Check the last selected radio button state from local storage
-            var selectedRadioButton = localStorage.getItem('selectedRadioButton');
-            if (selectedRadioButton === 'export') {
-                exportRadio.checked = true;
-                showExportDetails();
-            } else {
-                // By default, show import details
-                showImportDetails();
-            }
-        });
-    </script>
-
-
-    <script>
-        // Create and submit Charge Items
-
-        function submitForm(e) {
-
-            const dtlItemsArray = [];
-            const tableRows = $("#tblContainer tbody tr");
-            var chkAmount = "";
-
-            tableRows.each(function (index) {
-                const trRow = $(this);
-                chkAmount = trRow.find('input[name="Amount"]').val();
-
-                if (chkAmount === "" || parseFloat(chkAmount) === 0) {
-                    // chkAmount is empty or zero
-                    //console.log("chkAmount is empty or zero");
-                } else {
-                    // chkAmount is not empty and not zero
-                    const dtlItemJson = buildItemsJson(trRow, index);
-                    dtlItemsArray.push(dtlItemJson);
-                }
-            });
-
-            $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
-            var jobNo = JobHdMulti.FirstOrDefault().JobNo;
-            alert("jobNo: " + jobNo);
-
-            // Assign the value to the hidden input field using jQuery
-            $('#invoiceExportJobNo').val(jobNo);
-            // Assign the value to the hidden input field using jQuery
-            $('#invoiceImportJobNo').val(jobNo);
-        }
-
-        // Json Var create
-        function buildItemsJson(trRow, id) {
-            return {
-                SerialNo: id,
-                Description: trRow.find('input[name="Description"]').val(),
-                Amount: trRow.find('input[name="Amount"]').val(),
-            };
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
     <script>
         // Enter key blocking from submitig
         document.getElementById("InvoiceHDForm").onkeypress = function (e) {
@@ -947,7 +668,7 @@
                 }
             });
 
-            // Set the total amount in the TotalAmt input field 
+            // Set the total amount in the TotalAmt input field
             document.querySelector("#TotalAmtLKR").value = totalLKR.toFixed(2);
             document.querySelector("#TotalAmtUSD").value = totalUSD.toFixed(2);
         }

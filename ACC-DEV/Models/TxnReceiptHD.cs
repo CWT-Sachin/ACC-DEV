@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ACC_DEV.ModelsOperation;
+//using ACC_DEV.ModelsOperation;
 using Microsoft.EntityFrameworkCore;
 
 namespace ACC_DEV.Models;
@@ -11,19 +11,23 @@ public class TxnReceiptHD
 {
     [Key]
     [StringLength(50)]
-    public string? ReceiptNo { get; set; }
+    public string ReceiptNo { get; set; }
 
     [Column(TypeName = "date")]
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime? Date { get; set; }
 
     [StringLength(50)]
-    public string? ReceiptType { get; set; }
+    public string? PaymentMethod { get; set; }
 
     [Column(TypeName = "numeric(18, 2)")]
-    public decimal  ? ExchangeRate { get; set; }
+    public decimal? ExchangeRate { get; set; }
 
     [StringLength(50)]
     public string? CustomerID { get; set; }
+
+    [StringLength(50)]
+    public string? AgentID { get; set; }
 
     [StringLength(100)]
     public string? ChequeNo { get; set; }
@@ -31,7 +35,7 @@ public class TxnReceiptHD
     [Column(TypeName = "date")]
     public DateTime? ChequeDate { get; set; }
 
-    [StringLength(20)]
+    [StringLength(50)]
     public string? ChequeBankID { get; set; }
 
     [Column(TypeName = "numeric(18, 2)")]
@@ -72,11 +76,37 @@ public class TxnReceiptHD
     [StringLength(350)]
     public string? CanceledReason { get; set; }
 
+    [StringLength(250)]
+    public string? OtherAmountDescr { get; set; }
+
+    [Column(TypeName = "numeric(18, 2)")]
+    public decimal? OtherAmount { get; set; }
+
+    [StringLength(500)]
+    public string? TotAmtWord { get; set; }
+
+    [StringLength(50)]
+    public string? CustomerType { get; set; }
+
+    public bool Approved { get; set; }
+
+    [StringLength(20)]
+    public string? ApprovedBy { get; set; }
+
+    public DateTime? ApprovedDateTime { get; set; }
+
+    [StringLength(50)]
+    public string? Narration { get; set; }
+
+    [ForeignKey("AgentID")] // Assuming this is the correct foreign key property
+    [InverseProperty("TxnReceiptHDs")]
+    public virtual RefAgentAccOpt? RefAgentNavigation { get; set; }
+
     [ForeignKey("CustomerID")] // Assuming this is the correct foreign key property
     [InverseProperty("TxnReceiptHDs")]
-    public virtual RefCustomer? ReciptHdAcc { get; set; }
+    public virtual RefCustomerAccOpt? RefCustomerNavigation { get; set; }
 
-    [ForeignKey("ChequeBankID")]
-    [InverseProperty("TxnReceiptHDs")]
-    public virtual Ref_BankAcc? RefBankNavigation { get; set; }
+    //[ForeignKey("ChequeBankID")]
+    //[InverseProperty("TxnReceiptHDs")]
+    //public virtual RefBankAcc? RefBankNavigation { get; set; }
 }

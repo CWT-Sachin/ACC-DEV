@@ -2,9 +2,8 @@
 using ACC_DEV.ModelsOperation;
 using System.Collections.Generic;
 
-//using PowerAcc.DataOperation;
+//using ACC_DEV.DataOperation;
 using ACC_DEV.Data;
-using PowerAcc.Models;
 
 namespace ACC_DEV.ViewModel
 {

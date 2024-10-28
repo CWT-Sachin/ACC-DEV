@@ -32,7 +32,7 @@ namespace SWAT_DEV.Controllers
         // GET: RefCountries
         public async Task<IActionResult> Index(string searchString, int pg = 1)
         {
-            var Banks = from p in _context.RefBanks select p;
+            var Banks = from p in _context.RefBankAcc select p;
             Banks = Banks.OrderBy(x => x.Description);
             if (!String.IsNullOrEmpty(searchString))
             {
@@ -56,12 +56,12 @@ namespace SWAT_DEV.Controllers
         // GET: refCountry/Detail/5
         public async Task<IActionResult> Detail(string id)
         {
-            if (id == null || _context.RefBanks == null)
+            if (id == null || _context.RefBankAcc == null)
             {
                 return NotFound();
             }
 
-            var refLastNumber = await _context.RefBanks
+            var refLastNumber = await _context.RefBankAcc
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (refLastNumber == null)
             {
@@ -82,7 +82,7 @@ namespace SWAT_DEV.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,BankCode,Description,IsActive,CreatedBy,CreatedDateTime,LastUpdatedBy,LastUpdatedDateTime")] Ref_BankAcc refBanks)
+        public async Task<IActionResult> Create([Bind("ID,BankCode,Description,IsActive,CreatedBy,CreatedDateTime,LastUpdatedBy,LastUpdatedDateTime")] RefBankAcc refBanks)
         {
             var TableID = "Ref_BankAcc";  // Table ID in the Ref_Last
             var refLastNumber = await _context.RefLastNumbers.FindAsync(TableID);
@@ -117,12 +117,12 @@ namespace SWAT_DEV.Controllers
         // GET: refCountry/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
-            if (id == null || _context.RefBanks == null)
+            if (id == null || _context.RefBankAcc == null)
             {
                 return NotFound();
             }
 
-            var refBanks = await _context.RefBanks.FindAsync(id);
+            var refBanks = await _context.RefBankAcc.FindAsync(id);
             if (refBanks == null)
             {
                 return NotFound();
@@ -134,7 +134,7 @@ namespace SWAT_DEV.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("ID,BankCode,Description,IsActive,CreatedBy,CreatedDateTime,LastUpdatedBy,LastUpdatedDateTime")] Ref_BankAcc refBanks)
+        public async Task<IActionResult> Edit(string id, [Bind("ID,BankCode,Description,IsActive,CreatedBy,CreatedDateTime,LastUpdatedBy,LastUpdatedDateTime")] RefBankAcc refBanks)
         {
             if (id != refBanks.ID)
             {
@@ -168,12 +168,12 @@ namespace SWAT_DEV.Controllers
 
         public async Task<IActionResult> Delete(string id)
         {
-            if (id == null || _context.RefBanks == null)
+            if (id == null || _context.RefBankAcc == null)
             {
                 return NotFound();
             }
 
-            var refBanks = await _context.RefBanks
+            var refBanks = await _context.RefBankAcc
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (refBanks == null)
             {
@@ -187,14 +187,14 @@ namespace SWAT_DEV.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            if (_context.RefBanks == null)
+            if (_context.RefBankAcc == null)
             {
                 return Problem("Entity set 'FtlcolombOperationContext.RefBanks'  is null.");
             }
-            var refBanks = await _context.RefBanks.FindAsync(id);
+            var refBanks = await _context.RefBankAcc.FindAsync(id);
             if (refBanks != null)
             {
-                _context.RefBanks.Remove(refBanks);
+                _context.RefBankAcc.Remove(refBanks);
             }
 
             await _context.SaveChangesAsync();
@@ -203,7 +203,7 @@ namespace SWAT_DEV.Controllers
 
         private bool RefBanksNoExists(string id)
         {
-            return _context.RefBanks.Any(e => e.ID == id);
+            return _context.RefBankAcc.Any(e => e.ID == id);
         }
     }
 }

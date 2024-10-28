@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace ACC_DEV.Models;
+namespace ACC_DEV.ModelsOperation;
 
 [PrimaryKey("PayVoucherNo", "SerialNo")]
 [Table("Txn_PaymentVoucherDtl_Import")]

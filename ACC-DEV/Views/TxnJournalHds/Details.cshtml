@@ -1,0 +1,268 @@
+﻿@model ACC_DEV.ViewModel.AccountsViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h3 class="m-b-0 text-white">JOURNAL ENTRY - DETAILS</h3>
+                </div>
+            </div>
+             <div class="card-body">
+                <form asp-action="Create" method="post" onsubmit="submitForm(event)">
+                    <!--Jurnal No & Date-->
+                    <div class="row">
+                        <div class="col-md-3" style="margin-left:30px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Exchange Rate" style="font-weight: bold; color: darkblue; font-size: 14px;">Journal No</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <span style="font-weight: bold; color: darkblue; font-size: 14px;">
+                                        @Html.DisplayFor(m => Model.TxnJournalHdMulti.FirstOrDefault().JournalNo)
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2" style="margin-left:30px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Exchange Rate">Date</label>
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.DisplayFor(m => Model.TxnJournalHdMulti.FirstOrDefault().Date)
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="margin-left: 30px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Adjustment entry">Adjustment entry</label>
+                                </div>
+                                <div class="form-group">
+                                        <input type="checkbox" 
+                                               @(Model.TxnJournalHdMulti.FirstOrDefault().IsAdjustmentEntry ? "checked" : "") 
+                                               disabled 
+                                               class="form-control" 
+                                               style="transform: scale(1.5); margin-right: 5px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ref No , Job No if it related to Job-->
+                    <div class="row">
+                        <div class="col-md-2" style="margin-left:30px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Exchange Rate">Ref No</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" asp-for="TxnJournalHdMulti.FirstOrDefault().RefNo" class="form-control" style="background-color:#b8b8b8;" disabled />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Job No if it related to Job-->
+                        <div class="col-md-3" style="margin-left: 30px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Adjustment entry">Is This Job Related</label>
+                                </div>
+                                <div class="form-group">
+                                    <!-- Apply style directly within the input tag -->
+                                    <input type="checkbox" id="jobRelatedCheckbox" asp-for="TxnJournalHdMulti.FirstOrDefault().IsJobRelated" class="form-control" style="transform: scale(1.5); margin-right: 5px;" disabled />
+                                </div>
+                            </div>
+                        </div>
+                        @if (Model.TxnJournalHdMulti.FirstOrDefault().IsJobRelated)
+                        {
+                            <div class="col-md-3">
+                                <div class="input-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jobType" id="importRadio" value="Import" disabled>
+                                        <label class="form-check-label" for="importRadio">Import</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jobType" id="exportRadio" value="Export" disabled>
+                                        <label class="form-check-label" for="exportRadio">Export</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Job Number</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" asp-for="TxnJournalHdMulti.FirstOrDefault().JobNo" class="form-control" style="background-color:#b8b8b8;" />
+                                        <span asp-validation-for="TxnJournalHdMulti.FirstOrDefault().JobNo" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <br />
+                    <!--Table for Entry -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-hover border table-striped" id="tblContainer">
+                                    <thead>
+                                        <tr>
+                                            <th>Account</th>
+                                            <th>Description </th>
+                                            <th>Debit</th>
+                                            <th>Credit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ContainerDetailsBody">
+                                        <tr id="tablerow0" hidden>
+                                            <td style="width:30%;">
+                                                <select id="AccNo" asp-for="TxnJournalDtlMulti.FirstOrDefault().AccNo" value="" name="AccNo" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                            </td>
+                                            <td style="width:40%;">
+                                                <!-- Increase width for the description input -->
+                                                <input type="text" id="Description" asp-for="TxnJournalDtlMulti.FirstOrDefault().Description" name="Description" value="" class="form-control">
+                                            </td>
+                                            <td style="width:15%;">
+                                                <!-- Decrease width for the debit input -->
+                                                <input type="text" id="Debit" asp-for="TxnJournalDtlMulti.FirstOrDefault().Debit" name="Debit" value="" class="form-control" oninput="toggleInput(this)">
+                                            </td>
+                                            <td style="width:15%;">
+                                                <!-- Decrease width for the credit input -->
+                                                <input type="text" id="Credit" asp-for="TxnJournalDtlMulti.FirstOrDefault().Credit" name="Credit" value="" class="form-control" oninput="toggleInput(this)">
+                                            </td>
+                                            <td>
+                                                <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" />
+                                            </td>
+                                        </tr>
+                                        @foreach (var item in Model.TxnJournalDtlMulti)
+                                        {
+                                            <tr class="tablerow">
+                                                <td>
+                                                    <select asp-for="@item.AccNo"  class="form-control" asp-items="ViewBag.AccountsCodes" disabled></select>
+                                                </td>
+                                                <td style="width:40%;">
+                                                    <!-- Increase width for the description input -->
+                                                    <input type="text" asp-for="TxnJournalDtlMulti.FirstOrDefault().Description" name="Description" value="@item.Description" class="form-control unit" disabled>
+                                                </td>
+                                                <td style="width:15%;">
+                                                    <!-- Decrease width for the debit input -->
+                                                    <input type="text" asp-for="TxnJournalDtlMulti.FirstOrDefault().Debit" name="Debit" value="@item.Debit" class="form-control rate" style="text-align: right;" oninput="toggleInput(this)" disabled>
+                                                </td>
+                                                <td style="width:15%;">
+                                                    <!-- Decrease width for the credit input -->
+                                                    <input type="text" asp-for="TxnJournalDtlMulti.FirstOrDefault().Credit" name="Credit" value="@item.Credit" class="form-control qty" style="text-align: right;" oninput="toggleInput(this)" disabled>
+                                                </td>
+
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Total line -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- Your existing content goes here -->
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="TotalAmount">Total </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" readonly id="totalDebitAmount" />
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" readonly id="totalCreditAmount" />
+                                </div>
+                                <div class="col-md-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Note -->
+                    <div class="row">
+                        <div class="col-md-4" style="margin-left:30px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="Exchange Rate">Note</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <textarea asp-for="TxnJournalHdMulti.FirstOrDefault().Note" class="form-control" name="Note" type="text"  rows="5" readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </form>
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function calculateAmount(input) {
+            var inputValue = parseFloat(input.value) || 0;
+            var totalDebitInput = document.getElementById("totalDebitAmount");
+            var totalCreditInput = document.getElementById("totalCreditAmount");
+
+            if (input.id.includes("Debit")) {
+                totalDebitInput.value = (parseFloat(totalDebitInput.value) || 0) + inputValue;
+            } else if (input.id.includes("Credit")) {
+                totalCreditInput.value = (parseFloat(totalCreditInput.value) || 0) + inputValue;
+            }
+        }
+
+        // Function to recalculate totals
+        function recalculateTotals() {
+               
+                var totalDebitInput = document.getElementById("totalDebitAmount");
+                var totalCreditInput = document.getElementById("totalCreditAmount");
+
+                var totalDebit = 0;
+                var totalCredit = 0;
+
+                document.querySelectorAll('input[name^="Debit"]').forEach(function (debitInput) {
+                    totalDebit += parseFloat(debitInput.value) || 0;
+                });
+
+                document.querySelectorAll('input[name^="Credit"]').forEach(function (creditInput) {
+                    totalCredit += parseFloat(creditInput.value) || 0;
+                });
+
+                totalDebitInput.value = totalDebit.toFixed(2);
+                totalCreditInput.value = totalCredit.toFixed(2);
+            }
+        // Call the function on page load
+        window.onload = function () {
+            recalculateTotals();
+        };
+    </script>
+
+ }

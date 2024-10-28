@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
-using ACC_DEV.Models;
 
-
-namespace ACC_DEV.ModelsOperation;
+namespace ACC_DEV.Models;
 
 [PrimaryKey("InvoiceNo", "SerialNo")]
 [Table("Txn_InvoiceDtl_Export")]
@@ -45,7 +43,7 @@ public partial class TxnInvoiceExportDtl
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
     public DateTime? CreatedDate { get; set; }
 
-    [ForeignKey("ChargeItem")]
-    [InverseProperty("TxnInvoiceDtls")]
-    public virtual RefChargeItem? ChargeItemNavigation { get; set; }
+    //[ForeignKey("ChargeItem")]
+    //[InverseProperty("TxnInvoiceDtls")]
+    //public virtual RefChargeItemAcc? ChargeItemNavigation { get; set; }
 }

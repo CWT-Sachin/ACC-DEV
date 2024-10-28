@@ -3,6 +3,11 @@
     ViewData["Title"] = "Payment";
 
 }
+<style>
+    .hidden-column {
+        display: none;
+    }
+</style>
 <!-- ============================================================== -->
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
@@ -36,7 +41,7 @@
                                     <div class="col-md-12">
                                         @using (Html.BeginForm("Create", "TxnPaymentHDs", new { searchString = "" }, FormMethod.Get))
                                         {
-                                            <div class="input-group">
+@*                                            <div class="input-group">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="searchType" id="searchByCreditNote" value="Export" checked>
                                                     <label class="form-check-label" for="searchByCreditNote">Export</label>
@@ -49,16 +54,16 @@
                                                     <input class="form-check-input" type="radio" name="searchType" id="searchByApprove" value="Additional" checked>
                                                     <label class="form-check-label" for="searchByApprove">Additional PayVoucher</label>
                                                 </div>
-                                            </div>
+                                            </div>*@
                                             <br>
                                             <div class="input-group">
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" id="customerType" name="customerType" value="Overseas" checked />
-                                                    <label class="form-check-label" for="customerType">Overseas</label>
+                                                    <input class="form-check-input" type="radio" id="customerType"  name="customerType" value="Agent" checked />
+                                                    <label class="form-check-label" for="customerType">Agent</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" id="customerType" name="customerType" value="Local" />
-                                                    <label class="form-check-label" for="customerType">Local</label>
+                                                    <input class="form-check-input" type="radio" id="customerType" name="customerType" value="ShippingLine" />
+                                                    <label class="form-check-label" for="customerType">ShippingLine</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" id="customerType" name="customerType" value="Supplier" />
@@ -67,8 +72,8 @@
                                             </div>
                                             <br>
                                             <div class="row">
-                                                <div class="col-md-4">
-                                                    <div id="localDropdown" class="row" style="display: none;">
+                                                <div class="col-md-8">
+                                                    <div id="ShippingLineDropdown" class="row" style="display: none;">
                                                         <div class="col-md-4">
                                                             <label for="Customer">Shipping line</label>
                                                         </div>
@@ -76,7 +81,7 @@
                                                             <select id="ShippingLine" name="ShippingLine" asp-for="TxnPaymentHdMulti.FirstOrDefault().ShippingLineID" class="form-control" asp-items="ViewBag.ShippingLine"></select>
                                                         </div>
                                                     </div>
-                                                    <div id="overseasDropdown" class="row">
+                                                    <div id="AgentDropdown" class="row">
                                                         <div class="col-md-4">
                                                             <label for="Customer">Agent</label>
                                                         </div>
@@ -94,7 +99,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button type="submit" class="btn btn-info"><i class="fas fa-search-plus"></i> Refresh</button>
+                                                    <button type="submit" class="btn btn-info" onclick="checkCustomerAndToggleSaveButton()"><i class="fas fa-search-plus"></i> Refresh</button>
                                                 </div>
                                             </div>
                                         }
@@ -122,31 +127,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-1"></div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="Narration">Narration</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().Narration" class="form-control" />
+                                        <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().Narration" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-4">
                                 <div class="row">
                                     <div class="col-md-2">
-                                        <label for="Customer">A/C No</label>
+                                        <label for="Customer"> Debit A/C No</label>
                                     </div>
-                                    <div class="col-md-6">
-                                        <select id="CreditAcc" asp-for="TxnPaymentHdMulti.FirstOrDefault().CreditAcc" value="" name="CreditAcc" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                    <div class="col-md-9">
+                                        <select id="DebitAcc" asp-for="TxnPaymentHdMulti.FirstOrDefault().DebitAcc" value="" name="DebitAcc" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-1"></div>
-                            <div class="col-md-2">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <label for="Exchange Rate">Exchange Rate</label>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().ExchangeRate" class="form-control" />
-                                        <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().ExchangeRate" class="text-danger"></span>
-                                    </div>
-                                </div>
-                            </div>
-
-
 
                         </div>
                         <br />
@@ -175,22 +177,15 @@
                                                     <label for="ExchangeRate" id="paymentLabel">Cheque No</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeNo" class="form-control" value="" />
+                                                    <input type="text" id="ChequeNo" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeNo" class="form-control" />
+                                                    <span id="ChequeNoError" class="text-danger" style="display:none;"></span>
                                                     <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().ChequeNo" class="text-danger"></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <label for="Customer">Bank</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <select id="ChequeBankID" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeBankID" value="" name="ChequeBankID" class="form-control" asp-items="ViewBag.RefBankList"></select>
-                                                </div>
-                                            </div>
-                                        </div>
 
+                                        </div>
                                     </div>
                                     <br />
                                     <div class="row">
@@ -209,7 +204,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <input type="checkbox" asp-for="TxnPaymentHdMulti.FirstOrDefault().IsAcPayeeOnly" class="form-control" value="" />
+                                                        <input type="checkbox" asp-for="TxnPaymentHdMulti.FirstOrDefault().IsAcPayeeOnly" name="IsAcPayeeOnly"  class="form-control"  checked />
                                                         <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().IsAcPayeeOnly" class="text-danger"></span>
                                                     </div>
                                                 </div>
@@ -218,28 +213,58 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--Debit Acc No: -->
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="Bank">Credit A/C No</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <select id="CreditAcc" asp-for="TxnPaymentHdMulti.FirstOrDefault().CreditAcc" value="" name="CreditAcc" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                         <br />
                         <br />
                         <div class="row">
-                            <div class="col-md-5">
-                                <h4 style="font-weight:bolder; color: darkblue;">@ViewBag.PaymentVoucherType - Unpaid Payments of @ViewBag.Customer </h4>
+                            <div class="col-md-8">
+                                <h4 style="font-weight:normal; color: darkblue;">Unpaid PaymentVouchers/Credit for Import/ Export/ Other </h4>
+                                <h4 style="font-weight:bolder; color: darkblue;">Name: @ViewBag.Customer </h4>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-5">
-                                <div class="table-responsive">
-                                    <table class="table color-bordered-table purple-bordered-table" id="tblContainer1">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="ExchangeRate" id="DocNo">Doc No</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="docNoInput" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-info" id="searchBtn"><i class="fas fa-search-plus"></i> Search</button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-responsive" style="height: 300px; overflow-y: auto;">
+                                    <table class="table color-bordered-table purple-bordered-table" id="tblContainer1" style="margin-bottom: 0;">
                                         <!-- Table 1: Display invoices -->
-                                        <thead>
+                                        <thead style="position: sticky; top: 0; background-color: #fff;">
                                             <tr>
                                                 <th></th>
-                                                <th>Pay VocherNo</th>
+                                                <th>Doc No</th>
+                                                <th>Doc Type</th>
                                                 <th>Date</th>
-                                                <th>Total Amount</th>
-                                                <th>Paid</th>
-                                                <th>BlanceAmt</th>
+                                                <th>Total Amt</th>
+                                                <th>Paid Amt</th>
+                                                <th>Balance Amt</th>
                                             </tr>
                                         </thead>
                                         <tbody id="ContainerDetailsBody1">
@@ -248,45 +273,35 @@
                                                 <tr>
                                                     <td><input type="checkbox" name="selectedInvoices" value="@PaymentItem.PayVoucherNo" /></td>
                                                     <td>@PaymentItem.PayVoucherNo</td>
-                                                    @*   <td>@PaymentItem.Date</td>*@
+                                                    <td>@PaymentItem.DocType</td>
                                                     <td>@PaymentItem.Date?.ToString("yyyy-MM-dd")</td>
-                                                    @*                                                    <td>@PaymentItem.TotalPayVoucherAmountLkr</td>
-                                                *@
                                                     <td>@PaymentItem.TotalPayVoucherAmountLkr?.ToString("0.00")</td>
                                                     <td>@PaymentItem.AmountPaid</td>
                                                     <td>@PaymentItem.AmountToBePaid</td>
+                                                    <td class="hidden-column">@PaymentItem.JobNo</td>
+                                                    <td class="hidden-column">@PaymentItem.JobType</td>
                                                 </tr>
                                             }
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
-                            <div class="col-md-1">
                                 <div class="row">
                                     <div class="col-md-1" style="align-items:center">
                                         <!-- Button to trigger moving selected rows to the second table -->
                                         <input type="button" value="Select >>" id="selectButton" class="btn btn-info" onclick="moveSelectedRows()" />
                                     </div>
                                 </div>
-                                <br />
-                                <br />
-                                <div class="row">
-                                    <div class="col-md-1" style="align-items:center">
-                                        <!-- Button to trigger moving 1st table rows to the second table -->
-                                        <input type="button" value="<< Remove" id="RemoveButton" class="btn btn-warning" onclick="moveRemoveRows()" />
-                                    </div>
-                                </div>
                             </div>
-                            <div class="col-md-1">
-                            </div>
-                            <div class="col-md-5">
+
+                            <div class="col-md-6">
                                 <div class="table color-bordered-table purple-bordered-table">
                                     <table class="table table-hover border table-striped" id="tblContainer2">
                                         <!-- Table 2: Display selected invoices -->
                                         <thead>
                                             <tr>
                                                 <th></th>
-                                                <th>Pay VocherNo</th>
+                                                <th>Doc No</th>
+                                                <th>Doc Type</th>
                                                 <th nowrap="">Date</th>
                                                 <th nowrap="">Total Amount</th>
                                                 <th>Paid</th>
@@ -298,6 +313,12 @@
                                             <!-- Selected rows will be moved here -->
                                         </tbody>
                                     </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1" style="align-items:center">
+                                        <!-- Button to trigger moving 1st table rows to the second table -->
+                                        <input type="button" value="<< Remove" id="RemoveButton" class="btn btn-warning" onclick="moveRemoveRows()" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -360,9 +381,11 @@
                         <!--Save Button-->
                         <div class="row">
                             <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
-                            <input type="hidden" id="customerType" name="customerType" value="@ViewBag.CustomerType" />
+                            <input type="hidden" id="customerType" name="CustomerType" value="@ViewBag.CustomerType" />
+                            <input type="hidden" id="paymentVouchType" name="paymentVouchType" value="@ViewBag.PaymentVoucherType" />
                             <input type="hidden" asp-for="TxnPaymentHdMulti.FirstOrDefault().ShippingLineID" value="@ViewBag.ShippingLineID"></input>
-
+                            <input type="hidden" asp-for="TxnPaymentHdMulti.FirstOrDefault().CustomerID" value="@ViewBag.SupplierID"></input>
+                            <input type="hidden" asp-for="TxnPaymentHdMulti.FirstOrDefault().AgentID" value="@ViewBag.AgentID"></input>
                             <!--Save Button-->
                             <div class="form-group">
                                 <input type="submit" id="saveButton" value="Save" onclick="submitForm(this)" class="btn btn-primary" />
@@ -382,10 +405,10 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     // Enter key blocking from submitig
-    //document.getElementById("PaymentHDForm").onkeypress = function (e) {
+    document.getElementById("PaymentHDForm").onkeypress = function (e) {
 
-    //    preventEnterSubmit(e);
-    //}
+        preventEnterSubmit(e);
+    }
 
 </script>
 <script>
@@ -447,20 +470,25 @@
         checkboxes.forEach(function (checkbox) {
             var row = document.createElement("tr");
             var invoiceNo = checkbox.parentNode.parentNode.querySelector("td:nth-child(2)").textContent;
-            var date = checkbox.parentNode.parentNode.querySelector("td:nth-child(3)").textContent;
-            var amountPaid = checkbox.parentNode.parentNode.querySelector("td:nth-child(5)").textContent;
-            var balanceAmt = checkbox.parentNode.parentNode.querySelector("td:nth-child(6)").textContent;
-            var totalAmt = checkbox.parentNode.parentNode.querySelector("td:nth-child(4)").textContent;
+            var docType = checkbox.parentNode.parentNode.querySelector("td:nth-child(3)").textContent;
+            var date = checkbox.parentNode.parentNode.querySelector("td:nth-child(4)").textContent;
+            var amountPaid = checkbox.parentNode.parentNode.querySelector("td:nth-child(6)").textContent;
+            var balanceAmt = checkbox.parentNode.parentNode.querySelector("td:nth-child(7)").textContent;
+            var totalAmt = checkbox.parentNode.parentNode.querySelector("td:nth-child(5)").textContent;
+            var jobNo = checkbox.parentNode.parentNode.querySelector("td:nth-child(8)").textContent;
+            var jobType = checkbox.parentNode.parentNode.querySelector("td:nth-child(9)").textContent;
 
             // Add cells to the row with desired values
             row.innerHTML = '<td><input type="checkbox" name="selectedInvoices" value="' + invoiceNo + '" /></td>' +
                 '<td>' + invoiceNo + '</td>' +
+                '<td>' + docType + '</td>' +
                 '<td  nowrap="">' + date + '</td>' +
                 '<td>' + totalAmt + '</td>' +
                 '<td>' + amountPaid + '</td>' +
                 '<td>' + balanceAmt + '</td>' +
-                '<td><input type="text" name="invoiceAmounts[]" value="' + balanceAmt + '" class="form-control" /></td>';
-
+                '<td><input type="text" name="invoiceAmounts[]" value="' + balanceAmt + '" class="form-control" /></td>'+
+                '<td class="hidden-column">' + jobNo + '</td>' +
+                '<td class="hidden-column">' + jobType + '</td>';
             // Append the row to the second table body
             table2.querySelector("tbody").appendChild(row);
 
@@ -481,20 +509,28 @@
         checkboxes.forEach(function (checkbox) {
             var row = document.createElement("tr");
             var invoiceNo = checkbox.parentNode.parentNode.querySelector("td:nth-child(2)").textContent;
-            var date = checkbox.parentNode.parentNode.querySelector("td:nth-child(3)").textContent;
-            var totalAmt = checkbox.parentNode.parentNode.querySelector("td:nth-child(4)").textContent;
-            var amountPaid = checkbox.parentNode.parentNode.querySelector("td:nth-child(5)").textContent;
-            var balanceAmt = checkbox.parentNode.parentNode.querySelector("td:nth-child(6)").textContent;
-            var Amount = checkbox.parentNode.parentNode.querySelector("td:nth-child(7) input").value; // Retrieve input value
+            var docType = checkbox.parentNode.parentNode.querySelector("td:nth-child(3)").textContent;
+            var date = checkbox.parentNode.parentNode.querySelector("td:nth-child(4)").textContent;
+            var totalAmt = checkbox.parentNode.parentNode.querySelector("td:nth-child(5)").textContent;
+            var amountPaid = checkbox.parentNode.parentNode.querySelector("td:nth-child(6)").textContent;
+            var balanceAmt = checkbox.parentNode.parentNode.querySelector("td:nth-child(7)").textContent;
+            var Amount = checkbox.parentNode.parentNode.querySelector("td:nth-child(8) input").value; // Retrieve input value
+            var JobNo = checkbox.parentNode.parentNode.querySelector("td:nth-child(9)").textContent;
+            var JobType = checkbox.parentNode.parentNode.querySelector("td:nth-child(10)").textContent;
 
             // Add cells to the row with desired values
             row.innerHTML = '<td><input type="checkbox" name="selectedInvoices" value="' + invoiceNo + '" /></td>' +
                 '<td>' + invoiceNo + '</td>' +
+                '<td>' + docType + '</td>' +
                 '<td>' + date + '</td>' +
                 '<td>' + totalAmt + '</td>' +
                 '<td>' + amountPaid + '</td>' +
-                '<td>' + balanceAmt + '</td>'; // Append balanceAmt directly
+                '<td>' + balanceAmt + '</td>'+ // Append balanceAmt directly
+                '<td class="hidden-column">' + JobNo + '</td>' +
+                '<td class="hidden-column">' + JobType + '</td>';
 
+                //'<td class="hidden-column">' + JobNo + '</td>' +
+                //'<td class="hidden-column">' + JobType + '</td>';
             // Append the row to the first table body
             table1.querySelector("tbody").appendChild(row);
 
@@ -512,7 +548,7 @@
 
         // Calculate total receipt amount based on selected rows from the second table
         $('#tblContainer2 tbody tr').each(function () {
-            var invoiceAmount = parseFloat($(this).find('td:nth-child(7) input').val());
+            var invoiceAmount = parseFloat($(this).find('td:nth-child(8) input').val());
             totalReceiptAmount += isNaN(invoiceAmount) ? 0 : invoiceAmount;
         });
 
@@ -554,9 +590,11 @@
             //alert("Amount 1");
             var serialNo = index + 1; // Serial number starts from 1
             var refNo = $(row).find('td:nth-child(2)').text(); // Get description from second column
-            var amountInput = $(row).find('td:nth-child(7) input'); // Get input field in fourth column
+            var amountInput = $(row).find('td:nth-child(8) input'); // Get input field in fourth column
             var amount = 0; // Default amount
-            var refType = "PayVouAdd";
+            var refType = $(row).find('td:nth-child(3)').text();
+            var jobno = $(row).find('td:nth-child(9)').text();
+            var jobType = $(row).find('td:nth-child(10)').text();
             //alert("Amount 2");
 
             // Check if the amount input field exists and has a value
@@ -571,7 +609,9 @@
                     SerialNo: serialNo,
                     RefNo: refNo,
                     RefType: refType,
-                    Amount: amount
+                    Amount: amount,                    
+                    JobNo: jobno,
+                    JobType: jobType
                 });
             };
             //alert("Amount 4");
@@ -584,30 +624,105 @@
 <script>
     $(document).ready(function () {
         //alert("Test Tyepe");
-        // Initially hide the local and overseas dropdowns
-        $("#localDropdown").hide();
+        // Initially hide the ShippingLine and Agent dropdowns
+        $("#ShippingLineDropdown").hide();
         $("#SupplierDropdown").hide();
-        $("#overseasDropdown").show(); // Assuming overseas dropdown is initially visible
+        $("#AgentDropdown").show(); // Assuming Agent dropdown is initially visible
 
         // Listen for changes in the radio buttons
         $("input[name='customerType']").change(function () {
-            if ($("#customerType:checked").val() === "Local") {
-                // If "Local" is selected, show the local dropdown and hide the overseas dropdown
-                $("#localDropdown").show();
-                $("#overseasDropdown").hide();
+            if ($("#customerType:checked").val() === "ShippingLine") {
+                // If "ShippingLine" is selected, show the ShippingLine dropdown and hide the Agent dropdown
+                $("#ShippingLineDropdown").show();
+                $("#AgentDropdown").hide();
                 $("#SupplierDropdown").hide();
-            } else if ($("#customerType:checked").val() === "Overseas") {
-                // If "Overseas" is selected, show the overseas dropdown and hide the local dropdown
-                $("#localDropdown").hide();
-                $("#overseasDropdown").show();
+            } else if ($("#customerType:checked").val() === "Agent") {
+                // If "Agent" is selected, show the Agent dropdown and hide the ShippingLine dropdown
+                $("#ShippingLineDropdown").hide();
+                $("#AgentDropdown").show();
                 $("#SupplierDropdown").hide();
             } else if ($("#customerType:checked").val() === "Supplier") {
-                // If "Overseas" is selected, show the overseas dropdown and hide the local dropdown
-                $("#localDropdown").hide();
-                $("#overseasDropdown").hide();
+                // If "Agent" is selected, show the Agent dropdown and hide the ShippingLine dropdown
+                $("#ShippingLineDropdown").hide();
+                $("#AgentDropdown").hide();
                 $("#SupplierDropdown").show();
             }
         });
     });
 </script>
+
+<!-- Search Doc No-->
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#searchBtn').click(function () {
+                var docNo = $('#docNoInput').val().toLowerCase(); // Get the value from the input field and convert to lowercase for case-insensitive search
+                $('#ContainerDetailsBody1 tr').filter(function () {
+                    $(this).toggle($(this).find('td').eq(1).text().toLowerCase().indexOf(docNo) > -1)
+                });
+            });
+        });
+    </script>
+
+    <!--Check Chque Number -->
+    <script>
+        $(document).ready(function () {
+            $('#ChequeNo').blur(function () {
+                var chequeNo = $(this).val();
+                if (chequeNo) {
+                    $.ajax({
+                        url: '@Url.Action("CheckChequeNumber", "TxnPaymentHDs")',
+                        type: 'GET',
+                        data: { chequeNo: chequeNo },
+                        success: function (data) {
+                            if (data) {
+                                $('#ChequeNoError').text('Cheque number already exists.').show();
+                                $('#ChequeNo').focus();
+                            } else {
+                                $('#ChequeNoError').text('').hide();
+                            }
+                        },
+                        error: function () {
+                            $('#ChequeNoError').text('Error checking cheque number.').show();
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+          //$(document).ready(function () {
+           window.onload = function () {
+            var saveButton = document.getElementById("saveButton");
+
+            // Disable the save button on page load
+            saveButton.disabled = true;
+
+            // Check if @ViewBag.Customer has a value
+            var customer = '@ViewBag.Customer';
+
+            // If the customer is not empty, enable the save button
+            if (customer && customer.trim() !== "") {
+                saveButton.disabled = false;
+            }
+        };
+    </script>
+
+    <!-- JavaScript to disable the saveButton -->
+    <script>
+        function checkCustomerAndToggleSaveButton() {
+            var customer = '@ViewBag.Customer';
+
+            // If the customer is empty, disable the save button
+            if (!customer || customer.trim() === "") {
+                document.getElementById("saveButton").disabled = true;
+            } else {
+                // Enable save button if @ViewBag.Customer has a value
+                document.getElementById("saveButton").disabled = false;
+            }
+        }
+    </script>
+
+}
 

@@ -9,375 +9,431 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ACC-DEV
 build_property.RootNamespace = ACC-DEV
-build_property.ProjectDir = D:\ACC DEV\ACC DEV V18\ACC-DEV\
+build_property.ProjectDir = D:\ACC DEV 2\ACC-DEV-Sachin-2024-10-25\ACC-DEV-Sachin\ACC-DEV\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\ACC DEV\ACC DEV V18\ACC-DEV
+build_property.MSBuildProjectDirectory = D:\ACC DEV 2\ACC-DEV-Sachin-2024-10-25\ACC-DEV-Sachin\ACC-DEV
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/Home/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/Home/Privacy.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefAccountsType/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefAccountsType/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefAccountsType/Delete.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefAccountsType/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefAccountsType/Details.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefAccountsType/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefAccountsType/Edit.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefAccountsType/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefAccountsType/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefAccountsType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQWNjb3VudHNUeXBlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefChartOfAccs/COATreeview.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefChartOfAccs/COATreeview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcQ09BVHJlZXZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefChartOfAccs/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefChartOfAccs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefChartOfAccs/Details.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefChartOfAccs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefChartOfAccs/Edit.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefChartOfAccs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/RefChartOfAccs/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/RefChartOfAccs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVmQ2hhcnRPZkFjY3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/Shared/Error.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnaddPaymentHDs/ConvertToWord.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnaddPaymentHDs/ConvertToWord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuYWRkUGF5bWVudEhEc1xDb252ZXJ0VG9Xb3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnaddPaymentHDs/Create - Copy.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnaddPaymentHDs/Create - Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuYWRkUGF5bWVudEhEc1xDcmVhdGUgLSBDb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnaddPaymentHDs/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnaddPaymentHDs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuYWRkUGF5bWVudEhEc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnaddPaymentHDs/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnaddPaymentHDs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuYWRkUGF5bWVudEhEc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnaddPaymentHDs/RepPrintPayment.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnaddPaymentHDs/RepPrintPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuYWRkUGF5bWVudEhEc1xSZXBQcmludFBheW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditInvoiceHds/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditInvoiceHds/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0SW52b2ljZUhkc1xBcHByb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditInvoiceHds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0SW52b2ljZUhkc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditInvoiceHds/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditInvoiceHds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0SW52b2ljZUhkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditInvoiceHds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0SW52b2ljZUhkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditInvoiceHds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0SW52b2ljZUhkc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteAccHDs/ConvertToWord.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteAccHDs/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUFjY0hEc1xBcHByb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteAccHDs/ConvertToWord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUFjY0hEc1xDb252ZXJ0VG9Xb3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteAccHDs/Create - Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUFjY0hEc1xDcmVhdGUgLSBDb3B5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteAccHDs/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteAccHDs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUFjY0hEc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteAccHDs/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteAccHDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUFjY0hEc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteAccHDs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUFjY0hEc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteAccHDs/RepPrintPayment.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteAccHDs/RepPrintPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUFjY0hEc1xSZXBQcmludFBheW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteHds/Approve.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteHds/Approve.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xBcHByb3ZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteHds/Create Copy.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteHds/Create Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xDcmVhdGUgQ29weS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteHds/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteHds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteHds/Delete.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteHds/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteHds/Details.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteHds/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteHds/Edit.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteHds/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteHds/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteHds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnCreditNoteHds/RepPrintCreditNote.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnCreditNoteHds/RepPrintCreditNote.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUhkc1xSZXBQcmludENyZWRpdE5vdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteAccHDs/ConvertToWord.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteAccHDs/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXEFwcHJvdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteAccHDs/ConvertToWord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXENvbnZlcnRUb1dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteAccHDs/Create - Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXENyZWF0ZSAtIENvcHkuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteAccHDs/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteAccHDs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteAccHDs/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteAccHDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteAccHDs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteAccHDs/RepPrintPayment.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteAccHDs/RepPrintPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXFJlcFByaW50UGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteHds/Approve.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteHds/Approve.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXEFwcHJvdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteHds/Create Copy.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteHds/Create Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXENyZWF0ZSBDb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteHds/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteHds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteHds/Delete.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteHds/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteHds/Details.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteHds/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteHds/Edit.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteHds/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteHds/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteHds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnDebitNoteHds/RepPrintDebitNote.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnDebitNoteHds/RepPrintDebitNote.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlSGRzXFJlcFByaW50RGViaXROb3RlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnInvoiceHds/Approve.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnInvoiceHds/Approve.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xBcHByb3ZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnInvoiceHds/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnInvoiceHds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnInvoiceHds/Delete.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnInvoiceHds/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnInvoiceHds/Details.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnInvoiceHds/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnInvoiceHds/Edit.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnInvoiceHds/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnInvoiceHds/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnInvoiceHds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnInvoiceHds/RepPrintInvoice - Copy.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnInvoiceHds/RepPrintInvoice - Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xSZXBQcmludEludm9pY2UgLSBDb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnInvoiceHds/RepPrintInvoice.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnInvoiceHds/RepPrintInvoice.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSW52b2ljZUhkc1xSZXBQcmludEludm9pY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnJournalHds/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnJournalHds/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSm91cm5hbEhkc1xBcHByb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnJournalHds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSm91cm5hbEhkc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnJournalHds/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnJournalHds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSm91cm5hbEhkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnJournalHds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSm91cm5hbEhkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnJournalHds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuSm91cm5hbEhkc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentHDs/ConvertToWord.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentHDs/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudEhEc1xBcHByb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentHDs/ConvertToWord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudEhEc1xDb252ZXJ0VG9Xb3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentHDs/Create - Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudEhEc1xDcmVhdGUgLSBDb3B5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentHDs/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentHDs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudEhEc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentHDs/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentHDs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudEhEc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentHDs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudEhEc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentHDs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudEhEc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentHDs/RepPrintPayment.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentHDs/RepPrintPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudEhEc1xSZXBQcmludFBheW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentVoucherHds/Approve.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentVoucherHds/Approve.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcQXBwcm92ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentVoucherHds/Create Copy.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentVoucherHds/Create Copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcQ3JlYXRlIENvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentVoucherHds/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentVoucherHds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentVoucherHds/Delete.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentVoucherHds/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentVoucherHds/Details.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentVoucherHds/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentVoucherHds/Edit.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentVoucherHds/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentVoucherHds/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentVoucherHds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPaymentVoucherHds/RepPrintPaymentVoucher.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPaymentVoucherHds/RepPrintPaymentVoucher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGF5bWVudFZvdWNoZXJIZHNcUmVwUHJpbnRQYXltZW50Vm91Y2hlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPettyCashHDs/Approve.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPettyCashHDs/Approve.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGV0dHlDYXNoSERzXEFwcHJvdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPettyCashHDs/Create - Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGV0dHlDYXNoSERzXENyZWF0ZSAtIENvcHkuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPettyCashHDs/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPettyCashHDs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGV0dHlDYXNoSERzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPettyCashHDs/Details.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPettyCashHDs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGV0dHlDYXNoSERzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPettyCashHDs/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPettyCashHDs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGV0dHlDYXNoSERzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPettyCashHDs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGV0dHlDYXNoSERzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPettyCashHDs/RepPrintPettyCash.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPettyCashHDs/RepPrintPettyCash.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUGV0dHlDYXNoSERzXFJlcFByaW50UGV0dHlDYXNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPurchasVoucherHDs/ConvertToWord.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPurchasVoucherHDs/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUHVyY2hhc1ZvdWNoZXJIRHNcQXBwcm92ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPurchasVoucherHDs/ConvertToWord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUHVyY2hhc1ZvdWNoZXJIRHNcQ29udmVydFRvV29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPurchasVoucherHDs/Create - Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUHVyY2hhc1ZvdWNoZXJIRHNcQ3JlYXRlIC0gQ29weS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPurchasVoucherHDs/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPurchasVoucherHDs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUHVyY2hhc1ZvdWNoZXJIRHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPurchasVoucherHDs/Details.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPurchasVoucherHDs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUHVyY2hhc1ZvdWNoZXJIRHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPurchasVoucherHDs/Edit.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPurchasVoucherHDs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUHVyY2hhc1ZvdWNoZXJIRHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPurchasVoucherHDs/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPurchasVoucherHDs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUHVyY2hhc1ZvdWNoZXJIRHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnPurchasVoucherHDs/RepPrintPurchaseVoucher.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnPurchasVoucherHDs/RepPrintPurchaseVoucher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUHVyY2hhc1ZvdWNoZXJIRHNcUmVwUHJpbnRQdXJjaGFzZVZvdWNoZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnReceiptHds/Create.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnReceiptHds/Approve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUmVjZWlwdEhkc1xBcHByb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnReceiptHds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUmVjZWlwdEhkc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnReceiptHds/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnReceiptHds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUmVjZWlwdEhkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnReceiptHds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUmVjZWlwdEhkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnReceiptHds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUmVjZWlwdEhkc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnTransactions/Edit.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnReceiptHds/RepPrintReceipt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuUmVjZWlwdEhkc1xSZXBQcmludFJlY2VpcHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnTransactions/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuVHJhbnNhY3Rpb25zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnTransactions/Index.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnTransactions/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuVHJhbnNhY3Rpb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/TxnTransactions/TransactionLedger.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/TxnTransactions/TransactionLedger.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuVHJhbnNhY3Rpb25zXFRyYW5zYWN0aW9uTGVkZ2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/_ViewImports.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/_ViewStart.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ACC DEV/ACC DEV V18/ACC-DEV/Views/Shared/_Layout.cshtml]
+[D:/ACC DEV 2/ACC-DEV-Sachin-2024-10-25/ACC-DEV-Sachin/ACC-DEV/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bsrp0koxi5

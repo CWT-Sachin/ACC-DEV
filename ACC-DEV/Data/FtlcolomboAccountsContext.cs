@@ -10,7 +10,7 @@ using ACC_DEV.ViewModel;
 using Newtonsoft.Json;
 using ACC_DEV.Data;
 using ACC_DEV.DataOperation;
-using PowerAcc.Models;
+
 
 
 
@@ -40,6 +40,9 @@ public partial class FtlcolomboAccountsContext : DbContext
 
     public virtual DbSet<RefLastNumber> RefLastNumbers { get; set; }
 
+    public virtual DbSet<RefCustomerAccOpt> RefCustomerAccOpt { get; set; }
+    public virtual DbSet<RefAgentAccOpt> RefAgentAccOpt { get; set; }
+
     public virtual DbSet<TxnPettyCashHD> TxnPettyCashHDs { get; set; }
 
     public virtual DbSet<TxnPettyCashDtl> TxnPettyCashDtls { get; set; }
@@ -66,7 +69,7 @@ public partial class FtlcolomboAccountsContext : DbContext
 
     public virtual DbSet<TxnDebitNoteHd> TxnDebitNoteHds { get; set; }
 
-    public virtual DbSet<Ref_BankAcc> RefBanks { get; set; }
+    public virtual DbSet<RefBankAcc> RefBankAcc { get; set; }
 
     public virtual DbSet<TxnReceiptDtl> TxnReceiptDtls { get; set; }
 
@@ -80,20 +83,19 @@ public partial class FtlcolomboAccountsContext : DbContext
     public virtual DbSet<TxnPurchasVoucherHD> TxnPurchasVoucherHDs { get; set; }
     public virtual DbSet<TxnPurchasVoucherDtl> TxnPurchasVoucherDtls { get; set; }
 
-    public virtual DbSet<RefShippingLineAccOpt> RefShippingLineAccOpts { get; set; }
+    public virtual DbSet<RefShippingLineAccOpt> RefShippingLineAccOpt { get; set; }
 
 
 
 
     public virtual DbSet<TxnDebitNoteAccDtl> TxnDebitNoteAccDtls { get; set; }
-
     public virtual DbSet<TxnDebitNoteAccHD> TxnDebitNoteAccHDs { get; set; }
 
-
-
+    public virtual DbSet<TxnCreditNoteAccHD> TxnCreditNoteAccHDs { get; set; }
     public virtual DbSet<TxnCreditNoteAccDtl> TxnCreditNoteAccDtls { get; set; }
 
-    public virtual DbSet<TxnCreditNoteAccHD> TxnCreditNoteAccHDs { get; set; }
+    public virtual DbSet<TxnCreditSalesHD> TxnCreditSalesHDs { get; set; }
+    public virtual DbSet<TxnCreditSalesDtl> TxnCreditSalesDtls { get; set; }
 
 
 
@@ -112,17 +114,13 @@ public partial class FtlcolomboAccountsContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<TxnPaymentDtl>()
-.HasKey(e => new { e.PaymentNo, e.RefNo });
+
 
         modelBuilder.Entity<TxnInvoiceHd>(entity =>
         {
             entity.HasOne(d => d.InvoiceHdAcc).WithMany(p => p.TxnInvoiceHds).HasConstraintName("FK_Txn_InvoiceHD_Export_Ref_Customer");
         });
-        modelBuilder.Entity<TxnReceiptHD>(entity =>
-        {
-            entity.HasOne(d => d.RefBankNavigation).WithMany(p => p.TxnReceiptHDs).HasConstraintName("FK_Txn_ReceiptHD_Ref_Bank");
-        });
+
         modelBuilder.Entity<TxnPaymentHDs>(entity =>
         {
             entity.HasOne(d => d.RefBankPayNavigation).WithMany(p => p.TxnPaymentHDs).HasConstraintName("FK_Txn_PaymentHD_Ref_Bank");
@@ -134,8 +132,7 @@ public partial class FtlcolomboAccountsContext : DbContext
         modelBuilder.Entity<TxnDebitNoteAccDtl>()
            .HasKey(e => new { e.DebitNoteNo, e.SerialNo });
 
-        modelBuilder.Entity<TxnReceiptDtl>()
-        .HasKey(e => new { e.ReceiptNo, e.RefNo });
+
 
 
         OnModelCreatingPartial(modelBuilder);

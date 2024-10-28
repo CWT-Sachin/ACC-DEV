@@ -1,0 +1,272 @@
+﻿@model ACC_DEV.ViewModel.TxnReceiptViewModel
+@{
+    ViewData["Title"] = "Receipt";
+
+}
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>
+                                Receipt
+                            </h3>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                     <div class="row">
+                        <div class="col-md-8">
+                            <h4 style="font-weight:bolder; color: darkblue;">@ViewBag.CustomerType: @ViewBag.Customer </h4>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <form asp-action="Create" asp-controller="TxnReceiptHDs" id="PaymentHDForm">
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Receipt">Receipt No:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" asp-for="TxnReceiptHdMulti.FirstOrDefault().ReceiptNo" class="form-control" readonly />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="Exchange Rate">Date</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().Date) 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="Narration">Narration</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" asp-for="TxnReceiptHdMulti.FirstOrDefault().Narration" class="form-control" readonly/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="Customer"> Credit A/C No</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <select id="CreditAcc" asp-for="TxnReceiptHdMulti.FirstOrDefault().CreditAcc" value="" name="CreditAcc" class="form-control" asp-items="ViewBag.AccountsCodes" readonly></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="radio" id="Cheque" name="PaymentMethod" value="Cheque" checked />
+                                        <label for="Cheque">Cheque</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" id="Cash" name="PaymentMethod" value="Cash" />
+                                        <label for="Cash">Cash</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" id="BankTransfer" name="PaymentMethod" value="BankTransfer" />
+                                        <label for="BankTransfer">Bank Transfer</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div id="paymentDetails" style="border:1px solid black; padding: 10px;">
+                                    <div class="row">
+                                        <div class="col-md-4" id="ChequeNoDiv">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="ExchangeRate" id="paymentLabel">Cheque No</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="ChequeNo" asp-for="TxnReceiptHdMulti.FirstOrDefault().ChequeNo" class="form-control" readonly />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label for="ExchangeRate" id="chequeAmountLabel">Cheque Amount</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="ChequeAmount" asp-for="TxnReceiptHdMulti.FirstOrDefault().ChequeAmount" class="form-control" readonly />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row" id="ChequeDateRow">
+                                        <div class="col-md-2">
+                                            <label for="Date " id="chequeDateLabel">Cheque Date</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            @Html.DisplayFor(m => Model.TxnReceiptHdMulti.FirstOrDefault().ChequeDate)
+                                        </div>
+
+                                        <div class="col-md-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Debit Acc No: -->
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="Bank">Debit A/C No</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <select id="DebitAcc" asp-for="TxnReceiptHdMulti.FirstOrDefault().DebitAcc" value="" name="DebitAcc" class="form-control" asp-items="ViewBag.AccountsCodes" readonly></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 style=" color: darkblue;">Receipt details </h4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-responsive" style="height: 200px; overflow-y: auto;">
+                                    <table class="table color-bordered-table purple-bordered-table" id="tblContainer1" style="margin-bottom: 0;">
+                                        <!-- Table 1: Display invoices -->
+                                        <thead style="position: sticky; top: 0; background-color: #fff;">
+                                            <tr>
+                                                <th>Doc No</th>
+                                                <th>Doc Type</th>
+                                                <th>Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="ContainerDetailsBody1">
+                                            @foreach (var PaymentItem in Model.TxnReceiptDtMulti)
+                                            {
+                                                <tr>
+                                                    <td>@PaymentItem.DocNo</td>
+                                                    <td>@PaymentItem.DocType</td>
+                                                    <td>@PaymentItem.Amount</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <!-- Display and input for total receipt amount -->
+                                        <label for="Customer">Other Amount</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" asp-for="TxnReceiptHdMulti.FirstOrDefault().OtherAmountDescr" class="form-control" placeholder="Other Amount Details" readonly />
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input id="otherAmountInput" type="text" asp-for="TxnReceiptHdMulti.FirstOrDefault().OtherAmount" class="form-control" readonly />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <!-- Display and input for total receipt amount -->
+                                        <label for="Customer" style="font-weight:bolder;">Total Amount</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                    </div>
+                                    <div class="col-md-3">
+@*                                        <input style="font-weight:bolder;" type="text" id="totalReceiptAmount" class="form-control"  disabled />
+*@                                        <input type="text" id="receiptTotalAmt" asp-for="TxnReceiptHdMulti.FirstOrDefault().ReceiptTotalAmt" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <!--Remarks Textbox-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <h6 class="box-title">Remarks</h6>
+                                    <div class="col-md-12">
+                                        <textarea asp-for="TxnReceiptHdMulti.FirstOrDefault().Remarks" class="form-control" name="Remarks" type="text" placeholder="Type here your Remarks" rows="5" readonly> </textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </form>
+                </div>
+  
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload = function() {
+        var paymentMethod = '@(Model.TxnReceiptHdMulti.FirstOrDefault()?.PaymentMethod ?? "")';
+
+        if (paymentMethod === "Cheque") {
+            document.getElementById("Cheque").checked = true;
+        } else if (paymentMethod === "Cash") {
+            document.getElementById("Cash").checked = true;
+            // Change the label text to "Reference No" when Bank Transfer is selected
+            $("#paymentLabel").text("Reference No");
+            $("#chequeAmountLabel").text("Cash Amount");
+            $("#chequeDateLabel").text("Transfer Date");
+            $("#ChequeDateRow").hide();
+            $("#ChequeNoDiv").hide();
+        } else if (paymentMethod === "BankTransfer") {
+            document.getElementById("BankTransfer").checked = true;
+            // Change the label text to "Reference No" when Bank Transfer is selected
+            $("#paymentLabel").text("Reference No");
+            $("#chequeAmountLabel").text("Transfer Amount");
+            $("#chequeDateLabel").text("Transfer Date");
+        }
+    };
+</script>

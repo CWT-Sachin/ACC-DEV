@@ -56,7 +56,7 @@ namespace ACC_DEV.Models
 
         [ForeignKey("AccType")]
         [InverseProperty("RefChartOfAcc")]
-        public virtual RefAccountType? RefAccountType { get; set; }
+        public virtual RefAccountType? AccountsTypes { get; set; }
 
         // Navigation property to represent the parent node
         [ForeignKey("ParentNo")]
@@ -67,6 +67,26 @@ namespace ACC_DEV.Models
 
         [InverseProperty("TxnTransactionNavigation")]
         public virtual ICollection<TxnTransactions> TxnTransaction { get; set; } = new List<TxnTransactions>();
+
+
+        // Charge Items 
+        [InverseProperty("AccNoRevenueImpNavigation")]
+        public virtual ICollection<RefChargeItem> AccNoRevenueImp { get; set; } = new List<RefChargeItem>();
+
+        [InverseProperty("AccNoRevenueExpNavigation")]
+        public virtual ICollection<RefChargeItem> AccNoRevenueExp { get; set; } = new List<RefChargeItem>();
+
+        [InverseProperty("AccNoExpenseImpLinerNavigation")]
+        public virtual ICollection<RefChargeItem> AccNoExpenseImpLiner { get; set; } = new List<RefChargeItem>();
+
+        [InverseProperty("AccNoExpenseImpAgentNavigation")]
+        public virtual ICollection<RefChargeItem> AccNoExpenseImpAgent { get; set; } = new List<RefChargeItem>();
+
+        [InverseProperty("AccNoExpenseExpLinerNavigation")]
+        public virtual ICollection<RefChargeItem> AccNoExpenseExpLiner { get; set; } = new List<RefChargeItem>();
+
+        [InverseProperty("AccNoExpenseExpAgentNavigation")]
+        public virtual ICollection<RefChargeItem> AccNoExpenseExpAgent { get; set; } = new List<RefChargeItem>();
 
 
 

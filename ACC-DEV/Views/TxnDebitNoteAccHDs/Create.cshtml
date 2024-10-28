@@ -1,4 +1,4 @@
-﻿@model ACC_DEV.ViewModel.DebitNoteAccViewModel
+﻿@model ACC_DEV.ViewModel.TxnDebitNoteAccViewModel
 @{
     ViewData["Title"] = "Payment";
 
@@ -36,7 +36,7 @@
                     </div>
                     <br />
                     <br />
-                    <form asp-action="Create" asp-controller="TxnDebitNoteAccHDs">
+                    <form asp-action="Create" asp-controller="TxnDebitNoteAccHDs" id="TxnDebitNoteAccHDForm">
                         <!-- Hidden field to store selected items -->
                         <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
                         <div class="row">
@@ -51,14 +51,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6"></div>
+@*                            <div class="col-md-6"></div>*@         
                             <div class="col-md-2">
                                 <div class="row">
                                     <div class="col-md-5">
                                         <label for="Exchange Rate">Exchange Rate</label>
                                     </div>
                                     <div class="col-md-7">
-                                        <input type="text" asp-for="TxnDebitNoteAccHDMulti.FirstOrDefault().ExchangeRate" class="form-control" />
+                                        <input type="text" id="ExchangeRate" asp-for="TxnDebitNoteAccHDMulti.FirstOrDefault().ExchangeRate" class="form-control" oninput="calculateTotalAmount()" />
                                         <span asp-validation-for="TxnDebitNoteAccHDMulti.FirstOrDefault().ExchangeRate" class="text-danger"></span>
                                     </div>
                                 </div>
@@ -91,9 +91,9 @@
                                                 <div class="col-md-2">
                                                     <label for="Agent">Agent</label>
                                                 </div>
-                                                <div class="col-md-3">
-    <select id="selectedAgent" asp-for="TxnDebitNoteAccHDMulti.FirstOrDefault().Agent" class="form-control" asp-items="ViewBag.AgentIDNomination"></select>
-</div>
+                                                <div class="col-md-4">
+                                                    <select id="selectedAgent" asp-for="TxnDebitNoteAccHDMulti.FirstOrDefault().Agent" class="form-control" asp-items="ViewBag.AgentIDNomination"></select>
+                                                </div>
 
                                             </div>
 
@@ -121,20 +121,29 @@
                             </div>
                         </div>
                         <!-- Job Selection  -->
-                        <div class="row" id="JobSelection">
+                        <div class="row" >
                             <div class="col-md-7">
-                                <div id="paymentDetails" style="border:1px solid black; padding: 10px;">
+                                <div id="JobSelection" style="border:1px solid black; padding: 10px;">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-10">
                                              <div class="row">
-                                                <div class="col-md-4">
-                                                    <input type="radio" id="Cheque" name="JobType" value="Import" checked />
+                                                <div class="col-md-3">
+                                                    <input type="radio" id="Import" name="JobType" value="Import" checked />
                                                     <label for="Cheque">Import</label>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <input type="radio" id="Cash" name="JobType" value="Export" />
+                                                <div class="col-md-3">
+                                                    <input type="radio" id="Export" name="JobType" value="Export" />
                                                     <label for="Cash">Export</label>
                                                 </div>
+                                                <div class="col-md-3">
+                                                    <input type="radio" id="AirImport" name="JobType" value="AirImport" />
+                                                    <label for="Cash">Air Import</label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <input type="radio" id="AirExport" name="JobType" value="AirExport" />
+                                                    <label for="Cash">Air Export</label>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -145,15 +154,16 @@
                                                     <label for="ExchangeRate" id="paymentLabel">Job No</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <input type="text" asp-for="TxnDebitNoteAccHDMulti.FirstOrDefault().JobNo" class="form-control" value="" />
+                                                    <input type="text" id="JobNoInput" asp-for="TxnDebitNoteAccHDMulti.FirstOrDefault().JobNo" class="form-control" value="" />
                                                     <span asp-validation-for="TxnDebitNoteAccHDMulti.FirstOrDefault().JobNo" class="text-danger"></span> 
                                                 </div>
+                                                    <span id="jobNoError" class="text-danger"></span>
+                                                    <span id="jobNoSuccess" class="text-info"></span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row">
-
 
                                     </div>
                                     <br />
@@ -168,11 +178,10 @@
                             <div class="col-md-4">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <label for="ExchangeRate" id="paymentLabel">A/C No</label>
+                                        <label for="ExchangeRate" id="paymentLabel">Debit A/C No</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" asp-for="TxnDebitNoteAccHDMulti.FirstOrDefault().MainAcc" class="form-control" value="" />
-                                        <span asp-validation-for="TxnDebitNoteAccHDMulti.FirstOrDefault().MainAcc" class="text-danger"></span>
+                                        <select id="selectedAccount" asp-for="TxnDebitNoteAccHDMulti.FirstOrDefault().MainAcc" name="MainAcc" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +221,7 @@
                                     <table class="table table-hover border table-striped" id="tblContainer">
                                         <thead>
                                             <tr>
-                                                <th>Acc/No</th>
+                                                <th>Credit Acc/No</th>
                                                 <th>Charge Item</th>
                                                 <th>Description</th>
                                                 <th>USD Amount</th>
@@ -220,9 +229,9 @@
                                         </thead>
                                         <tbody id="ContainerDetailsBody">
                                             <tr id="tablerow0" hidden>
-                                                <td style="width:30%;">  <select select id="LineAccNo" name="LineAccNo"  class="form-control" asp-items="ViewBag.AccountsCodes"></select> </td>
-                                                <td style="width:30%;"> <select id="ChargeItemRw" value="" name="ChargeItemRw" class="form-control" asp-items="ViewBag.ChargeItemsList"></select> </td>
-                                                <td style="width:40%;"> <input type="text" id="Unit"  value="" name="Unit" class="form-control" ></input> </td>
+                                                <td style="width:25%;"> <select select id="LineAccNo" name="LineAccNo"  class="form-control" asp-items="ViewBag.AccountsCodes"></select> </td>
+                                                <td style="width:20%;"> <select id="ChargeItemRw" value="" name="ChargeItemRw" class="form-control" asp-items="ViewBag.ChargeItemsList"></select> </td>
+                                                <td style="width:40%;"> <input type="text" id="DescrRW" value="" name="DescrRW" class="form-control"></input> </td>
                                                 <td> <input type="text" id="Amount" name="Amount" value="" class="form-control" style="text-align: right;"></td>
                                                 <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td>
                                             </tr>
@@ -232,6 +241,7 @@
                             </div>
                         </div>
 
+                        <!--Line Add  button and total Amounts-->
                         <div class="row">
                             <!--Add button Charge Items-->
                             <div class="col-md-4">
@@ -249,7 +259,18 @@
                                         <label for="TotalAmount">Total Amount USD </label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" id="LineTotalAmount" class="form-control" style="text-align: right; font-weight:bold"  readonly />
+                                        <!--Give the name as field name-->
+                                        <input type="text" id="LineTotalAmountUSD" name="TotalAmountUSD" class="form-control" style="text-align: right; font-weight:bold" readonly />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="TotalAmount">Total Amount LKR </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!--Give the name as field name-->
+                                        <input type="text" id="LineTotalAmountLKR" name="TotalAmountLKR" class="form-control" style="text-align: right; font-weight:bold"  readonly />
                                     </div>
                                 </div>
                             </div>
@@ -266,9 +287,7 @@
                                     <h6 class="box-title">Remarks</h6>
                                     <div class="col-md-12">
                                         <textarea class="form-control" name="Remarks" type="text" placeholder="Type here your Remarks" rows="5"> </textarea>
-                                        
                                         <span class="text-danger"></span>
-
                                     </div>
                                 </div>
                             </div>
@@ -300,33 +319,9 @@
 <!-- Creditor Selection-->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const radios = document.getElementsByName('CreditorType');
-        //const creditorAgent = document.getElementById('CreditorAgent');
-        const creditorShippingLine = document.getElementById('CreditorShippingLine');
-        const creditorSupplier = document.getElementById('CreditorSupplier');
 
-        function showHideSections() {
-            //creditorAgent.style.display = 'none';
-            creditorShippingLine.style.display = 'none';
-            creditorSupplier.style.display = 'none';
-
-            //if (document.getElementById('Agent').checked) {
-            //    creditorAgent.style.display = 'flex';
-            //} else 
-            if (document.getElementById('ShippingLine').checked) {
-                creditorShippingLine.style.display = 'flex';
-            } else if (document.getElementById('Supplier').checked) {
-                creditorSupplier.style.display = 'flex';
-            }
-        }
-
-        radios.forEach(radio => {
-            radio.addEventListener('change', showHideSections);
-        });
-
-        // Initial call to set correct section
-        showHideSections();
         // Call checkAmounts on page load
+        // This will disable the save button
         checkAmounts();
     });
 </script>
@@ -347,7 +342,7 @@
         }
 
         // Attach the function to the change event of the radio buttons
-        var voucherTypeRadios = document.getElementsByName("VoucherType");
+        var voucherTypeRadios = document.getElementsByName("DocType");
         for (var i = 0; i < voucherTypeRadios.length; i++) {
             voucherTypeRadios[i].addEventListener("change", toggleJobSelection);
         }
@@ -371,7 +366,6 @@
             var NoOfRows = $("#tblContainer tbody tr").length
             var counter = NoOfRows + 1;
 
-
             // Update remove Button
             var removeBtn = newRow.find('input[name="RemoveBttn"]');
             var RemoveBtnVal = 'RemoveRow(' + counter + ')';
@@ -386,9 +380,7 @@
 
             // add event listener to the new amount input
             newRow.find('input[name="Amount"]').on('input', calculateTotalAmount);
-
             return false;
-
 
         }
 
@@ -406,10 +398,21 @@
                     total += amount;
                 }
             });
+                let exchangeRateValue = $("#ExchangeRate").val();
+                let exchangeRate = 0;
+                if (exchangeRateValue) {
+                    exchangeRate = parseFloat(exchangeRateValue);
+                    if (isNaN(exchangeRate)) {
+                        alert("Exchange Rate cannot be empty!!");
+                        exchangeRate = 0;
+                    }
+                }
 
-            //$("#LineTotalAmount").val(total.toFixed(2));
-        $("#LineTotalAmount").val(formatNumber(total));
-        // Enable /Disable Save button
+                let totalLKR = total * exchangeRate;
+
+            $("#LineTotalAmountLKR").val(formatNumber(totalLKR));
+            $("#LineTotalAmountUSD").val(formatNumber(total));
+            // Enable /Disable Save button
             checkAmounts();
         }
         function formatNumber(num) {
@@ -425,61 +428,140 @@
 <!--Check Amounts before submit-->
 <script>
     function checkAmounts() {
-        //alert("Test check Amount");
         const mainAmount = document.getElementById('MainAmount').value.trim();
-        const lineTotalAmount = document.getElementById('LineTotalAmount').value.trim();
+        const lineTotalAmount = document.getElementById('LineTotalAmountUSD').value.trim();
         const saveButton = document.getElementById('saveButton');
 
-        // Convert values to numbers for comparison
-        const mainAmountNum = parseFloat(mainAmount);
-        const lineTotalAmountNum = parseFloat(lineTotalAmount);
+        // Function to remove thousand separators and parse as float
+        function parseAmount(value) {
+            // Remove commas (thousand separators)
+            const cleanValue = value.replace(/,/g, '');
+            // Parse as float
+            return parseFloat(cleanValue);
+        }
+
+         // Convert values to numbers for comparison
+        const mainAmountNum = parseAmount(mainAmount);
+        const lineTotalAmountNum = parseAmount(lineTotalAmount);
 
         if ((mainAmountNum === lineTotalAmountNum) && !isNaN(mainAmountNum) && mainAmountNum > 0) {
+
             saveButton.disabled = false;
         } else {
+           
             saveButton.disabled = true;
         }
     }
 </script>
-    <!--Create and submit accounts-->
-    <script>
-        // Create and submit Charge Items
 
-        function submitForm(e) {
+<!--Validate Job Number-->
+<script>
+    $(document).ready(function () {
+        $('#JobNoInput').on('blur', function () {
 
-            const dtlItemsArray = [];
-            const tableRows = $("#tblContainer tbody tr");
-            var chkAmount = "";
+            var jobNo = $(this).val();
+            var jobType = $('input[name="JobType"]:checked').val();
 
-            tableRows.each(function (index) {
-                //alert("Test in tbl ROW");
-                const trRow = $(this);
-                chkAmount = trRow.find('input[name="Amount"]').val();
-                // Check if chkAmount is empty or zero
-                if (chkAmount === "" || parseFloat(chkAmount) === 0) {
-                    // chkAmount is empty or zero
-                    //console.log("chkAmount is empty or zero");
-                } else {
-                    // chkAmount is not empty and not zero
-                    const dtlItemJson = buildItemsJson(trRow, index);
-                    dtlItemsArray.push(dtlItemJson);
-                }
-            });
-            $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+            if (jobNo) {
+                $.ajax({
+                    url: '@Url.Action("ValidateJobNo", "TxnCreditNoteAccHds")',
+                    type: 'POST',
+                    data: { jobNo: jobNo, jobType: jobType },
+                    success: function (response) {
+                        if (!response.isValid) {
+                            $('#jobNoError').text(response.message);
+                            $('#jobNoSuccess').text('');
+                            $('#JobNoInput').focus();
+                        } else {
+                            $('#jobNoError').text('');
+                            $('#jobNoSuccess').text(response.message);
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+
+<!--Create and submit accounts-->
+<!--Enter key blocking from submitting / checked and "Job No" is empty / process table rows and build JSON-->
+<script>
+    // Enter key blocking from submitting
+    document.getElementById("TxnDebitNoteAccHDForm").onkeypress = function (e) {
+        preventEnterSubmit(e);
+    }
+
+    // Function Enter key blocking from submitting
+    function preventEnterSubmit(e) {
+        // Enter Key
+        if (e.which == 13) {
+            var $targ = $(e.target);
+            if (!$targ.is("textarea") && !$targ.is(":button,:submit")) {
+                e.preventDefault();
+            }
         }
-        // Json Var create
-        function buildItemsJson(trRow, id) {
-            return {
-                SerialNo: id,
-                ChargeItem: trRow.find('select[name="ChargeItemRw"]').val(),
-                Unit: trRow.find('select[name="Unit"]').val(),
-                Rate: trRow.find('input[name="Rate"]').val(),
-                Currency: trRow.find('select[name="Currency"]').val(),
-                Qty: trRow.find('input[name="Qty"]').val(),
-                Amount: trRow.find('input[name="Amount"]').val(),
-            };
+    }
+
+    // Function to validate the form before submission
+    function validateForm() {
+        const jobRelatedRadio = document.getElementById("JobRelated");
+        const jobNoInput = document.getElementById("JobNoInput");
+
+        // If "Job Related" is checked and "Job No" is empty
+        if (jobRelatedRadio.checked && jobNoInput.value.trim() === "") {
+            document.getElementById("jobNoError").textContent = "Job No is required for Job Related documents.";
+            return false;
         }
-    </script>
+
+        // Clear error message if validation passes
+        document.getElementById("jobNoError").textContent = "";
+        return true;
+    }
+
+    // Function to process table rows and build JSON
+    function submitForm(e) {
+        // Validate the form
+        if (!validateForm()) {
+            e.preventDefault(); // Prevent form submission if validation fails
+            return;
+        }
+
+        const dtlItemsArray = [];
+        const tableRows = $("#tblContainer tbody tr");
+        var chkAmount = "";
+
+        tableRows.each(function (index) {
+            const trRow = $(this);
+            chkAmount = trRow.find('input[name="Amount"]').val();
+            // Check if chkAmount is empty or zero
+            if (chkAmount === "" || parseFloat(chkAmount) === 0) {
+                // chkAmount is empty or zero
+                //console.log("chkAmount is empty or zero");
+            } else {
+                // chkAmount is not empty and not zero
+                const dtlItemJson = buildItemsJson(trRow, index);
+                dtlItemsArray.push(dtlItemJson);
+            }
+        });
+        $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+    }
+
+    // Json Var create
+    function buildItemsJson(trRow, id) {
+        return {
+            SerialNo: id,
+            LineAccNo: trRow.find('select[name="LineAccNo"]').val(),
+            ChargeItem: trRow.find('select[name="ChargeItemRw"]').val(),
+            Description: trRow.find('input[name="DescrRW"]').val(),
+            Amount: trRow.find('input[name="Amount"]').val(),
+        };
+    }
+
+    // Attach submitForm function to the form's submit event
+    document.getElementById("TxnPurchasVoucherHDForm").addEventListener("submit", submitForm);
+</script>
 
 
 

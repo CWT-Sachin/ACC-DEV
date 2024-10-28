@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using ACC_DEV.ModelsOperation;
 
-namespace ACC_DEV.ModelsOperation;
+namespace ACC_DEV.Models;
 
 [Table("Txn_InvoiceHD_Import")]
 public partial class TxnInvoiceImportHd
@@ -77,7 +78,16 @@ public partial class TxnInvoiceImportHd
     [StringLength(50)]
     public string? CreditAcc { get; set; }
 
+
+    [Column("AmountPaid", TypeName = "numeric(18, 3)")]
+    public decimal? AmountPaid { get; set; }
+
+    [Column("AmountToBePaid", TypeName = "numeric(18, 3)")]
+    public decimal? AmountToBePaid { get; set; }
+
+
     [ForeignKey("Customer")] // Assuming this is the correct foreign key property
     [InverseProperty("TxnInvoiceImportHds")]
-    public virtual RefCustomer? InvoiceImportHd { get; set; }
+    public virtual RefCustomer? CustomerInvoiceImportHd { get; set; }
+
 }

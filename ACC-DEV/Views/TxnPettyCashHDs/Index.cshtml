@@ -46,18 +46,18 @@
                 <div class="col-md-3 align-self-center text-right">
                 </div>
                 <!-- Search-->
-                @*                 <div class="col-md-4 align-self-center text-right">
-                @using (Html.BeginForm("Index", "TxnPaymentHDs", new { searchString = "" }, FormMethod.Post))
+                                 <div class="col-md-4 align-self-center text-right">
+                    @using (Html.BeginForm("Index", "TxnPettyCashHDs", new { searchString = "" }, FormMethod.Post))
                 {
                 <div class="input-group">
 
-                <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search by Payment No..." />
+                <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search by No..." />
                 <div class="input-group-append">
                 <button type="submit" class="btn btn-info"> <i class="fas fa-search-plus"></i> Go!</button>
                 </div>
                 </div>
                 }
-                </div> *@
+                </div> 
                 <!-- End Search-->
             </div>
             <div class="card">
@@ -176,10 +176,6 @@
                                                 <i class="ti-check-box"></i> Approve
                                             </a>
                                             |
-                                            <a class="btn btn-sm btn-rounded btn-warning"
-                                               asp-action="RepPrintPettyCash" asp-route-id="@item.PettyCashNo">
-                                                <i class="fa fa-print"></i> Print Petty Cash
-                                            </a>
                                             @*                                            <a class="btn btn-sm btn-rounded btn-warning"
                                         asp-action="RepPrintInvoice" asp-route-InvoiceNo="@item.PurchasVoucherNo">
                                         <i class="fa fa-print"></i> Print PurchasVoucher

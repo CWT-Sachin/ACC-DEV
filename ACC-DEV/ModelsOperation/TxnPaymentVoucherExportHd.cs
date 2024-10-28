@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using ACC_DEV.ModelsOperation;
 using Microsoft.EntityFrameworkCore;
 
-namespace ACC_DEV.Models;
+namespace ACC_DEV.ModelsOperation;
 
 [Table("Txn_PaymentVoucherHD_Export")]
 public partial class TxnPaymentVoucherExportHd

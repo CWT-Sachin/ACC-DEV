@@ -99,15 +99,20 @@ public partial class RefCustomer
     [InverseProperty("ShipperImportJobDtlNavigation")]
     public virtual ICollection<TxnImportJobDtl> TxnImportJobDtls { get; } = new List<TxnImportJobDtl>();
 
-    [InverseProperty("InvoiceHd")]
+    [InverseProperty("CustomerInvoiceExportHd")]
     public virtual ICollection<TxnInvoiceExportHd> TxnInvoiceExportHds { get; } = new List<TxnInvoiceExportHd>();
 
-    [InverseProperty("InvoiceHdAcc")] // from Accounts 
-    public virtual ICollection<TxnInvoiceHd> TxnInvoiceHds { get; } = new List<TxnInvoiceHd>();
-
-    [InverseProperty("ReciptHdAcc")] // from Accounts 
-    public virtual ICollection<TxnReceiptHD> TxnReceiptHDs { get; } = new List<TxnReceiptHD>();
-
-    [InverseProperty("InvoiceImportHd")]
+    [InverseProperty("CustomerInvoiceImportHd")]
     public virtual ICollection<TxnInvoiceImportHd> TxnInvoiceImportHds { get; } = new List<TxnInvoiceImportHd>();
+
+    //[InverseProperty("InvoiceHd")]
+    //public virtual ICollection<TxnInvoiceExportHd> TxnInvoiceExportHds { get; } = new List<TxnInvoiceExportHd>();
+
+    //[InverseProperty("InvoiceHdAcc")] // from Accounts 
+    //public virtual ICollection<TxnInvoiceHd> TxnInvoiceHds { get; } = new List<TxnInvoiceHd>();
+
+    //[InverseProperty("ReciptHdAcc")] // from Accounts 
+    //public virtual ICollection<TxnReceiptHD> TxnReceiptHDs { get; } = new List<TxnReceiptHD>();
+
+
 }

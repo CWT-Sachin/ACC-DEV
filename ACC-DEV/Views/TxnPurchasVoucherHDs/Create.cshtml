@@ -17,7 +17,7 @@
         <div class="container-fluid">
             <div class="card">
                 <div class="card-header bg-info">
-                    <h4 class="m-b-0 text-white">Purchas Voucher - Create</h4>
+                    <h4 class="m-b-0 text-white">Purchase Voucher - Create</h4>
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -88,15 +88,6 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-
-@*                                            <div class="row" id="CreditorAgent">
-                                                <div class="col-md-2">
-                                                    <label for="Agent" id="Label">Agent</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <select id="selectedAgent" name="selectedAgent" class="form-control" asp-items="ViewBag.AgentIDNomination"></select>
-                                                </div>
-                                            </div>*@
                                             <div class="row" id="CreditorShippingLine">
                                                 <div class="col-md-2">
                                                     <label for="ShippingLine" id="Label">ShippingLine</label>
@@ -105,7 +96,6 @@
                                                     <select id="selectedShippingLine" name="ShippingLine" asp-for="TxnPurchasVoucherHDMulti.FirstOrDefault().ShippingLine" class="form-control" asp-items="ViewBag.ShippingLine"></select>
                                                 </div>
                                             </div>
-
                                             <div class="row" id="CreditorSupplier">
                                                 <div class="col-md-2">
                                                     <label for="Supplier" id="Label">Supplier</label>
@@ -115,7 +105,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -138,18 +127,18 @@
                             </div>
                         </div>
                         <!-- Job Selection  -->
-                        <div class="row" id="JobSelection">
+                        <div class="row">
                             <div class="col-md-7">
-                                <div id="paymentDetails" style="border:1px solid black; padding: 10px;">
+                                <div id="JobSelection" style="border:1px solid black; padding: 10px;">
                                     <div class="row" >
                                         <div class="col-md-6">
                                              <div class="row">
                                                 <div class="col-md-4">
-                                                    <input type="radio" id="Cheque" name="JobType" value="Import" checked />
+                                                    <input type="radio" id="ImportJob" name="JobType" value="Import" checked />
                                                     <label for="Import">Import</label>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="radio" id="Cash" name="JobType" value="Export" />
+                                                    <input type="radio" id="ExportJob" name="JobType" value="Export" />
                                                     <label for="Export">Export</label>
                                                 </div>
 @*                                                <div class="col-md-4">
@@ -163,27 +152,17 @@
                                         <div class="col-md-6">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <label for="ExchangeRate" id="paymentLabel">Job No</label>
+                                                    <label for="ExchangeRate">Job No</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <input type="text" asp-for="TxnPurchasVoucherHDMulti.FirstOrDefault().JobNo" class="form-control" value="" />
+                                                    <input type="text" id="JobNoInput"  asp-for="TxnPurchasVoucherHDMulti.FirstOrDefault().JobNo" class="form-control" value="" on />
                                                     <span asp-validation-for="TxnPurchasVoucherHDMulti.FirstOrDefault().JobNo" class="text-danger"></span>
                                                 </div>
                                             </div>
                                         </div>
-@*                                        <div class="col-md-6">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <label for="ExchangeRate" id="paymentLabel">B/L</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <input type="text" asp-for="TxnPaymentHdMulti.FirstOrDefault().ChequeNo" class="form-control" value="" />
-                                                    <span asp-validation-for="TxnPaymentHdMulti.FirstOrDefault().ChequeNo" class="text-danger"></span>
-                                                </div>
-                                            </div>
-                                        </div>*@
                                     </div>
-
+                                    <span id="jobNoError" class="text-danger"></span>
+                                    <span id="jobNoSuccess" class="text-info"></span>
                                     <div class="row">
 
 
@@ -195,7 +174,7 @@
 
                         <br />
                         <br />
-
+                        <!--Main Accoun And narration -->
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="row">
@@ -484,40 +463,115 @@
     }
 </script>
     <!--Create and submit accounts-->
-    <script>
-        // Create and submit Charge Items
 
-        function submitForm(e) {
 
-            const dtlItemsArray = [];
-            const tableRows = $("#tblContainer tbody tr");
-            var chkAmount = "";
+<!--Validate Job Number-->
+<script>
+    $(document).ready(function () {
+        $('#JobNoInput').on('blur', function () {
+          
+            var jobNo = $(this).val();
+            var jobType = $('input[name="JobType"]:checked').val();
 
-            tableRows.each(function (index) {
-                //alert("Test in tbl ROW");
-                const trRow = $(this);
-                chkAmount = trRow.find('input[name="Amount"]').val();
-                // Check if chkAmount is empty or zero
-                if (chkAmount === "" || parseFloat(chkAmount) === 0) {
-                    // chkAmount is empty or zero
-                    //console.log("chkAmount is empty or zero");
-                } else {
-                    // chkAmount is not empty and not zero
-                    const dtlItemJson = buildItemsJson(trRow, index);
-                    dtlItemsArray.push(dtlItemJson);
-                }
-            });
-            $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+            
+            if (jobNo) {
+                $.ajax({
+                    url: '@Url.Action("ValidateJobNo", "TxnPurchasVoucherHDs")',
+                    type: 'POST',
+                    data: { jobNo: jobNo, jobType: jobType },
+                    success: function (response) {
+                        if (!response.isValid) {
+                            $('#jobNoError').text(response.message);
+                            $('#jobNoSuccess').text('');
+                            $('#JobNoInput').focus();
+                        } else {
+                            $('#jobNoError').text('');
+                            $('#jobNoSuccess').text(response.message);
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+
+    <!--88888888888888888888888888-->
+<!--Enter key blocking from submitting-->
+<!--Enter key blocking from submitting / checked and "Job No" is empty / process table rows and build JSON-->
+<script>
+    // Enter key blocking from submitting
+    document.getElementById("TxnPurchasVoucherHDForm").onkeypress = function (e) {
+        preventEnterSubmit(e);
+    }
+
+    // Function Enter key blocking from submitting
+    function preventEnterSubmit(e) {
+        // Enter Key
+        if (e.which == 13) {
+            var $targ = $(e.target);
+            if (!$targ.is("textarea") && !$targ.is(":button,:submit")) {
+                e.preventDefault();
+            }
         }
-        // Json Var create
-        function buildItemsJson(trRow, id) {
-            return {
-                SerialNo: id,
-                LineAccNo: trRow.find('select[name="LineAccNo"]').val(),
-                Description: trRow.find('input[name="DescrRW"]').val(),
-                Amount: trRow.find('input[name="Amount"]').val(),
-            };
-        }
-    </script>
+    }
 
+    // Function to validate the form before submission
+    function validateForm() {
+        const jobRelatedRadio = document.getElementById("JobRelated");
+        const jobNoInput = document.getElementById("JobNoInput");
+
+        // If "Job Related" is checked and "Job No" is empty
+        if (jobRelatedRadio.checked && jobNoInput.value.trim() === "") {
+            document.getElementById("jobNoError").textContent = "Job No is required for Job Related documents.";
+            return false;
+        }
+
+        // Clear error message if validation passes
+        document.getElementById("jobNoError").textContent = "";
+        return true;
+    }
+
+    // Function to process table rows and build JSON
+    function submitForm(e) {
+        // Validate the form
+        if (!validateForm()) {
+            e.preventDefault(); // Prevent form submission if validation fails
+            return;
+        }
+
+        const dtlItemsArray = [];
+        const tableRows = $("#tblContainer tbody tr");
+        var chkAmount = "";
+
+        tableRows.each(function (index) {
+            const trRow = $(this);
+            chkAmount = trRow.find('input[name="Amount"]').val();
+            // Check if chkAmount is empty or zero
+            if (chkAmount === "" || parseFloat(chkAmount) === 0) {
+                // chkAmount is empty or zero
+                //console.log("chkAmount is empty or zero");
+            } else {
+                // chkAmount is not empty and not zero
+                const dtlItemJson = buildItemsJson(trRow, index);
+                dtlItemsArray.push(dtlItemJson);
+            }
+        });
+        $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
+    }
+
+    // Json Var create
+    function buildItemsJson(trRow, id) {
+        return {
+            SerialNo: id,
+            LineAccNo: trRow.find('select[name="LineAccNo"]').val(),
+            Description: trRow.find('input[name="DescrRW"]').val(),
+            Amount: trRow.find('input[name="Amount"]').val(),
+        };
+    }
+
+    // Attach submitForm function to the form's submit event
+    document.getElementById("TxnPurchasVoucherHDForm").addEventListener("submit", submitForm);
+</script>
 

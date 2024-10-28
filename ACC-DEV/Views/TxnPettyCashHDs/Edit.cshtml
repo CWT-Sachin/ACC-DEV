@@ -1,31 +1,9 @@
 ﻿@model ACC_DEV.ViewModel.TxnPettyCashViewModel
 @{
-    ViewData["Title"] = "Payment";
+    ViewData["Title"] = "PettyCash";
 
 }
-<style>
-    .d-flex {
-        display: flex;
-    }
 
-    .align-items-center {
-        align-items: center;
-    }
-
-    .ml-4 {
-        margin-left: 50.5rem; /* Adjust as needed for more or less space */
-    }
-
-    .ml-3 {
-        margin-left: 20rem; /* Add more space if necessary */
-    }
-
-    #paymentLabel {
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-</style>
 <!-- ============================================================== -->
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
@@ -40,13 +18,13 @@
         <div class="container-fluid">
             <div class="card">
                 <div class="card-header bg-info">
-                    <h4 class="m-b-0 text-white">Petty Cash - Create</h4>
+                    <h4 class="m-b-0 text-white">Petty Cash - EDIT</h4>
                 </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
                             <h3>
-                                Petty Cash
+                                Petty Cash 
                             </h3>
                         </div>
                         <div class="col-md-6"></div>
@@ -54,66 +32,73 @@
                     <br />
                     <div class="row">
                         <div class="col-md-9">
-
                         </div>
                     </div>
+                    <br /> 
                     <br />
-                    <br />
-                    <form asp-action="Create" asp-controller="TxnPettyCashHDs" id="TxnPettyCashHDForm">
-                       @* <form asp-action="Create" asp-controller="TxnPettyCashHDs" id="TxnPettyCashHDForm">*@
-                        <!-- Hidden field to store selected items -->
+                    <form asp-action="Edit" asp-controller="TxnPettyCashHDs" id="TxnPurchasVoucherHDForm">
+                        @* <form asp-action="Create" asp-controller="TxnPurchasVoucherHDs" id="TxnPurchasVoucherHDForm">*@
                         <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
+                        <input type="hidden" asp-for="TxnPettyCashHDMulti.FirstOrDefault().PettyCashNo" />
+                        <input type="hidden" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Approved" />
+                        <input type="hidden" asp-for="TxnPettyCashHDMulti.FirstOrDefault().CreatedBy" />
+                        <input type="hidden" asp-for="TxnPettyCashHDMulti.FirstOrDefault().CreatedDateTime" />
+                        <input type="hidden" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Canceled" />
+                        <input type="hidden" asp-for="TxnPettyCashHDMulti.FirstOrDefault().TotAmtWord" /> 
                         <div class="row">
-
-                            <div class="col-md-4"> 
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="Job No">Petty Cash No.</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span id="jobno">
+                                            <b>  @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().PettyCashNo) </b>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <label for="Exchange Rate">Date</label>
                                     </div>
                                     <div class="col-md-8">
-                                        <input type="date" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Date" class="form-control" value="Date" />
+                                        <input type="date" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Date" class="form-control"  asp-format="{0:yyyy-MM-dd}" />
                                         <span asp-validation-for="TxnPettyCashHDMulti.FirstOrDefault().Date" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                         <br />
-
                         <br />
-                        <br />
-
+                        <!--Select Supplier /Creditor-->
                         <div class="row">
                             <div class="col-md-9">
                                 <div id="paymentvocherDetails" style="border: 1px solid black; padding: 10px;">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            @using (Html.BeginForm("Create", "TxnPaymentHDs", new { searchString = "" }, FormMethod.Get))
-                                            {
-                                                    <div class="input-group">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="searchType" id="searchBySuppliers/Creditors" value="Suppliers/Creditors" checked>
-                                                            <label class="form-check-label" for="searchBySuppliers/Creditors">Suppliers / Creditors</label>
-                                                        </div>
-                                                    </div>
+                                            <div class="input-group">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="searchType" id="searchBySuppliers/Creditors" value="Suppliers/Creditors" checked>
+                                                    <label class="form-check-label" for="searchBySuppliers/Creditors">Suppliers / Creditors</label>
+                                                </div>
+                                            </div>
 
+                                            <div class="row">
+                                                <div class="col-md-6">
                                                     <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="row">
-                                                                <div class="col-md-4">
-                                                                    <label for="ExchangeRate" id="paymentLabel">Suppliers/Creditors</label>
-                                                                </div>
-                                                                <div class="col-md-8">
-                                                                <select id="Supplier" name="Supplier" class="form-control" asp-items="ViewBag.Suppliers"></select>
-                                                                    <span class="text-danger"></span>
-                                                                </div>
-                                                            </div>
+                                                        <div class="col-md-4">
+                                                            <label for="ExchangeRate" id="paymentLabel">Suppliers/Creditors</label>
                                                         </div>
-
+                                                        <div class="col-md-8">
+                                                            <select id="Supplier" name="Supplier" class="form-control" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Supplier"  asp-items="ViewBag.Suppliers"></select>
+                                                            <span class="text-danger"></span>
+                                                        </div>
                                                     </div>
-                                            }
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                     <br>
@@ -121,20 +106,18 @@
                             </div>
                         </div>
                         <br />
-
-
                         <br />
-                        <br />
+                        <!--Job Selction-->
                         <div class="row">
                             <div class="col-md-2">
-                                <input type="radio" id="JobRelated" name="DocType" value="PurchasVRelated" checked />
-                                <label for="Cash">PurchasV Related</label>
+                                <input type="radio" id="JobRelated" name="DocType" value="PurchasVRelated" @(Model.TxnPettyCashHDMulti.FirstOrDefault()?.DocType == "PurchasVRelated" ? "checked" : "") />
+                                <label for="JobRelated">PurchasV Related</label>
                             </div>
                             <div class="col-md-4">
-                                <input type="radio" id="Other" name="DocType" value="Other" />
-                                <label for="Cheque">Other</label>
+                                <input type="radio" id="Other" name="DocType" value="Other" @(Model.TxnPettyCashHDMulti.FirstOrDefault()?.DocType == "Other" ? "checked" : "") />
+                                <label for="Other">Other</label>
                             </div>
-                         </div>
+                        </div>
 
                         <br />
                         <br />
@@ -142,18 +125,18 @@
                             <div class="col-md-10">
                                 <div class="row" id="JobSelection" style="border: 1px solid black; padding: 10px;">
                                     <div class="row">
-                                        <div class="col-md-5" >
+                                        <div class="col-md-5">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <input type="radio" id="ImportJob" name="JobType" value="Import" checked />
-                                                    <label for="Import">Import</label>
+                                                    <input type="radio" id="ImportJob" name="VoucherType" value="Import" @(Model.TxnPettyCashHDMulti.FirstOrDefault()?.VoucherType == "Import" ? "checked" : "checked") />
+                                                    <label for="ImportJob">Import</label>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="radio" id="ExportJob" name="JobType" value="Export" />
-                                                    <label for="Export">Export</label>
+                                                    <input type="radio" id="ExportJob" name="VoucherType" value="Export" @(Model.TxnPettyCashHDMulti.FirstOrDefault()?.VoucherType == "Export" ? "checked" : "") />
+                                                    <label for="ExportJob">Export</label>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="radio" id="Additional" name="JobType" value="Additional" />
+                                                    <input type="radio" id="Additional" name="VoucherType" value="Additional" @(Model.TxnPettyCashHDMulti.FirstOrDefault()?.VoucherType == "Additional" ? "checked" : "") />
                                                     <label for="Additional">Additional</label>
                                                 </div>
                                             </div>
@@ -163,8 +146,8 @@
                                                         <label for="ExchangeRate">PV Number</label>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input type="text" id="JobNoInput" asp-for="TxnPettyCashHDMulti.FirstOrDefault().VoucherNo" class="form-control" value="" on />
-                                                        <span asp-validation-for="TxnPettyCashHDMulti.FirstOrDefault().VoucherNo" class="text-danger"></span>
+                                                        <input type="text" id="JobNoInput" asp-for="TxnPettyCashHDMulti.FirstOrDefault().VoucherNo" class="form-control">
+                                                        <span asp-validation-for="TxnPettyCashHDMulti.FirstOrDefault().VoucherType" class="text-danger"></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -172,13 +155,13 @@
                                             <span id="jobNoSuccess" class="text-info"></span>
                                         </div>
                                         <div class="col-md-7" style="background-color:lightgray">
-                                             <br />
-                                             <div class="row">
+                                            <br />
+                                            <div class="row">
                                                 <div class="col-md-2">
                                                     <label for="ExchangeRate" id="">Supplier/Creditor</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <input type="text" id="CreditorName" asp-for="TxnPettyCashHDMulti.FirstOrDefault().CreditorName" class="form-control"  readonly/>
+                                                    <input type="text" id="CreditorName" asp-for="TxnPettyCashHDMulti.FirstOrDefault().CreditorName" class="form-control" readonly />
                                                 </div>
                                             </div>
                                             <br />
@@ -216,12 +199,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                               
+
                                             </div>
                                             <br>
                                         </div>
-                                     </div>
-                                   
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -244,7 +227,7 @@
                                         <label for="ExchangeRate" id="paymentLabel">Narration</label>
                                     </div>
                                     <div class="col-md-10">
-                                        <input type="text" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Narration" class="form-control" value="" />
+                                        <input type="text" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Narration" class="form-control" />
                                         <span asp-validation-for="TxnPettyCashHDMulti.FirstOrDefault().Narration" class="text-danger"></span>
                                     </div>
                                 </div>
@@ -256,14 +239,14 @@
                                         <label for="ExchangeRate" id="paymentLabel">Amount LKR</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" id="MainAmount" asp-for="TxnPettyCashHDMulti.FirstOrDefault().MainAccAmount" class="form-control" value="" oninput="checkAmounts()" />
+                                        <input type="text" id="MainAmount" asp-for="TxnPettyCashHDMulti.FirstOrDefault().MainAccAmount" class="form-control"  oninput="checkAmounts()" />
                                         <span asp-validation-for="TxnPettyCashHDMulti.FirstOrDefault().MainAccAmount" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-
+                        <br />
                         <!--Table for Charge Items --><br />
                         <div class="row">
                             <div class="col-md-12">
@@ -283,6 +266,20 @@
                                                 <td> <input type="text" id="Amount" name="Amount" value="" class="form-control" style="text-align: right;"></td>
                                                 <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td>
                                             </tr>
+
+                                            @{
+                                                var i = 0;
+                                                @foreach (var item in Model.TxnPettyCashDtlMulti)
+                                                {
+                                                    i++;
+                                                    <tr id="tablerow_@i">
+                                                        <td style="width:30%;">  <select id="LineAccNo" name="LineAccNo" class="form-control" asp-for="@item.LineAccNo" value="@item.LineAccNo" asp-items="ViewBag.AccountsCodes"></select> </td>
+                                                        <td style="width:40%;"> <input type="text" id="DescrRW" name="DescrRW" asp-for="@item.Description" value="@item.Description" class="form-control"></input> </td>
+                                                        <td> <input type="text" id="Amount" name="Amount" class="form-control" asp-for="@item.Amount" value="@item.Amount" style="text-align: right;"></td>
+                                                        <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(@i)" /></td>
+                                                    </tr>
+                                                }
+                                            }
                                         </tbody>
                                     </table>
                                 </div>
@@ -309,34 +306,31 @@
                                         <input type="text" id="LineTotalAmount" asp-for="TxnPettyCashHDMulti.FirstOrDefault().TotalAmountLKR" class="form-control" style="text-align: right; font-weight:bold" readonly />
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="col-md-1"></div>
                         </div>
                         <br />
                         <br />
-
                         <!--Remarks Textbox-->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group row">
                                     <h6 class="box-title">Remarks</h6>
                                     <div class="col-md-12">
-                                        <textarea  class="form-control" name="Remarks" type="text" placeholder="Type here your Remarks" rows="5"> </textarea>
+                                        <textarea class="form-control" name="Remarks" type="text" asp-for="TxnPettyCashHDMulti.FirstOrDefault().Remarks"  placeholder="Type here your Remarks" rows="5"> </textarea>
                                         @* <input asp-for="BLTypeID" class="form-control" />*@
-                                        <span  class="text-danger"></span>
+                                        <span class="text-danger"></span>
 
                                     </div>
                                 </div>
                             </div>
 
                         </div><br />
-
                         <!--Save Button-->
                         <div class="row">
                             <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
-@*                            <input type="hidden" id="customerType" name="customerType" value="@ViewBag.CustomerType" />
-*@
+
                             <!--Save Button-->
                             <div class="form-group">
                                 <input type="submit" id="saveButton" value="Save" onclick="submitForm(this)" class="btn btn-primary" />
@@ -344,10 +338,9 @@
                         </div>
                     </form>
                 </div>
-
-            </div>
-            <div>
-                <a asp-action="Index">Back to List</a>
+                <div>
+                    <a asp-action="Index">Back to List</a>
+                </div>
             </div>
         </div>
     </div>
@@ -378,6 +371,64 @@
 
         // Initial check
         toggleJobSelection();
+    });
+</script>
+
+<!--Validate Job Number-->
+<script>
+    $(document).ready(function () {
+        $('#JobNoInput').on('blur', function () {
+
+            var jobNo = $(this).val();
+            var jobType = $('input[name="VoucherType"]:checked').val();
+
+
+            if (jobNo) {
+                $.ajax({
+                    url: '@Url.Action("ValidatePVNo", "TxnPettyCashHDs")',
+                    type: 'POST',
+                    data: { jobNo: jobNo, jobType: jobType },
+                    success: function (response) {
+                        if (!response.isValid) {
+                            $('#jobNoError').text(response.message);
+                            $('#jobNoSuccess').text('');
+                            $('#JobNoInput').focus();
+                            $('#TotalAmt').val(0);
+                            $('#PaidAmt').val(0);
+                            $('#BalanceAmt').val(0);
+                            $('#MainAmount').val(0);
+                            $('#CreditorName').val("");
+                        } else {
+                            $('#jobNoError').text('');
+                            $('#jobNoSuccess').text(response.message);
+                            $('#TotalAmt').val(response.totalAmt);
+                            $('#PaidAmt').val(response.amountPaid);
+                            $('#BalanceAmt').val(response.amountToBePaid);
+
+                            //  response.amountToBePaid is the string with thousand separators
+                            var amountToBePaid = response.amountToBePaid;
+
+                            // Remove thousand separators (assuming comma as thousand separator)
+                            amountToBePaid = amountToBePaid.replace(/,/g, '');
+
+                            // Convert the string to a number
+                            var amountNumber = parseFloat(amountToBePaid);
+
+                            // Format the number to two decimal places
+                            var formattedAmount = amountNumber.toFixed(2);
+
+                            // Set the value in the input field
+                            $('#MainAmount').val(formattedAmount);
+                            //$('#MainAmount').val(response.amountToBePaid);
+                            $('#CreditorName').val(response.creditorName);
+
+                            checkAmounts(); // Check save button acive /Inactive Added by Nish
+                        }
+                    }
+                });
+            }
+            
+        });
     });
 </script>
 
@@ -473,47 +524,6 @@
     }
 </script>
 
-
-
-<!--Validate Job Number-->
-<script>
-    $(document).ready(function () {
-        $('#JobNoInput').on('blur', function () {
-
-            var jobNo = $(this).val();
-            var jobType = $('input[name="JobType"]:checked').val();
-
-
-            if (jobNo) {
-                $.ajax({
-                    url: '@Url.Action("ValidatePVNo", "TxnPettyCashHDs")',
-                    type: 'POST',
-                    data: { jobNo: jobNo, jobType: jobType },
-                    success: function (response) {
-                        if (!response.isValid) {
-                            $('#jobNoError').text(response.message);
-                            $('#jobNoSuccess').text('');
-                            $('#JobNoInput').focus();
-                            $('#TotalAmt').val(0);
-                            $('#PaidAmt').val(0);
-                            $('#BalanceAmt').val(0);
-                            $('#CreditorName').val("");
-                        } else {
-                            $('#jobNoError').text('');
-                            $('#jobNoSuccess').text(response.message);
-                            $('#TotalAmt').val(response.totalAmt);
-                            $('#PaidAmt').val(response.amountPaid);
-                            $('#BalanceAmt').val(response.amountToBePaid);
-                            $('#CreditorName').val(response.creditorName);
-                            
-                        }
-                    }
-                });
-            }
-        });
-    });
-</script>
-
 <!--Enter key blocking from submitting-->
 <!--Enter key blocking from submitting / checked and "Job No" is empty / process table rows and build JSON-->
 <script>
@@ -535,12 +545,12 @@
 
     // Function to validate the form before submission
     function validateForm() {
-        alert("Test Validate");
         const jobRelatedRadio = document.getElementById("JobRelated");
         const jobNoInput = document.getElementById("JobNoInput");
 
         // If "Job Related" is checked and "Job No" is empty
         if (jobRelatedRadio.checked && jobNoInput.value.trim() === "") {
+
             document.getElementById("jobNoError").textContent = "Job No is required for Job Related documents.";
             return false;
         }
@@ -552,18 +562,18 @@
 
     // Function to process table rows and build JSON
     function submitForm(e) {
-        // Validate the form
-        //if (!validateForm()) {
-        //    e.preventDefault(); // Prevent form submission if validation fails
-        //    return;
-        //}
-        alert("Test");
+        //Validate the form
+        if (!validateForm()) {
+            e.preventDefault(); // Prevent form submission if validation fails
+            return;
+        }
+
         const dtlItemsArray = [];
         const tableRows = $("#tblContainer tbody tr");
         var chkAmount = "";
-        alert("Test 2");
+
         tableRows.each(function (index) {
-            alert("Test 3");
+
             const trRow = $(this);
             chkAmount = trRow.find('input[name="Amount"]').val();
             // Check if chkAmount is empty or zero
@@ -577,7 +587,7 @@
             }
         });
         $("#dtlItemsList").val(JSON.stringify(dtlItemsArray));
-        alert("Test 4");
+
     }
 
     // Json Var create

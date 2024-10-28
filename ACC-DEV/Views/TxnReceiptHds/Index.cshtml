@@ -1,5 +1,4 @@
-﻿@model IEnumerable<ACC_DEV.Models.TxnReceiptHD>
-
+﻿@model ACC_DEV.ViewModel.TxnReceiptViewModel
 @{
     ViewData["Title"] = "Index";
     Pager pager = new Pager();
@@ -23,7 +22,6 @@
         <!-- Container fluid  -->
         <!-- ============================================================== -->
         <div class="container-fluid">
-
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
                     <h4 class="text-themecolor">Transactions</h4>
@@ -32,9 +30,9 @@
                     <div class="d-flex justify-content-end align-items-center">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Master Reference</li>
+                            <li class="breadcrumb-item active">Transactions</li>
                         </ol>
-                        <button type="button" onclick="location.href='@Url.Action("Create", "TxnReceiptHds")'" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New Receipt</button>
+                        <button type="button" onclick="location.href='@Url.Action("Create", "TxnReceiptHDs")'" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New Receipt</button>
                     </div>
                 </div>
             </div>
@@ -46,11 +44,11 @@
                 </div>
                 <!-- Search-->
                 <div class="col-md-4 align-self-center text-right">
-                    @using (Html.BeginForm("Index", "TxnReceiptHds", new { searchString = "" }, FormMethod.Post))
+                    @using (Html.BeginForm("Index", "TxnReceiptHDs", new { searchString = "" }, FormMethod.Post))
                     {
                         <div class="input-group">
 
-                            <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search by Receipt No..." />
+                            <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search by No..." />
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-info"> <i class="fas fa-search-plus"></i> Go!</button>
                             </div>
@@ -67,41 +65,88 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        @Html.DisplayNameFor(model => model.ReceiptNo)
+                                        Receipt No
                                     </th>
                                     <th>
-                                        @Html.DisplayNameFor(model => model.Date)
+                                        Date
                                     </th>
                                     <th>
-                                        @Html.DisplayNameFor(model => model.CustomerID)
+                                        Customer/Agent/Supplier
                                     </th>
                                     <th>
-                                        @Html.DisplayNameFor(model => model.ReceiptType)
+                                        Cheque No
+                                    </th>
+                                    <th>
+                                        Pay method
+                                    </th>
+                                    <th>
+                                        Receipt Total Amount
+                                    </th>
+                                    <th>
+                                       Approved
+                                    </th>
+                                    <th>
+                                        Canceled
                                     </th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model)
+                                @foreach (var item in Model.TxnReceiptHdMulti)
                                 {
                                     <tr>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.ReceiptNo)
                                         </td>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.Date)
                                         </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.CustomerID)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.ReceiptType)
-                                        </td>
+                                        <td nowrap=""  style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @if (item.CustomerType == "Agent")
+                                            {
+                                                @Html.DisplayFor(modelItem => item.RefAgentNavigation.AgentName)
+                                            }
+                                            else if (item.CustomerType == "Customer")
+                                            {
+                                                @Html.DisplayFor(modelItem => item.RefCustomerNavigation.Name)
+                                            }
 
-                                        <td nowrap="">
-                                            <a class="btn btn-sm btn-rounded btn-primary" asp-action="Edit" asp-route-id="@item.ReceiptNo"><i class="fa fa-edit"></i> Edit</a> |
-                                            <a class="btn btn-sm btn-rounded btn-success" asp-action="Details" asp-route-id="@item.ReceiptNo"><i class="fa  ti-view-list-alt"></i> Details</a> |
-                                            <a class="btn btn-sm btn-rounded btn-warning" asp-action="RepPrintInvoice" asp-route-InvoiceNo="@item.ReceiptNo"><i class="fa  fa-print"></i> Print Receipt</a>
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.ChequeNo)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.PaymentMethod)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.ReceiptTotalAmt)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.Approved)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.Canceled)
+                                        </td>
+                                        <td nowrap="" style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @{
+                                                bool isEditEnabled = item.Approved == false;
+                                            }
+
+                                            <a class="btn btn-sm btn-rounded btn-primary@(isEditEnabled ? "" : " disabled")"
+                                           asp-action="Edit" asp-route-id="@item.ReceiptNo">
+                                                <i class="fa fa-edit"></i> Edit
+                                            </a> |
+
+                                            <a class="btn btn-sm btn-rounded btn-success"
+                                           asp-action="Details" asp-route-id="@item.ReceiptNo">
+                                                <i class="fa ti-view-list-alt"></i> Details
+                                            </a> |
+                                            <a class="btn btn-sm btn-rounded btn-danger@(isEditEnabled ? "" : " disabled")"
+                                           asp-action="Approve" asp-route-id="@item.ReceiptNo">
+                                                <i class="ti-check-box"></i> Approve
+                                            </a>
+                                            |
+                                            <a class="btn btn-sm btn-rounded btn-warning" asp-action="RepPrintReceipt" asp-route-ReceiptNo="@item.ReceiptNo"><i class="fa  fa-print"></i> Print Reciept</a>
                                         </td>
                                     </tr>
                                 }
@@ -113,17 +158,17 @@
             <div class="container">
                 @if (pager.TotalPages > 0)
                 {
-                    <ul class="pagination justify-content-end">
+                        <ul class="pagination justify-content-end">
                         @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
                         {
-                            <li class="page-item @(pge == pager.CurrentPage ? "active" : "")">
-                                <a class="page-link" aps-controller="RefPorts" asp-action="Index" asp-route-pg="@pge"> @pge </a>
-                            </li>
+                                    <li class="page-item @(pge == pager.CurrentPage ? "active" : "")">
+                                        <a class="page-link" aps-controller="RefPorts" asp-action="Index" asp-route-pg="@pge"> @pge </a>
+                                    </li>
                         }
-                    </ul>
-                    <ul class="pagination justify-content-end">
-                        <p> Page @(pager.TotalPages < pager.CurrentPage ? 0 : pager.CurrentPage) of @pager.TotalPages </p>
-                    </ul>
+                        </ul>
+                        <ul class="pagination justify-content-end">
+                            <p> Page @(pager.TotalPages < pager.CurrentPage ? 0 : pager.CurrentPage) of @pager.TotalPages </p>
+                        </ul>
                 }
             </div>
         </div>

@@ -53,7 +53,8 @@ public partial class FtlcolombOperationContext : DbContext
 
     public virtual DbSet<RefCountry> RefCountries { get; set; }
 
-    
+    public virtual DbSet<RefChargeItemAcc> RefChargeItemAccs { get; set; }
+
 
     //public virtual DbSet<RefLastNumber> RefLastNumbers { get; set; }
     public virtual DbSet<TxnBookingExp> TxnBookingExps { get; set; }
@@ -78,7 +79,16 @@ public partial class FtlcolombOperationContext : DbContext
 
     public virtual DbSet<TxnPaymentVoucherExportHd> TxnPaymentVoucherExportHds { get; set; }
 
+    public virtual DbSet<TxnCreditNoteExportHd> TxnCreditNoteExportHds { get; set; }
+    public virtual DbSet<TxnCreditNoteImportHd> TxnCreditNoteImportHds { get; set; }
 
+    public virtual DbSet<TxnDebitNoteExportDtl> TxnDebitNoteExportDtls { get; set; }
+    public virtual DbSet<TxnDebitNoteExportHd> TxnDebitNoteExportHds { get; set; }
+    public virtual DbSet<TxnDebitNoteImportDtl> TxnDebitNoteImportDtls { get; set; }
+    public virtual DbSet<TxnDebitNoteImportHd> TxnDebitNoteImportHds { get; set; }
+
+    public virtual DbSet<TxnInvoiceExportHd> TxnInvoiceExportHds { get; set; }
+    public virtual DbSet<TxnInvoiceImportHd> TxnInvoiceImportHds { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("name=operationConstring");
@@ -87,19 +97,19 @@ public partial class FtlcolombOperationContext : DbContext
     {
 
 
-        modelBuilder.Entity<TxnInvoiceExportHd>(entity =>
-        {
-            entity.HasOne(d => d.InvoiceHd).WithMany(p => p.TxnInvoiceExportHds).HasConstraintName("FK_Txn_InvoiceHD_Export_Ref_Customer");
-        });
-        modelBuilder.Entity<TxnReceiptHD>(entity =>
-        {
-            entity.HasOne(d => d.ReciptHdAcc).WithMany(p => p.TxnReceiptHDs).HasConstraintName("FK_Txn_ReceiptHD_Ref_Customer");
-        });
+        //modelBuilder.Entity<TxnInvoiceExportHd>(entity =>
+        //{
+        //    entity.HasOne(d => d.InvoiceHd).WithMany(p => p.TxnInvoiceExportHds).HasConstraintName("FK_Txn_InvoiceHD_Export_Ref_Customer");
+        //});
+        //modelBuilder.Entity<TxnReceiptHD>(entity =>
+        //{
+        //    entity.HasOne(d => d.ReciptHdAcc).WithMany(p => p.TxnReceiptHDs).HasConstraintName("FK_Txn_ReceiptHD_Ref_Customer");
+        //});
 
-        modelBuilder.Entity<TxnInvoiceImportHd>(entity =>
-        {
-            entity.HasOne(d => d.InvoiceImportHd).WithMany(p => p.TxnInvoiceImportHds).HasConstraintName("FK_Txn_InvoiceHD_Import_Ref_Customer");
-        });
+        //modelBuilder.Entity<TxnInvoiceImportHd>(entity =>
+        //{
+        //    entity.HasOne(d => d.InvoiceImportHd).WithMany(p => p.TxnInvoiceImportHds).HasConstraintName("FK_Txn_InvoiceHD_Import_Ref_Customer");
+        //});
 
 
 

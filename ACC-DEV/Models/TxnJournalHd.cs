@@ -55,4 +55,11 @@ public class TxnJournalHd
 
     [StringLength(500)]
     public string? CanceledReason { get; set; }
+
+    public bool Approved { get; set; }
+
+    [StringLength(20)]
+    public string? ApprovedBy { get; set; }
+
+    public DateTime? ApprovedDateTime { get; set; }
 }

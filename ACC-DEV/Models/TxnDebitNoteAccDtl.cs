@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ACC_DEV.Models
 {
+    [PrimaryKey("DebitNoteNo", "SerialNo")]
     [Table("Txn_DebitNoteAccDtl")]
     public class TxnDebitNoteAccDtl
     {
@@ -25,7 +26,7 @@ namespace ACC_DEV.Models
         public string ChargeItem { get; set; }
 
         [StringLength(500)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         public decimal Amount { get; set; }
 

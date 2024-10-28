@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ACC_DEV.Models;
+using ACC_DEV.ModelsOperation;
 using ACC_DEV.ViewModel;
 using Newtonsoft.Json;
 using ACC_DEV.Data;
@@ -13,7 +14,6 @@ using ACC_DEV.DataOperation;
 using ACC_DEV.CommonMethods;
 using Microsoft.Identity.Client;
 using System.Data;
-using ACC_DEV.Models;
 
 
 namespace ACC_DEV.Views
@@ -216,11 +216,25 @@ namespace ACC_DEV.Views
 
         public async Task<IActionResult> Index(string searchString, string searchType, int pg = 1)
         {
-            var txnPettyCashHDs = await _context.TxnPettyCashHDs.OrderByDescending(p => p.PettyCashNo).ToListAsync();
-            
-        
-              
-            return View(txnPettyCashHDs);
+            var txnPettyCashHDs = await _context.TxnPettyCashHDs.Include(t => t.SupplierPettyNavigation)
+                .OrderByDescending(p => p.PettyCashNo).ToListAsync();
+
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                txnPettyCashHDs = txnPettyCashHDs.Where(t => t.PettyCashNo.Contains(searchString)).OrderByDescending(t => t.PettyCashNo).ToList();
+            }
+
+            const int pageSize = 7;
+            if (pg < 1)
+                pg = 1;
+            int recsCount = txnPettyCashHDs.Count();
+            var pager = new Pager(recsCount, pg, pageSize);
+            int recSkip = (pg - 1) * pageSize;
+            var data = txnPettyCashHDs.Skip(recSkip).Take(pager.PageSize).ToList();
+
+            this.ViewBag.Pager = pager;
+            return View(data);
         }
 
 
@@ -245,7 +259,7 @@ namespace ACC_DEV.Views
             ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
 
             ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
-            ViewData["RefBankList"] = new SelectList(_context.Set<Ref_BankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
             ViewData["AccountsCodes"] = new SelectList(
                                                _context.Set<RefChartOfAcc>()
                                                    .Where(a => a.IsInactive.Equals(false))
@@ -368,7 +382,7 @@ namespace ACC_DEV.Views
             ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
 
             ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
-            ViewData["RefBankList"] = new SelectList(_context.Set<Ref_BankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
             ViewData["AccountsCodes"] = new SelectList(
                                                _context.Set<RefChartOfAcc>()
                                                    .Where(a => a.IsInactive.Equals(false))
@@ -389,29 +403,6 @@ namespace ACC_DEV.Views
                                  IsActive = a.IsActive
                              }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
             return View(tables);
-        }
-
-        public async Task<IActionResult> RepPrintPettyCash(string id)
-        {
-            if (id == null || _context.TxnPettyCashHDs == null)
-            {
-                return NotFound();
-            }
-
-            var txnPettyCashHD = await _context.TxnPettyCashHDs.FindAsync(id);
-            if (txnPettyCashHD == null)
-            {
-                return NotFound();
-            }
-
-            var tables = new TxnPettyCashViewModel
-            {
-                TxnPettyCashHDMulti = _context.TxnPettyCashHDs.Where(t => t.PettyCashNo == id),
-                TxnPettyCashDtlMulti = _context.TxnPettyCashDtls.Where(t => t.PettyCashNo == id),
-            };
-
-            return View(tables);
-
         }
 
         public async Task<IActionResult> Approve(string id)
@@ -501,8 +492,8 @@ namespace ACC_DEV.Views
                 NewRowAccTxnFirst.CreatedDateTime = DateTime.Now;
                 NewRowAccTxnFirst.Canceled = false;
 
-                //NewRowAccTxnFirst.JobNo = txnPettyCashHD.VoucherNo;
-                //NewRowAccTxnFirst.JobType = txnPettyCashHD.DocType;
+                NewRowAccTxnFirst.JobNo = txnPettyCashHD.VoucherNo;
+                NewRowAccTxnFirst.JobType = txnPettyCashHD.DocType;
 
                 _context.TxnTransactions.Add(NewRowAccTxnFirst);
 
@@ -519,7 +510,7 @@ namespace ACC_DEV.Views
                     NewRowAccTxn.TxnAccCode = item.LineAccNo;
                     NewRowAccTxn.Dr = (decimal)item.Amount;
                     NewRowAccTxn.Cr = (decimal)0;
-                    NewRowAccTxn.RefNo = txnPettyCashHD.PettyCashNo; // Invoice No
+                    NewRowAccTxn.RefNo = txnPettyCashHD.PettyCashNo; //  No
                     NewRowAccTxn.Note = "";
                     NewRowAccTxn.Reconciled = false;
                     NewRowAccTxn.DocType = "PettyCash";
@@ -527,13 +518,48 @@ namespace ACC_DEV.Views
                     NewRowAccTxn.CreatedBy = "Admin";
                     NewRowAccTxn.CreatedDateTime = DateTime.Now;
                     NewRowAccTxn.Canceled = false;
-                    //NewRowAccTxn.JobNo = txnPettyCashHD.VoucherNo;
-                    //NewRowAccTxn.JobType = txnPettyCashHD.DocType;
+                    NewRowAccTxn.JobNo = txnPettyCashHD.VoucherNo;
+                    NewRowAccTxn.JobType = txnPettyCashHD.DocType;
 
                     _context.TxnTransactions.Add(NewRowAccTxn);
                 }
             }
             // END Inserting Transaction Data to Acccounts 
+
+            // ************
+            // Update paid amount/ Balance Amount in PurchasVRelated
+            var docType = txnPettyCashHD.DocType; //PurchasVRelated/ Other
+            var voucherType = txnPettyCashHD.VoucherType; // Import / Export / Additional 
+            var voucherNo = txnPettyCashHD.VoucherNo;
+            if (docType == "PurchasVRelated")
+            {
+                if (voucherType == "Additional")
+                {
+                    var txnPurchasVoucherHDs = _context.TxnPurchasVoucherHDs.Where(t => t.PurchasVoucherNo == voucherNo);
+                    var totalPaidAmt = txnPurchasVoucherHDs.FirstOrDefault().AmountPaid + txnPettyCashHD.TotalAmountLKR;
+                    txnPurchasVoucherHDs.FirstOrDefault().AmountPaid = totalPaidAmt;
+                    txnPurchasVoucherHDs.FirstOrDefault().AmountToBePaid = txnPurchasVoucherHDs.FirstOrDefault().TotalAmountLKR - totalPaidAmt;
+                }
+                else if (voucherType == "Import")
+                {
+                    var txnPaymentVoucherImportHds = _operationcontext.TxnPaymentVoucherImportHds.Where(t => t.PayVoucherNo == voucherNo);
+                    var totalPaidAmt = txnPaymentVoucherImportHds.FirstOrDefault().AmountPaid + txnPettyCashHD.TotalAmountLKR;
+                    txnPaymentVoucherImportHds.FirstOrDefault().AmountPaid = totalPaidAmt;
+                    txnPaymentVoucherImportHds.FirstOrDefault().AmountToBePaid = txnPaymentVoucherImportHds.FirstOrDefault().TotalPayVoucherAmountLkr - totalPaidAmt;
+                    _operationcontext.Update(txnPaymentVoucherImportHds.FirstOrDefault());
+                    await _operationcontext.SaveChangesAsync();
+                }
+                else if (voucherType == "Export")
+                {
+                    var txnPaymentVoucherExportHds = _operationcontext.TxnPaymentVoucherExportHds.Where(t => t.PayVoucherNo == voucherNo);
+                    var totalPaidAmt = txnPaymentVoucherExportHds.FirstOrDefault().AmountPaid + txnPettyCashHD.TotalAmountLKR;
+                    txnPaymentVoucherExportHds.FirstOrDefault().AmountPaid = totalPaidAmt;
+                    txnPaymentVoucherExportHds.FirstOrDefault().AmountToBePaid = txnPaymentVoucherExportHds.FirstOrDefault().TotalPayVoucherAmountLkr - totalPaidAmt;
+                    _operationcontext.Update(txnPaymentVoucherExportHds.FirstOrDefault());
+                    await _operationcontext.SaveChangesAsync();
+                }
+            }
+            // ************
 
             /// Update the Approved property based on the form submission
             txnPettyCashHD.Approved = approved;
@@ -543,8 +569,10 @@ namespace ACC_DEV.Views
             _context.Update(txnPettyCashHD);
             await _context.SaveChangesAsync();
 
+
             return RedirectToAction(nameof(Index)); // Redirect to the appropriate action
         }
+
 
         // GET: 
         public async Task<IActionResult> Details(string id)
@@ -576,7 +604,7 @@ namespace ACC_DEV.Views
             ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
 
             ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
-            ViewData["RefBankList"] = new SelectList(_context.Set<Ref_BankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
             ViewData["AccountsCodes"] = new SelectList(
                                                _context.Set<RefChartOfAcc>()
                                                    .Where(a => a.IsInactive.Equals(false))
@@ -598,9 +626,156 @@ namespace ACC_DEV.Views
                              }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
             return View(tables);
         }
+
+        // GET: txnInvoiceExportHds/Edit/5
+        public async Task<IActionResult> Edit(string id)
+        {
+            var tables = new TxnPettyCashViewModel
+            {
+                TxnPettyCashHDMulti = _context.TxnPettyCashHDs.Where(t => t.PettyCashNo == id),
+                TxnPettyCashDtlMulti = _context.TxnPettyCashDtls.Where(t => t.PettyCashNo == id),
+
+            };
+
+
+            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
+
+            ViewData["ShippingLine"] = new SelectList(_operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
+
+            ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
+
+            ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["AccountsCodes"] = new SelectList(
+                                               _context.Set<RefChartOfAcc>()
+                                                   .Where(a => a.IsInactive.Equals(false))
+                                                   .OrderBy(p => p.AccCode)
+                                                   .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
+                                               "AccNo",
+                                               "DisplayValue",
+                                               "AccNo"
+            );
+
+            ViewData["AgentIDNomination"] = new SelectList(_operationcontext.RefAgents.Join(_operationcontext.RefPorts,
+                             a => a.PortId,
+                             b => b.PortCode,
+                             (a, b) => new
+                             {
+                                 AgentId = a.AgentId,
+                                 AgentName = a.AgentName + " - " + b.PortName,
+                                 IsActive = a.IsActive
+                             }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
+            return View(tables);
+        }
+
+        // POST: Credit sales/Edit/5 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, string dtlItemsList, [Bind("PettyCashNo,Date,Supplier,DocType,VoucherNo,VoucherType,MainAcc,Narration,MainAccAmount,TotalAmountLKR,Remarks,AmountPaid,AmountToBePaid,TotAmtWord,CreatedBy,CreatedDateTime,LastUpdatedBy,LastUpdatedDateTime,Canceled,CanceledBy,CanceledDateTime,CanceledReason,Approved,ApprovedBy,ApprovedDateTime,CreditorName")] TxnPettyCashHD txnPettyCashHD)
+        {
+            if (id != txnPettyCashHD.PettyCashNo)
+            {
+                return NotFound();
+            }
+
+            txnPettyCashHD.LastUpdatedBy = "Admin";
+            txnPettyCashHD.LastUpdatedDateTime = DateTime.Now;
+
+            var TotalAmount = txnPettyCashHD.TotalAmountLKR;
+            var CommonMethodClass = new CommonMethodClass(); // to calll the convert to word 
+
+            txnPettyCashHD.TotAmtWord = CommonMethodClass.ConvertToWords((decimal)TotalAmount);
+
+            if (ModelState.IsValid)
+            {
+
+                if (!string.IsNullOrWhiteSpace(dtlItemsList))
+                {
+                    var rowsToDelete = _context.TxnPettyCashDtls.Where(t => t.PettyCashNo == id);
+                    if (rowsToDelete != null && rowsToDelete.Any())
+                    {
+                        _context.TxnPettyCashDtls.RemoveRange(rowsToDelete);
+                    }
+
+                    var detailItemList = JsonConvert.DeserializeObject<List<SelectedPettyCashItem>>(dtlItemsList);
+                    if (detailItemList != null)
+                    {
+                        foreach (var item in detailItemList)
+                        {
+                            var detailItem = new TxnPettyCashDtl
+                            {
+                                PettyCashNo = id, // Set PaymentNo 
+                                SerialNo = item.SerialNo,
+                                LineAccNo = item.LineAccNo,
+                                Description = item.Description,
+                                Amount = (decimal)item.Amount,
+                                CreatedDateTime = DateTime.Now,
+
+                            };
+                            _context.TxnPettyCashDtls.Add(detailItem);
+                        }
+                    }
+                }
+                try
+                {
+
+                    _context.Update(txnPettyCashHD);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    // Log or debug the exception
+                    Console.WriteLine(ex.Message);
+                    throw; // Rethrow the exception to see details in the browser
+                }
+
+            }
+
+
+            var tables = new TxnPettyCashViewModel
+            {
+                TxnPettyCashHDMulti = _context.TxnPettyCashHDs.Where(t => t.PettyCashNo == id),
+                TxnPettyCashDtlMulti = _context.TxnPettyCashDtls.Where(t => t.PettyCashNo == id),
+
+            };
+
+
+            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
+
+            ViewData["ShippingLine"] = new SelectList(_operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
+
+            ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
+
+            ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["AccountsCodes"] = new SelectList(
+                                               _context.Set<RefChartOfAcc>()
+                                                   .Where(a => a.IsInactive.Equals(false))
+                                                   .OrderBy(p => p.AccCode)
+                                                   .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
+                                               "AccNo",
+                                               "DisplayValue",
+                                               "AccNo"
+            );
+
+            ViewData["AgentIDNomination"] = new SelectList(_operationcontext.RefAgents.Join(_operationcontext.RefPorts,
+                             a => a.PortId,
+                             b => b.PortCode,
+                             (a, b) => new
+                             {
+                                 AgentId = a.AgentId,
+                                 AgentName = a.AgentName + " - " + b.PortName,
+                                 IsActive = a.IsActive
+                             }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
+            return View(tables);
+
+        }
+
+
     }
-
-
 }
 
 

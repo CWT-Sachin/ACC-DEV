@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using ACC_DEV.Models;
 
 namespace ACC_DEV.ModelsOperation;
 
@@ -61,6 +62,9 @@ public partial class RefAgent
     [Column(TypeName = "datetime")]
     public DateTime? LastUpdatedDateTime { get; set; }
 
+
+
+
     [ForeignKey("PortId")]
     [InverseProperty("RefAgents")]
     public virtual RefPort Port { get; set; } = null!;
@@ -76,5 +80,11 @@ public partial class RefAgent
 
     [InverseProperty("AgentExportNavigation")]
     public virtual ICollection<TxnExportJobHD> TxnExportJobHds { get; } = new List<TxnExportJobHD>();
+
+    [InverseProperty("AgentDebitNoteImportNavigation")]
+    public virtual ICollection<TxnDebitNoteImportHd> TxnDebitNoteImportHd { get; } = new List<TxnDebitNoteImportHd>();
+
+    [InverseProperty("AgentDebitNoteExportNavigation")]
+    public virtual ICollection<TxnDebitNoteExportHd> TxnDebitNoteExportHd { get; } = new List<TxnDebitNoteExportHd>();
 
 }

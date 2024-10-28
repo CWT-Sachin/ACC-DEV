@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using ACC_DEV.ModelsOperation;
 
-namespace ACC_DEV.ModelsOperation;
+namespace ACC_DEV.Models;
 
 [Table("Txn_InvoiceHD_Export")]
 public partial class TxnInvoiceExportHd
@@ -21,7 +22,7 @@ public partial class TxnInvoiceExportHd
     public string? JobNo { get; set; }
 
     [Column("BLNo")]
-    [StringLength(100)]
+    [StringLength(20)]
     public string? Blno { get; set; }
 
     [StringLength(20)]
@@ -77,7 +78,28 @@ public partial class TxnInvoiceExportHd
     [StringLength(50)]
     public string? CreditAcc { get; set; }
 
+
+    [Column("AmountPaid", TypeName = "numeric(18, 3)")]
+    public decimal? AmountPaid { get; set; }
+
+    [Column("AmountToBePaid", TypeName = "numeric(18, 3)")]
+    public decimal? AmountToBePaid { get; set; }
+
+    [StringLength(50)]
+    public string? BLNoTS { get; set; }
+    [StringLength(50)]
+    public string? BLNoType { get; set; }
+
+    [StringLength(50)]
+    public string? BLNoLocal { get; set; }
+
+    [StringLength(50)]
+    public string? BLNoTSRefNo { get; set; }
+
+
     [ForeignKey("Customer")] // Assuming this is the correct foreign key property
     [InverseProperty("TxnInvoiceExportHds")]
-    public virtual RefCustomer? InvoiceHd { get; set; }
+    public virtual RefCustomer? CustomerInvoiceExportHd { get; set; }
+
+
 }

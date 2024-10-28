@@ -18,13 +18,13 @@
 
             <div class="card">
                 <div class="card-header bg-info">
-                    <h4 class="m-b-0 text-white">Purchas Voucher - Create</h4>
+                    <h4 class="m-b-0 text-white">Purchase Voucher - DETAILS</h4>
                 </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
                             <h3>
-                                Purchas Voucher
+                                Purchase Voucher
                             </h3>
                         </div>
                         <div class="col-md-6"></div>
@@ -43,7 +43,7 @@
                             <div class="col-md-4">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label for="Job No">Job No.</label>
+                                        <label for="Job No"> Purchase Voucher No.</label>
                                     </div>
                                     <div class="col-md-6">
                                         <span id="jobno">
@@ -80,6 +80,12 @@
                             <div class="col-md-7">
                                 <div id="paymentDetails" style="border:1px solid black; padding: 10px;">
                                     <div class="row">
+
+                                        @{
+                                            // to show  the ShippingLine/ Supplier
+                                            var CreditorTypeSaved = Model.TxnPurchasVoucherHDMulti.FirstOrDefault().ShippingLine;
+                                        }
+                                        <input type="hidden" id="CreditorTypeSavedHidden" value="@CreditorTypeSaved" />
                                         <div class="col-md-6">
                                             <div class="row">
                                                 @*                                                <div class="col-md-4">
@@ -87,33 +93,26 @@
                                                 <label for="Agent">Agent</label>
                                                 </div>*@
                                                 <div class="col-md-4">
-                                                    <input type="radio" id="ShippingLine" name="CreditorType" value="ShippingLine" checked />
+                                                    <input type="radio" id="ShippingLine" name="CreditorType" value="ShippingLine" disabled />
                                                     <label for="Cash">Shipping Line</label>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <input type="radio" id="Supplier" name="CreditorType" value="Supplier" />
+                                                    <input type="radio" id="Supplier" name="CreditorType" value="Supplier" disabled />
                                                     <label for="Cash">Supplier /Creditor</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
+
                                         <div class="col-md-12">
 
-                                            @*                                            <div class="row" id="CreditorAgent">
-                                            <div class="col-md-2">
-                                            <label for="Agent" id="Label">Agent</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                            <select id="selectedAgent" name="selectedAgent" class="form-control" asp-items="ViewBag.AgentIDNomination"></select>
-                                            </div>
-                                            </div>*@
                                             <div class="row" id="CreditorShippingLine">
                                                 <div class="col-md-2">
                                                     <label for="ShippingLine" id="Label">ShippingLine</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <select id="selectedShippingLine" name="ShippingLine" asp-for="TxnPurchasVoucherHDMulti.FirstOrDefault().ShippingLine" class="form-control" asp-items="ViewBag.ShippingLine"></select>
+                                                    <select id="selectedShippingLine" name="ShippingLine" asp-for="TxnPurchasVoucherHDMulti.FirstOrDefault().ShippingLine" class="form-control" asp-items="ViewBag.ShippingLine" disabled></select>
                                                 </div>
                                             </div>
 
@@ -122,11 +121,10 @@
                                                     <label for="Supplier" id="Label">Supplier</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <select id="selectedSupplier" name="Supplier" asp-for="TxnPurchasVoucherHDMulti.FirstOrDefault().Supplier" class="form-control" asp-items="ViewBag.Suppliers"></select>
+                                                    <select id="selectedSupplier" name="Supplier" asp-for="TxnPurchasVoucherHDMulti.FirstOrDefault().Supplier" class="form-control" asp-items="ViewBag.Suppliers" disabled></select>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -136,15 +134,15 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="row">
-                                    @Html.DisplayFor(m => Model.TxnPurchasVoucherHDMulti.FirstOrDefault().DocType)
-@*                                    <div class="col-md-4">
-                                        <input type="radio" id="JobRelated" name="DocType" value="JobRelated" checked />
+@*                                    @Html.DisplayFor(m => Model.TxnPurchasVoucherHDMulti.FirstOrDefault().DocType)
+*@                                    <div class="col-md-4">
+                                        <input type="radio" id="JobRelated" name="DocType" value="JobRelated" disabled />
                                         <label for="Related">Job Related</label>
                                     </div>
                                     <div class="col-md-4">
-                                        <input type="radio" id="Other" name="DocType" value="Other" />
+                                        <input type="radio" id="Other" name="DocType" value="Other" disabled />
                                         <label for="Other">Other</label>
-                                    </div>*@
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -254,23 +252,38 @@
                                         </thead>
                                         <tbody id="ContainerDetailsBody">
                                             <tr id="tablerow0" hidden>
-                                                <td style="width:30%;">  <select id="LineAccNo" name="LineAccNo" class="form-control" asp-items="ViewBag.AccountsCodes"></select> </td>
-                                                <td style="width:40%;"> <input type="text" id="DescrRW" value="" name="DescrRW" class="form-control"></input> </td>
-                                                <td> <input type="text" id="Amount" name="Amount" value="" class="form-control" style="text-align: right;"></td>
-                                                <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td>
+                                                <td style="width:30%;">
+                                                    <select id="LineAccNo" name="LineAccNo" class="form-control" asp-items="ViewBag.AccountsCodes"></select>
+                                                </td>
+                                                <td style="width:40%;">
+                                                    <input type="text" id="DescrRW" value="" name="DescrRW" class="form-control"></input>
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="Amount" name="Amount" value="" class="form-control" style="text-align: right;">
+                                                </td>
+                                                <td>
+                                                    <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" />
+                                                </td>
                                             </tr>
                                             @foreach (var item in Model.TxnPurchasVoucherDtlMulti)
                                             {
-                                             <tr id="tablerow0" >
-                                                    <td style="width:30%;">  <select asp-for="TxnPurchasVoucherDtlMulti.FirstOrDefault().LineAccNo" value="@item.LineAccNo" asp-items="ViewBag.AccountsCodes" class="form-control" disabled> </select> </td>
-                                                 
-                                                <td style="width:40%;"> <input type="text" asp-for="TxnPurchasVoucherDtlMulti.FirstOrDefault().Description" value="@item.Description"  class="form-control" readonly></input> </td>
-                                                    <td> <input type="text" asp-for="TxnPurchasVoucherDtlMulti.FirstOrDefault().Amount" value="@item.Amount" class="form-control" style="text-align: right;" readonly></td>
-                                                    @* <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td>
-                                            *@  </tr>
+                                                <tr id="tablerow0">
+                                                    <td style="width:30%;">
+                                                        <select asp-for="@item.LineAccNo" asp-items="ViewBag.AccountsCodes" class="form-control" disabled>
+                                                        </select>
+                                                    </td>
+                                                    <td style="width:40%;">
+                                                        <input type="text" asp-for="@item.Description" value="@item.Description" class="form-control" readonly></input>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" asp-for="@item.Amount" value="@item.Amount" class="form-control" style="text-align: right;" readonly>
+                                                    </td>
+                                                    @* <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td> *@
+                                                </tr>
                                             }
                                         </tbody>
                                     </table>
+
                                 </div>
                             </div>
                         </div>
@@ -342,3 +355,56 @@
     <!-- Page wrapper  END -->
     <!-- ============================================================== -->
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+@section Scripts {
+    <!--Set Creditor type on lloading -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var creditorType = '@(Model.TxnPurchasVoucherHDMulti.FirstOrDefault()?.CreditorType)';
+
+            if (creditorType === 'ShippingLine') {
+                $('#ShippingLine').prop('checked', true);
+                $('#CreditorShippingLine').show();
+                $('#CreditorSupplier').hide();
+            } else if (creditorType === 'Supplier') {
+                $('#Supplier').prop('checked', true);
+                $('#CreditorShippingLine').hide();
+                $('#CreditorSupplier').show();
+            }
+
+            $('input[name="CreditorType"]').change(function () {
+                if ($(this).val() === 'ShippingLine') {
+                    $('#CreditorShippingLine').show();
+                    $('#CreditorSupplier').hide();
+                } else if ($(this).val() === 'Supplier') {
+                    $('#CreditorShippingLine').hide();
+                    $('#CreditorSupplier').show();
+                }
+            });
+        });
+    </script>
+    <!--Set Doc type and Job Type on lloading -->
+    <script>
+        $(document).ready(function () {
+            // Assuming the values are passed from the controller to the view
+            var docType = '@(Model.TxnPurchasVoucherHDMulti.FirstOrDefault().DocType)';
+            var jobType = '@(Model.TxnPurchasVoucherHDMulti.FirstOrDefault().JobType)';
+
+            if (docType === 'JobRelated') {
+                $('#JobRelated').prop('checked', true);
+                $('#JobSelection').show();
+
+                if (jobType === 'Import') {
+                    $('#Import').prop('checked', true);
+                } else if (jobType === 'Export') {
+                    $('#Export').prop('checked', true);
+                }
+            } else if (docType === 'Other') {
+                $('#Other').prop('checked', true);
+                $('#JobSelection').hide();
+            }
+        });
+    </script>
+    }

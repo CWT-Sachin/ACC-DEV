@@ -18,7 +18,7 @@
 
             <div class="card">
                 <div class="card-header bg-info">
-                    <h4 class="m-b-0 text-white">Journal Entry - Create</h4>
+                    <h3 class="m-b-0 text-white">JOURNAL ENTRY - CREATE</h3>
                 </div>
                 <div class="card-body">
                     <form asp-action="Create" method="post" onsubmit="submitForm(event)">
@@ -51,6 +51,7 @@
                             </div>
                         </div>
                         <div class="row">
+                            <!-- Ref No , Job No if it related to Job-->
                             <div class="col-md-2" style="margin-left:30px;">
                                 <div class="row">
                                     <div class="col-md-4">
@@ -63,6 +64,7 @@
 
                                 </div>
                             </div>
+                            <!-- Job No if it related to Job-->
                             <div class="col-md-3" style="margin-left: 30px;">
                                 <div class="row">
                                     <div class="col-md-4">
@@ -102,6 +104,7 @@
                             </div>
                         </div>
                         <br />
+                        <!--Table for Entry -->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="table-responsive">
@@ -164,7 +167,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!--Total line -->
                         <div class="row">
                             <div class="col-md-8">
                                 <!-- Your existing content goes here -->
@@ -187,9 +190,9 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!--Add button Line-->
                         <div class="row">
-                            <!--Add button Charge Items-->
+                           
                             <div class="col-md-4">
                                 <div class="form-group">
 
@@ -359,6 +362,7 @@
             }
         }
     </script>
+    <!--Add remove Row-->
     <script>
         function AddRow() {
             var newRow = $("#tablerow0").clone();
@@ -469,4 +473,4 @@
     </script>
 
 
-            }
+ }

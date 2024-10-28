@@ -31,9 +31,8 @@ public partial class RefAccountType
     public DateTime? LastUpdatedDateTime { get; set; }
 
 
-    [InverseProperty("RefAccountType")]
+    [InverseProperty("AccountsTypes")]
     public virtual ICollection<RefChartOfAcc> RefChartOfAcc { get; set; } = new List<RefChartOfAcc>();
-
 
 
 }

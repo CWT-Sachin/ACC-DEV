@@ -40,7 +40,8 @@
             </div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h1 class="text-themecolor">Journal Entry</h1>
+                    <h2 class="m-b-0 text-blue">JOURNAL ENTRY</h2>
+
                 </div>
                 <div class="col-md-3 align-self-center text-right">
                 </div>
@@ -78,6 +79,9 @@
                                     <th>
                                         @Html.DisplayNameFor(model => model.IsAdjustmentEntry)
                                     </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Approved)
+                                    </th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -85,24 +89,65 @@
                                 @foreach (var item in Model)
                                 {
                                     <tr>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.JournalNo)
                                         </td>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.Date)
                                         </td>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.Note)
                                         </td>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.IsAdjustmentEntry)
                                         </td>
 
-                                        <td nowrap="">
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            <select style="color: @(item.Approved == true ? "black" : "black");" disabled>
+                                                @if (item.Approved == true)
+                                                {
+                                                    <option value="true" selected>Yes</option>
+                                                    <option value="false" disabled>No</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="true" disabled>Yes</option>
+                                                    <option value="false" selected>No</option>
+                                                }
+                                            </select>
+                                        </td>
+
+                                        <td nowrap="" style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @{
+                                                bool isEditEnabled = item.Approved == false;
+                                            }
+
+                                            <a class="btn btn-sm btn-rounded btn-primary@(isEditEnabled ? "" : " disabled")"
+                                           asp-action="Edit" asp-route-id="@item.JournalNo">
+                                                <i class="fa fa-edit"></i> Edit
+                                            </a> |
+
+                                            <a class="btn btn-sm btn-rounded btn-success"
+                                           asp-action="Details" asp-route-id="@item.JournalNo">
+                                                <i class="fa ti-view-list-alt"></i> Details
+                                            </a> |
+
+                                            <a class="btn btn-sm btn-rounded btn-danger @(isEditEnabled ? "" : " disabled")"
+                                           asp-action="Approve" asp-route-id="@item.JournalNo">
+                                                <i class="ti-check-box"></i> Approve
+                                            </a>
+                                            |
+                                            <a class="btn btn-sm btn-rounded btn-warning @(isEditEnabled ? "disabled" : " ")"
+                                           asp-action="RepPrintDebitNote" asp-route-DebitNoteNo="@item.JournalNo">
+                                                <i class="fa fa-print"></i> Print Journal
+                                            </a>
+                                        </td>
+
+@*                                        <td nowrap="">
                                             <a class="btn btn-sm btn-rounded btn-primary" asp-action="Edit" asp-route-id="@item.JournalNo"><i class="fa fa-edit"></i> Edit</a> |
                                             <a class="btn btn-sm btn-rounded btn-success" asp-action="Details" asp-route-id="@item.JournalNo"><i class="fa  ti-view-list-alt"></i> Details</a> |
                                             <a class="btn btn-sm btn-rounded btn-warning" asp-action="RepPrintInvoice" asp-route-InvoiceNo="@item.JournalNo"><i class="fa  fa-print"></i> Print Journal</a>
-                                        </td>
+                                        </td>*@
                                     </tr>
                                 }
                             </tbody>

@@ -244,7 +244,7 @@
                                         </thead>
                                         <tbody id="ContainerDetailsBody">
                                             <tr id="tablerow0" hidden>
-                                                <td style="width:30%;">  <select id="LineAccNo" name="LineAccNo" class="form-control" asp-items="ViewBag.AccountsCodes"></select> </td>
+                                                <td style="width:30%;">  <select id="LineAccNo" name="LineAccNo" class="form-control" asp-items="ViewBag.AccountsCodes" ></select> </td>
                                                 <td style="width:40%;"> <input type="text" id="DescrRW" value="" name="DescrRW" class="form-control"></input> </td>
                                                 <td> <input type="text" id="Amount" name="Amount" value="" class="form-control" style="text-align: right;"></td>
                                                 <td> <input type="button" id="btnRemove" class="btn btn-danger" value="X" name="RemoveBttn" onclick="RemoveRow(this)" /></td>
@@ -299,8 +299,7 @@
                         <!--Save Button-->
                         <div class="row">
                             <input type="hidden" id="dtlItemsList" name="dtlItemsList" />
-@*                            <input type="hidden" id="customerType" name="customerType" value="@ViewBag.CustomerType" />
-*@
+
                             <!--Save Button-->
                             <div class="form-group">
                                 <input type="submit" id="saveButton" value="Save" onclick="submitForm(this)" class="btn btn-primary" />
@@ -366,6 +365,7 @@
                             $('#TotalAmt').val(0);
                             $('#PaidAmt').val(0);
                             $('#BalanceAmt').val(0);
+                            $('#MainAmount').val(0);
                             $('#CreditorName').val("");
                         } else {
                             $('#jobNoError').text('');
@@ -373,6 +373,22 @@
                             $('#TotalAmt').val(response.totalAmt);
                             $('#PaidAmt').val(response.amountPaid);
                             $('#BalanceAmt').val(response.amountToBePaid);
+                            
+                            //  response.amountToBePaid is the string with thousand separators
+                            var amountToBePaid = response.amountToBePaid;
+
+                            // Remove thousand separators (assuming comma as thousand separator)
+                            amountToBePaid = amountToBePaid.replace(/,/g, '');
+
+                            // Convert the string to a number
+                            var amountNumber = parseFloat(amountToBePaid);
+
+                            // Format the number to two decimal places
+                            var formattedAmount = amountNumber.toFixed(2);
+
+                            // Set the value in the input field
+                            $('#MainAmount').val(formattedAmount);
+                            //$('#MainAmount').val(response.amountToBePaid);
                             $('#CreditorName').val(response.creditorName);
                             
                         }
@@ -496,12 +512,12 @@
 
     // Function to validate the form before submission
     function validateForm() {
-        //alert("Test Validate");
         const jobRelatedRadio = document.getElementById("JobRelated");
         const jobNoInput = document.getElementById("JobNoInput");
 
         // If "Job Related" is checked and "Job No" is empty
         if (jobRelatedRadio.checked && jobNoInput.value.trim() === "") {
+            
             document.getElementById("jobNoError").textContent = "Job No is required for Job Related documents.";
             return false;
         }

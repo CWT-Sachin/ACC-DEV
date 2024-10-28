@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ACC_DEV.Models
 {
-    [PrimaryKey("PaymentNo", "RefNo")]
+    [PrimaryKey("PaymentNo", "DocNo")]
     [Table("Txn_PaymentDtl")]
     public partial class TxnPaymentDtl
     {
@@ -17,15 +17,21 @@ namespace ACC_DEV.Models
 
         [Key]
         [StringLength(50)]
-        public string? RefNo { get; set; }
+        public string? DocNo { get; set; }
 
         [StringLength(50)]
-        public string? RefType { get; set; }
+        public string? DocType { get; set; }
 
         [Column(TypeName = "numeric(18, 2)")]
         public decimal? Amount { get; set; }
 
         [Column(TypeName = "datetime")]
         public DateTime? CreatedDateTime { get; set; }
+
+        [StringLength(50)]
+        public string? JobNo { get; set; }
+
+        [StringLength(50)]
+        public string? JobType { get; set; }
     }
 }

@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 using ACC_DEV.ModelsOperation;
-using PowerAcc.Models;
 
 namespace ACC_DEV.Models;
 
@@ -50,9 +49,11 @@ public partial class TxnPurchasVoucherHD
     public string? Narration { get; set; }
 
     [Column("MainAccAmount", TypeName = "numeric(18, 2)")]
+    [DisplayFormat(DataFormatString = "{0:N2}")]
     public decimal? MainAccAmount { get; set; }
 
     [Column("TotalAmountLKR", TypeName = "numeric(18, 2)")]
+    [DisplayFormat(DataFormatString = "{0:N2}")]
     public decimal? TotalAmountLKR { get; set; }
 
     [StringLength(450)]

@@ -78,19 +78,7 @@ public partial class TxnInvoiceHd
     [StringLength(50)]
     public string? CreditAcc { get; set; }
 
-    [StringLength(50)]
-    public string? JobType { get; set; }
-
-    [Column(TypeName = "numeric(18, 3)")]
-    public decimal? AmountToBePaid { get; set; }
-
-    [Column(TypeName = "numeric(18, 3)")]
-    public decimal? AmountPaid { get; set; }
-
-    [StringLength(50)]
-    public string? JobMode { get; set; }
-
     [ForeignKey("Customer")] // Assuming this is the correct foreign key property
     [InverseProperty("TxnInvoiceHds")]
-    public virtual RefCustomer? InvoiceHdAcc { get; set; }
+    public virtual RefCustomerAccOpt? InvoiceHdAcc { get; set; }
 }

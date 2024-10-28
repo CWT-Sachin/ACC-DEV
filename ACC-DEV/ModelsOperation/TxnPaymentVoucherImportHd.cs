@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ACC_DEV.ModelsOperation;
+using ACC_DEV.DataOperation;
 using Microsoft.EntityFrameworkCore;
 
-namespace ACC_DEV.Models;
+namespace ACC_DEV.ModelsOperation;
 
 [Table("Txn_PaymentVoucherHD_Import")]
 public partial class TxnPaymentVoucherImportHd

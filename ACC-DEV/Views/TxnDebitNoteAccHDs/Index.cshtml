@@ -1,5 +1,7 @@
-﻿@model ACC_DEV.ViewModel.DebitNoteAccViewModel
-@{
+﻿@model IEnumerable<ACC_DEV.Models.TxnDebitNoteAccHD>
+
+@*@model PowerAcc.ViewModel.TxnDebitNoteAccViewModel
+*@@{
 
 
     ViewData["Title"] = "Index";
@@ -24,7 +26,6 @@
         <!-- Container fluid  -->
         <!-- ============================================================== -->
         <div class="container-fluid">
-
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
                     <h4 class="text-themecolor">Transactions</h4>
@@ -46,24 +47,150 @@
                 <div class="col-md-3 align-self-center text-right">
                 </div>
                 <!-- Search-->
-@*                 <div class="col-md-4 align-self-center text-right">
-                    @using (Html.BeginForm("Index", "TxnPaymentHDs", new { searchString = "" }, FormMethod.Post))
+                 <div class="col-md-4 align-self-center text-right">
+                    @using (Html.BeginForm("Index", "TxnDebitNoteAccHDs", new { searchString = "" }, FormMethod.Post))
                     {
                         <div class="input-group">
 
-                            <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search by Payment No..." />
+                            <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search by No..." />
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-info"> <i class="fas fa-search-plus"></i> Go!</button>
                             </div>
                         </div>
                     }
-                </div> *@
+                </div> 
                 <!-- End Search-->
             </div>
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
+                        <table class="table color-bordered-table purple-bordered-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        DebitNT No
+                                    </th>
+                                    <th>
+                                        Date
+                                    </th>
+                                    <th>
+                                        JobNo
+                                    </th>
+                                    <th>
+                                        Agent
+                                    </th>
 
+                                    <th>
+                                        VoucherType
+                                    </th>
+                                    <th>
+                                        Total USD
+                                    </th>
+                                    <th>
+                                        ExchangeRate
+                                    </th>
+                                    <th>
+                                        Total LKR
+                                    </th>
+
+                                    <th>
+                                        Approved
+                                    </th>
+                                    <th>
+                                        Canceled
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.DebitNoteNo)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.Date)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.JobNo)
+                                        </td>
+                                        <td nowrap="" style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.AgentNavigation.AgentName)
+                                        </td>
+
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.DocType)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.TotalAmountUSD)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.ExchangeRate)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.TotalAmountLKR) 
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            <select style="color: @(item.Approved == true ? "black" : "black");" disabled>
+                                                @if (item.Approved == true)
+                                                {
+                                                    <option value="true" selected>True</option>
+                                                    <option value="false" disabled>False</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="true" disabled>True</option>
+                                                    <option value="false" selected>False</option>
+                                                }
+                                            </select>
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white" );">
+                                            <select style="color: @(item.Canceled == true ? "black" : "black");" disabled>
+                                                @if (item.Canceled == true)
+                                                {
+                                                    <option value="true" selected>True</option>
+                                                    <option value="false" disabled>False</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="true" disabled>True</option>
+                                                    <option value="false" selected>False</option>
+                                                }
+                                            </select>
+                                        </td>
+
+                                        <td nowrap="" style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @{
+                                                bool isEditEnabled = item.Approved == false;
+                                            }
+
+                                            <a class="btn btn-sm btn-rounded btn-primary@(isEditEnabled ? "" : " disabled")"
+                                           asp-action="Edit" asp-route-id="@item.DebitNoteNo">
+                                                <i class="fa fa-edit"></i> Edit
+                                            </a> |
+
+                                            <a class="btn btn-sm btn-rounded btn-success"
+                                           asp-action="Details" asp-route-id="@item.DebitNoteNo">
+                                                <i class="fa ti-view-list-alt"></i> Details
+                                            </a> |
+
+                                            @*                                            <a class="btn btn-sm btn-rounded btn-danger"*@
+                                            <a class="btn btn-sm btn-rounded btn-danger@(isEditEnabled ? "" : " disabled")"
+                                           asp-action="Approve" asp-route-id="@item.DebitNoteNo">
+                                                <i class="ti-check-box"></i> Approve
+                                            </a>
+                                            |
+                                            @*                                            <a class="btn btn-sm btn-rounded btn-warning"
+                                        asp-action="RepPrintInvoice" asp-route-InvoiceNo="@item.PurchasVoucherNo">
+                                        <i class="fa fa-print"></i> Print PurchasVoucher
+                                        </a>*@
+                                        </td>
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
                         
                     </div>
                 </div>

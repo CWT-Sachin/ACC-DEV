@@ -1,7 +1,5 @@
 ﻿@model ACC_DEV.ViewModel.TxnPaymentViewMode
 @{
-
-
     ViewData["Title"] = "Index";
     Pager pager = new Pager();
     int pageNo = 0;
@@ -74,16 +72,22 @@
                                        Date
                                     </th>
                                     <th>
-                                       Customer
+                                       Customer/Agent/Supplier
                                     </th>
                                     <th>
-                                       Agent
+                                       Cheque No
                                     </th>
                                     <th>
-                                       Shipping line
+                                        Pay method
                                     </th>
                                     <th>
                                        Payment Total Amount
+                                    </th>
+                                     <th>
+                                       Approved
+                                    </th>
+                                    <th>
+                                        Canceled
                                     </th>
                                     <th></th>
                                 </tr>
@@ -92,30 +96,85 @@
                                 @foreach (var item in Model.TxnPaymentHdMulti)
                                 {
                                     <tr>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.PaymentNo)
                                         </td>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.Date)
                                         </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.CustomerID)
+                                        <td nowrap="" style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @if(item.CustomerType =="Agent")
+                                            {
+                                                @Html.DisplayFor(modelItem => item.RefAgentNavigation.AgentName)
+                                            }
+                                            else if (item.CustomerType == "ShippingLine")
+                                            {
+                                                @Html.DisplayFor(modelItem => item.RefShippingLineNavigation.Name)
+                                            }
+                                            else if (item.CustomerType == "Supplier")
+                                            {
+                                                @Html.DisplayFor(modelItem => item.RefSupplierNavigation.Name)
+                                            }
+
                                         </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.AgentID)
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.ChequeNo)
                                         </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.ShippingLineID)
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.PaymentMethod)
                                         </td>
-                                        <td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.PaymentTotalAmt)
                                         </td>
-                                        <td nowrap="">
-                                            <a class="btn btn-sm btn-rounded btn-primary" asp-action="Edit" asp-route-id="@item.PaymentNo"><i class="fa fa-edit"></i> Edit</a> |
-                                            <a class="btn btn-sm btn-rounded btn-success" asp-action="Details" asp-route-id="@item.PaymentNo"><i class="fa  ti-view-list-alt"></i> Details</a> |
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            <select style="color: @(item.Approved == true ? "black" : "black");" disabled>
+                                                @if (item.Approved == true)
+                                                {
+                                                    <option value="true" selected>True</option>
+                                                    <option value="false" disabled>False</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="true" disabled>True</option>
+                                                    <option value="false" selected>False</option>
+                                                }
+                                            </select>
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white" );">
+                                            <select style="color: @(item.Canceled == true ? "black" : "black");" disabled>
+                                                @if (item.Canceled == true)
+                                                {
+                                                    <option value="true" selected>True</option>
+                                                    <option value="false" disabled>False</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="true" disabled>True</option>
+                                                    <option value="false" selected>False</option>
+                                                }
+                                            </select>
+                                        </td>
+                                        <td nowrap="" style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @{
+                                                bool isEditEnabled = item.Approved == false;
+                                            }
+
+                                            <a class="btn btn-sm btn-rounded btn-primary@(isEditEnabled ? "" : " disabled")"
+                                           asp-action="Edit" asp-route-id="@item.PaymentNo">
+                                                <i class="fa fa-edit"></i> Edit
+                                            </a> |
+
+                                            <a class="btn btn-sm btn-rounded btn-success"
+                                           asp-action="Details" asp-route-id="@item.PaymentNo">
+                                                <i class="fa ti-view-list-alt"></i> Details
+                                            </a> |
+                                            <a class="btn btn-sm btn-rounded btn-danger@(isEditEnabled ? "" : " disabled")"
+                                           asp-action="Approve" asp-route-id="@item.PaymentNo">
+                                                <i class="ti-check-box"></i> Approve
+                                            </a>
+                                            |
                                             <a class="btn btn-sm btn-rounded btn-warning" asp-action="RepPrintPayment" asp-route-InvoiceNo="@item.PaymentNo"><i class="fa  fa-print"></i> Print Payment</a>
                                             <a class="btn btn-sm btn-rounded btn-warning" asp-action="RepPrintPayment" asp-route-InvoiceNo="@item.PaymentNo"><i class="fa  fa-print"></i> Cheque Print</a>
-
                                         </td>
                                     </tr>
                                 }

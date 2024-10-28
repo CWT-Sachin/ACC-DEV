@@ -43,11 +43,24 @@
             </div>
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h1 class="text-themecolor">Purchas Voucher</h1>
+                    <h1 class="text-themecolor">Purchase Voucher</h1>
                 </div>
                 <div class="col-md-3 align-self-center text-right">
                 </div>
+                <!-- Search-->
+                <div class="col-md-4 align-self-center text-right">
+                    @using (Html.BeginForm("Index", "TxnPurchasVoucherHDs", new { searchString = "" }, FormMethod.Post))
+                    {
+                        <div class="input-group">
 
+                            <input type="text" id="searchString" name="searchString" class="form-control" placeholder="Search by Purchase V. No..." />
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-info"> <i class="fas fa-search-plus"></i> Go!</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!-- End Search-->
             </div>
             <div class="card">
                 <div class="card-body">
@@ -71,8 +84,12 @@
                                         CreditorType
                                     </th>
                                     <th>
+                                        VoucherType
+                                    </th>
+                                    <th>
                                         Total LKR
                                     </th>
+
                                     <th>
                                         Approved
                                     </th>
@@ -95,7 +112,7 @@
                                         <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.JobNo)
                                         </td>
-                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                        <td nowrap="" style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @if (item.CreditorType == "Supplier")
                                             {
                                                 @Html.DisplayFor(modelItem => item.SupplierNavigation.Name)
@@ -110,9 +127,11 @@
                                             @Html.DisplayFor(modelItem => item.CreditorType)
                                         </td>
                                         <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
+                                            @Html.DisplayFor(modelItem => item.DocType)
+                                        </td>
+                                        <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             @Html.DisplayFor(modelItem => item.TotalAmountLKR)
                                         </td>
-
                                         <td style="background-color: @(item.Approved == true ? "#ECFFDC" : "white");">
                                             <select style="color: @(item.Approved == true ? "black" : "black");" disabled>
                                                 @if (item.Approved == true)
@@ -157,15 +176,16 @@
                                                 <i class="fa ti-view-list-alt"></i> Details
                                             </a> |
 
-                                            <a class="btn btn-sm btn-rounded btn-danger"
+@*                                            <a class="btn btn-sm btn-rounded btn-danger"*@
+                                            <a class="btn btn-sm btn-rounded btn-danger@(isEditEnabled ? "" : " disabled")"
                                            asp-action="Approve" asp-route-id="@item.PurchasVoucherNo">
                                                 <i class="ti-check-box"></i> Approve
                                             </a>
                                             |
-                                           <a class="btn btn-sm btn-rounded btn-warning"
-                                               asp-action="RepPrintPurchaseVoucher" asp-route-id="@item.PurchasVoucherNo">
+@*                                            <a class="btn btn-sm btn-rounded btn-warning"
+                                           asp-action="RepPrintInvoice" asp-route-InvoiceNo="@item.PurchasVoucherNo">
                                                 <i class="fa fa-print"></i> Print PurchasVoucher
-                                            </a>
+                                            </a>*@
                                         </td>
 
                                     </tr>

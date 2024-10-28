@@ -30,6 +30,7 @@ public partial class TxnPurchasVoucherDtl
 
 
     [Column(TypeName = "numeric(18, 2)")]
+    [DisplayFormat(DataFormatString = "{0:N2}")]
     public decimal? Amount { get; set; }
 
     [Column(TypeName = "CreatedDate")]
