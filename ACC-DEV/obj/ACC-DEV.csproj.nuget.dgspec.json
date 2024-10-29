@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ACC DEV 2\\ACC-DEV-Sachin-2024-10-25\\ACC-DEV-Sachin\\ACC-DEV\\ACC-DEV.csproj": {}
+    "D:\\ACC DEV\\ACC-DEV\\ACC-DEV.csproj": {}
   },
   "projects": {
-    "D:\\ACC DEV 2\\ACC-DEV-Sachin-2024-10-25\\ACC-DEV-Sachin\\ACC-DEV\\ACC-DEV.csproj": {
+    "D:\\ACC DEV\\ACC-DEV\\ACC-DEV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ACC DEV 2\\ACC-DEV-Sachin-2024-10-25\\ACC-DEV-Sachin\\ACC-DEV\\ACC-DEV.csproj",
+        "projectUniqueName": "D:\\ACC DEV\\ACC-DEV\\ACC-DEV.csproj",
         "projectName": "ACC-DEV",
-        "projectPath": "D:\\ACC DEV 2\\ACC-DEV-Sachin-2024-10-25\\ACC-DEV-Sachin\\ACC-DEV\\ACC-DEV.csproj",
+        "projectPath": "D:\\ACC DEV\\ACC-DEV\\ACC-DEV.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\ACC DEV 2\\ACC-DEV-Sachin-2024-10-25\\ACC-DEV-Sachin\\ACC-DEV\\obj\\",
+        "outputPath": "D:\\ACC DEV\\ACC-DEV\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

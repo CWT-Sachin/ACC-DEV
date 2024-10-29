@@ -24,15 +24,15 @@
                         <div class="row">
                             <div class="col-md-4">                               
                             </div>
-                            <div class="col-md-8"></div>
+                            <div class="col-md-8"><img src="\assets\images\logo-icon.png" alt="FTL LOGO" width="120" height="120" /></div>
                         </div>
                     </div>
                     <div class="col-md-6 ">
 
                         <br />
                         <div class="row ">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6"><h3><b>Petty Cash</b></h3></div>
+                            <div class="col-md-3"> </div>
+                            <div class="col-md-6"><h3><b>Petty Cash Voucher</b></h3></div>
                             <div class="col-md-3">
                                 
                             </div>
@@ -90,7 +90,7 @@
                                 <br />
 
                             </div>
-                            <div class="col-md-4 p-0">
+                            <div class="col-md-8 p-0">
 
 
                                 <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().Narration) </span>
@@ -98,7 +98,7 @@
                                 <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().MainAcc) </span>
                                 <br />
 
-                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().AmountToBePaid)</span>
+                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().TotalAmountLKR)</span>
                                 <br />
 
                             </div>
@@ -143,7 +143,7 @@
                                 <span style="color:black;">@string.Format("{0:#,##0.00}", Model.TxnPettyCashHDMulti.FirstOrDefault().TotAmtWord)</span>
                             </td>
                             <td style="border-top: 2px solid black; text-align:right;border-right: 1px solid black;border-bottom: 1px solid black; font-weight:bold; border-left: 1px solid black;">
-                                <span style="color:black;">@string.Format("{0:#,##0.00}", Model.TxnPettyCashHDMulti.FirstOrDefault().AmountToBePaid)</span>
+                                <span style="color:black;">@string.Format("{0:#,##0.00}", Model.TxnPettyCashHDMulti.FirstOrDefault().TotalAmountLKR)</span>
                             </td>
                         </tr>
 
@@ -204,7 +204,35 @@
         </div>
     </div>
 </div>
-<div class="row">
+
+
+<div class="row mt-4 no-print">
+    <div class="col-md-6 text-center">
+    </div>
+    <div class="col-md-3 text-center">
+        <button id="printButton" class="btn btn-warning">
+            <i class="fa fa-print"></i> Print PettyCash
+        </button>
+    </div>
+
+</div>
+
+@section Scripts {
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#printButton').click(function () {
+                window.print();
+            });
+        });
+    </script>
+}
+
+
+
+
+@* <div class="row">
     <div class="col-md-6 text-Center">
     </div>
     <div class="col-md-3 text-Center">
@@ -235,4 +263,4 @@
             });
         });
     </script>
-}
+} *@

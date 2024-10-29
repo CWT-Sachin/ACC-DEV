@@ -172,14 +172,14 @@
 
                                             @*                                            <a class="btn btn-sm btn-rounded btn-danger"*@
                                             <a class="btn btn-sm btn-rounded btn-danger@(isEditEnabled ? "" : " disabled")"
-                                           asp-action="Approve" asp-route-id="@item.PettyCashNo">
+                                               asp-action="Approve" asp-route-PettyCashNo="@item.PettyCashNo">
                                                 <i class="ti-check-box"></i> Approve
                                             </a>
                                             |
-                                            @*                                            <a class="btn btn-sm btn-rounded btn-warning"
-                                        asp-action="RepPrintInvoice" asp-route-InvoiceNo="@item.PurchasVoucherNo">
-                                        <i class="fa fa-print"></i> Print PurchasVoucher
-                                        </a>*@
+                                                                                       <a class="btn btn-sm btn-rounded btn-warning"
+                                               asp-action="RepPrintPettyCash" asp-route-PettyCashNo="@item.PettyCashNo">
+                                        <i class="fa fa-print"></i> Print PettyCash
+                                        </a>
                                         </td>
 
                                     </tr>
