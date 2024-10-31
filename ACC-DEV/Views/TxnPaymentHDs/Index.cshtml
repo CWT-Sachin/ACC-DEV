@@ -175,6 +175,8 @@
                                             |
                                             <a class="btn btn-sm btn-rounded btn-warning" asp-action="RepPrintPayment" asp-route-InvoiceNo="@item.PaymentNo"><i class="fa  fa-print"></i> Print Payment</a>
                                             <a class="btn btn-sm btn-rounded btn-warning" asp-action="RepPrintPayment" asp-route-InvoiceNo="@item.PaymentNo"><i class="fa  fa-print"></i> Cheque Print</a>
+                                            |
+                                            <a class="btn btn-sm btn-rounded btn-warning" asp-action="RepPrintChequePaymentVoucher" asp-route-PaymentNo="@item.PaymentNo"><i class="fa  fa-print"></i> Print cheque</a>
                                         </td>
                                     </tr>
                                 }

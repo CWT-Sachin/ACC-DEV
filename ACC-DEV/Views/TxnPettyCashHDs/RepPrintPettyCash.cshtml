@@ -95,7 +95,7 @@
 
                                 <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().Narration) </span>
                                 <br />
-                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().MainAcc) </span>
+                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashDtlMulti.FirstOrDefault().PettyCashDtlNavigation.AccCode) </span>
                                 <br />
 
                                 <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().TotalAmountLKR)</span>
@@ -124,7 +124,7 @@
                         {
                             <tr id="tablerow0" style="height: 30px; ">
                                 <td style="padding: 3px; margin: 0;border-left: 1px solid black;">
-                                    @item.LineAccNo @(item.PettyCashDtlNavigation?.AccName ?? string.Empty)
+                                    @item.PettyCashDtlNavigation.AccCode @(item.PettyCashDtlNavigation?.AccName ?? string.Empty)
                                 </td>
                                 <td style="text-align:left; border-left: 1px solid black; padding: 3px; margin: 0; border-left: 1px solid black; border-right: 1px solid black;">
                                     @item.Description
@@ -179,21 +179,28 @@
                         </div>
                     </div>
                     <br />
-                    <div class="row">
-                        <div class="col-md-3">
+                    <div class="row" style="margin: 0;">
+
+                        <div class="col-md-3" style="padding: 0; display: flex; flex-direction: column; align-items: flex-start;">
                             <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 2px;">
                                 <hr style="border: none; border-top: 1px dotted black; margin: 0; width: 100%;" /> <!-- Dotted hr Border (inline CSS) -->
                                 <span style="margin: 0; text-align: center;">Authorized By </span>
                             </div>
                         </div>
-                        <div class="col-md-6"></div>
+
+                        <div class="col-md-1"></div>
+
                         <div class="col-md-3">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3" style="padding: 0; display: flex; flex-direction: column; align-items: flex-start;">
                             <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 2px;">
                                 <hr style="border: none; border-top: 1px dotted black; margin: 0; width: 100%;" /> <!-- Dotted hr Border (inline CSS) -->
-                                <span style="margin: 0; text-align: center;">Received By </span>
+                                <span style="margin: 0; text-align: center;">Received By</span>
                             </div>
                         </div>
                     </div>
+                   
                 </div> <!-- Container Ending -->
                 <!-- ============================================================== -->
                 <!-- Container fluid  END -->

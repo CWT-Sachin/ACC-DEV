@@ -48,6 +48,70 @@ namespace ACC_DEV.Controllers
             return View();
         }
 
+
+        public async Task<IActionResult> RepPrintChequePaymentVoucher(string PaymentNo)
+        {
+            if (PaymentNo == null || _context.TxnPaymentHDs == null)
+            {
+                return NotFound();
+            }
+
+            var txnPaymentHd = await _context.TxnPaymentHDs
+                .FirstOrDefaultAsync(m => m.PaymentNo == PaymentNo);
+
+            if (txnPaymentHd == null)
+            {
+                return NotFound();
+            }
+
+
+
+
+
+            var tables = new TxnPaymentViewMode
+            {
+                TxnPaymentHdMulti = _context.TxnPaymentHDs.Where(t => t.PaymentNo == PaymentNo),
+                TxnPaymentDtMulti = _context.TxnPaymentDtls.Where(t => t.PaymentNo == PaymentNo),
+                
+
+            };
+
+            
+            
+
+
+        ViewData["ShippingLine"] = new SelectList(_operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
+
+            ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
+
+            ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
+            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+            ViewData["AccountsCodes"] = new SelectList(
+                                               _context.Set<RefChartOfAcc>()
+                                                   .Where(a => a.IsInactive.Equals(false))
+                                                   .OrderBy(p => p.AccCode)
+                                                   .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
+                                               "AccNo",
+                                               "DisplayValue",
+                                               "AccNo"
+            );
+
+            ViewData["AgentIDNomination"] = new SelectList(_operationcontext.RefAgents.Join(_operationcontext.RefPorts,
+                             a => a.PortId,
+                             b => b.PortCode,
+                             (a, b) => new
+                             {
+                                 AgentId = a.AgentId,
+                                 AgentName = a.AgentName + " - " + b.PortName,
+                                 IsActive = a.IsActive
+}).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
+return View(tables);
+
+        }
+
+
+
         public async Task<IActionResult> Approve(string id)
         {
             if (id == null)
