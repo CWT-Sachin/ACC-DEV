@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\ACC DEV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\views\\txnpettycashhds\\repprintpettycash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\views\\txnpettycashhds\\repprintpettycash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\views\\txnreceipthds\\repprintchequepaymentvoucher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\views\\txnreceipthds\\repprintchequepaymentvoucher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\views\\txnpettycashhds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\views\\txnpettycashhds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\controllers\\txnreceipthdscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\controllers\\txnreceipthdscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\controllers\\txnpettycashhdscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\controllers\\txnpettycashhdscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\viewmodel\\txnpettycashviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\viewmodel\\txnpettycashviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\views\\txnreceipthds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\views\\txnreceipthds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TxnPettyCashViewModel.cs",
-              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\ViewModel\\TxnPettyCashViewModel.cs",
-              "RelativeDocumentMoniker": "ACC-DEV\\ViewModel\\TxnPettyCashViewModel.cs",
-              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\ViewModel\\TxnPettyCashViewModel.cs",
-              "RelativeToolTip": "ACC-DEV\\ViewModel\\TxnPettyCashViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T04:39:26.671Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TxnPettyCashHDsController.cs",
-              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Controllers\\TxnPettyCashHDsController.cs",
-              "RelativeDocumentMoniker": "ACC-DEV\\Controllers\\TxnPettyCashHDsController.cs",
-              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Controllers\\TxnPettyCashHDsController.cs",
-              "RelativeToolTip": "ACC-DEV\\Controllers\\TxnPettyCashHDsController.cs",
-              "ViewState": "AgIAALIBAAAAAAAAAAA5wEACAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T04:36:42.846Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnReceiptHds\\Index.cshtml",
+              "RelativeDocumentMoniker": "ACC-DEV\\Views\\TxnReceiptHds\\Index.cshtml",
+              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnReceiptHds\\Index.cshtml",
+              "RelativeToolTip": "ACC-DEV\\Views\\TxnReceiptHds\\Index.cshtml",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAJAAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T03:49:55.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnPettyCashHDs\\Index.cshtml",
-              "RelativeDocumentMoniker": "ACC-DEV\\Views\\TxnPettyCashHDs\\Index.cshtml",
-              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnPettyCashHDs\\Index.cshtml",
-              "RelativeToolTip": "ACC-DEV\\Views\\TxnPettyCashHDs\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAALUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T04:36:00.193Z"
+              "Title": "TxnReceiptHdsController.cs",
+              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Controllers\\TxnReceiptHdsController.cs",
+              "RelativeDocumentMoniker": "ACC-DEV\\Controllers\\TxnReceiptHdsController.cs",
+              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Controllers\\TxnReceiptHdsController.cs",
+              "RelativeToolTip": "ACC-DEV\\Controllers\\TxnReceiptHdsController.cs",
+              "ViewState": "AgIAAJgBAAAAAAAAAAAcwNgBAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T03:49:06.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RepPrintPettyCash.cshtml",
-              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnPettyCashHDs\\RepPrintPettyCash.cshtml",
-              "RelativeDocumentMoniker": "ACC-DEV\\Views\\TxnPettyCashHDs\\RepPrintPettyCash.cshtml",
-              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnPettyCashHDs\\RepPrintPettyCash.cshtml",
-              "RelativeToolTip": "ACC-DEV\\Views\\TxnPettyCashHDs\\RepPrintPettyCash.cshtml",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIAAAAA6AAAAAAAAAA==",
+              "Title": "RepPrintChequePaymentVoucher.cshtml",
+              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnReceiptHds\\RepPrintChequePaymentVoucher.cshtml",
+              "RelativeDocumentMoniker": "ACC-DEV\\Views\\TxnReceiptHds\\RepPrintChequePaymentVoucher.cshtml",
+              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnReceiptHds\\RepPrintChequePaymentVoucher.cshtml",
+              "RelativeToolTip": "ACC-DEV\\Views\\TxnReceiptHds\\RepPrintChequePaymentVoucher.cshtml",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAAAM0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T04:34:52.352Z",
+              "WhenOpened": "2024-10-31T03:39:05.571Z",
               "EditorCaption": ""
             }
           ]

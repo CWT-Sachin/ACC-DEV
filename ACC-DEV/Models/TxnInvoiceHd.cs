@@ -78,7 +78,7 @@ public partial class TxnInvoiceHd
     [StringLength(50)]
     public string? CreditAcc { get; set; }
 
-    [ForeignKey("Customer")] // Assuming this is the correct foreign key property
+    
     [InverseProperty("TxnInvoiceHds")]
     public virtual RefCustomerAccOpt? InvoiceHdAcc { get; set; }
 }

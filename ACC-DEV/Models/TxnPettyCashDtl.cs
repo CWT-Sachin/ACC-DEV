@@ -28,5 +28,13 @@ namespace ACC_DEV.Models
 
         [Column(TypeName = "datetime")]
         public DateTime CreatedDateTime { get; set; }
+
+        //[InverseProperty("PettyCashDtl")]
+        //public virtual RefChartOfAcc? PettyCashDtlNavigation { get; set; }
+
+        [ForeignKey("LineAccNo")]
+        [InverseProperty("PettyCashDtl")]
+        public virtual RefChartOfAcc? PettyCashDtlNavigation { get; set; }
+
     }
 }

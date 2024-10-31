@@ -25,6 +25,7 @@ namespace ACC_DEV.ViewModel
         public string? SerialNo { get; set; }
         public string? LineAccNo { get; set; }
         public string? Description { get; set; }
+
         public decimal? Amount { get; set; } // Change the type to decimal?
     }
 

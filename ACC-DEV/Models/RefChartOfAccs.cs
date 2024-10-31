@@ -88,6 +88,9 @@ namespace ACC_DEV.Models
         [InverseProperty("AccNoExpenseExpAgentNavigation")]
         public virtual ICollection<RefChargeItem> AccNoExpenseExpAgent { get; set; } = new List<RefChargeItem>();
 
+        [InverseProperty("PettyCashDtlNavigation")]
+        public virtual ICollection<TxnPettyCashDtl> PettyCashDtl { get; set; } = new List<TxnPettyCashDtl>();
+
 
 
     }

@@ -574,9 +574,10 @@ namespace ACC_DEV.Views
         }
 
 
+
         public async Task<IActionResult> RepPrintPettyCash(string PettyCashNo)
         {
-            if (PettyCashNo == null || _context.TxnPettyCashHDs == null)
+            if (string.IsNullOrEmpty(PettyCashNo) || _context.TxnPettyCashHDs == null)
             {
                 return NotFound();
             }
@@ -589,48 +590,123 @@ namespace ACC_DEV.Views
                 return NotFound();
             }
 
-
-
-
-
             var tables = new TxnPettyCashViewModel
             {
-                TxnPettyCashHDMulti = _context.TxnPettyCashHDs.Where(t => t.PettyCashNo == PettyCashNo),
-                TxnPettyCashDtlMulti = _context.TxnPettyCashDtls.Where(t => t.PettyCashNo == PettyCashNo),
+                TxnPettyCashHDMulti = _context.TxnPettyCashHDs
+                    .Where(t => t.PettyCashNo == PettyCashNo).ToList(),
 
+                TxnPettyCashDtlMulti = _context.TxnPettyCashDtls
+                    .Include(t => t.PettyCashDtlNavigation) // Ensure related data is loaded
+                    .Where(t => t.PettyCashNo == PettyCashNo).ToList(),
             };
 
-            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
-
-            ViewData["ShippingLine"] = new SelectList(_operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
-            ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
-
-            ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
-
-            ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
-            ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
-            ViewData["AccountsCodes"] = new SelectList(
-                                               _context.Set<RefChartOfAcc>()
-                                                   .Where(a => a.IsInactive.Equals(false))
-                                                   .OrderBy(p => p.AccCode)
-                                                   .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
-                                               "AccNo",
-                                               "DisplayValue",
-                                               "AccNo"
+            // Populate dropdown lists in ViewData
+            ViewData["Suppliers"] = new SelectList(
+                _context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name"
             );
 
-            ViewData["AgentIDNomination"] = new SelectList(_operationcontext.RefAgents.Join(_operationcontext.RefPorts,
-                             a => a.PortId,
-                             b => b.PortCode,
-                             (a, b) => new
-                             {
-                                 AgentId = a.AgentId,
-                                 AgentName = a.AgentName + " - " + b.PortName,
-                                 IsActive = a.IsActive
-                             }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
-            return View(tables);
+            ViewData["ShippingLine"] = new SelectList(
+                _operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name"
+            );
 
+            ViewData["CustomerList"] = new SelectList(
+                _operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name"
+            );
+
+            ViewData["ChartofAccounts"] = new SelectList(
+                _context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName"
+            );
+
+            ViewData["RefBankList"] = new SelectList(
+                _context.Set<RefBankAcc>()
+                    .Where(a => a.IsActive)
+                    .OrderBy(p => p.Description), "ID", "Description"
+            );
+
+            ViewData["AccountsCodes"] = new SelectList(
+                _context.Set<RefChartOfAcc>()
+                    .Where(a => a.IsInactive == true) // Checks if IsActive is true, and excludes nulls.
+
+                    .OrderBy(p => p.AccCode)
+                    .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
+                "AccNo", "DisplayValue"
+            );
+
+            ViewData["AgentIDNomination"] = new SelectList(
+                _operationcontext.RefAgents
+                    .Join(_operationcontext.RefPorts,
+                        a => a.PortId,
+                        b => b.PortCode,
+                        (a, b) => new { a.AgentId, AgentName = a.AgentName + " - " + b.PortName, a.IsActive })
+                    .Where(a => a.IsActive)
+                    .OrderBy(a => a.AgentName),
+                "AgentId", "AgentName"
+            );
+
+            return View(tables);
         }
+
+
+
+
+
+        //public async Task<IActionResult> RepPrintPettyCash(string PettyCashNo)
+        //{
+        //    if (PettyCashNo == null || _context.TxnPettyCashHDs == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var txnPettyCashHd = await _context.TxnPettyCashHDs
+        //        .FirstOrDefaultAsync(m => m.PettyCashNo == PettyCashNo);
+
+        //    if (txnPettyCashHd == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+
+
+
+
+        //    var tables = new TxnPettyCashViewModel
+        //    {
+        //        TxnPettyCashHDMulti = _context.TxnPettyCashHDs.Where(t => t.PettyCashNo == PettyCashNo),
+        //        TxnPettyCashDtlMulti = _context.TxnPettyCashDtls.Where(t => t.PettyCashNo == PettyCashNo),
+
+        //    };
+
+        //    ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
+
+        //    ViewData["ShippingLine"] = new SelectList(_operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+        //    ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
+
+        //    ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
+
+        //    ViewData["ChartofAccounts"] = new SelectList(_context.RefChartOfAccs.OrderBy(c => c.AccName), "AccNo", "AccName", "AccNo");
+        //    ViewData["RefBankList"] = new SelectList(_context.Set<RefBankAcc>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ID", "Description", "ID");
+        //    ViewData["AccountsCodes"] = new SelectList(
+        //                                       _context.Set<RefChartOfAcc>()
+        //                                           .Where(a => a.IsInactive.Equals(false))
+        //                                           .OrderBy(p => p.AccCode)
+        //                                           .Select(a => new { AccNo = a.AccNo, DisplayValue = $"{a.AccCode} - {a.Description}" }),
+        //                                       "AccNo",
+        //                                       "DisplayValue",
+        //                                       "AccNo"
+        //    );
+
+        //    ViewData["AgentIDNomination"] = new SelectList(_operationcontext.RefAgents.Join(_operationcontext.RefPorts,
+        //                     a => a.PortId,
+        //                     b => b.PortCode,
+        //                     (a, b) => new
+        //                     {
+        //                         AgentId = a.AgentId,
+        //                         AgentName = a.AgentName + " - " + b.PortName,
+        //                         IsActive = a.IsActive
+        //                     }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
+        //    return View(tables);
+
+        //}
 
 
         // GET: 

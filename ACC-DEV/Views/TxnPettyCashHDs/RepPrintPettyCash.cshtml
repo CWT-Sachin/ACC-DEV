@@ -124,7 +124,7 @@
                         {
                             <tr id="tablerow0" style="height: 30px; ">
                                 <td style="padding: 3px; margin: 0;border-left: 1px solid black;">
-                                    @item.LineAccNo
+                                    @item.LineAccNo @(item.PettyCashDtlNavigation?.AccName ?? string.Empty)
                                 </td>
                                 <td style="text-align:left; border-left: 1px solid black; padding: 3px; margin: 0; border-left: 1px solid black; border-right: 1px solid black;">
                                     @item.Description
