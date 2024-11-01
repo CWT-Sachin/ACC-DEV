@@ -91,6 +91,9 @@ namespace ACC_DEV.Models
         [InverseProperty("PettyCashDtlNavigation")]
         public virtual ICollection<TxnPettyCashDtl> PettyCashDtl { get; set; } = new List<TxnPettyCashDtl>();
 
+        [InverseProperty("PaymentDtlNavigation")]
+        public virtual ICollection<TxnPaymentDtl> TxnPaymentDtl { get; set; } = new List<TxnPaymentDtl>();
+
 
 
     }

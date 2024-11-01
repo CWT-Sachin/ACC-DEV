@@ -49,6 +49,14 @@ namespace ACC_DEV.Controllers
         }
 
 
+
+
+
+
+
+
+
+
         public async Task<IActionResult> RepPrintChequePaymentVoucher(string PaymentNo)
         {
             if (PaymentNo == null || _context.TxnPaymentHDs == null)
@@ -72,15 +80,15 @@ namespace ACC_DEV.Controllers
             {
                 TxnPaymentHdMulti = _context.TxnPaymentHDs.Where(t => t.PaymentNo == PaymentNo),
                 TxnPaymentDtMulti = _context.TxnPaymentDtls.Where(t => t.PaymentNo == PaymentNo),
-                
+
 
             };
 
-            
-            
 
 
-        ViewData["ShippingLine"] = new SelectList(_operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+
+
+            ViewData["ShippingLine"] = new SelectList(_operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
             ViewData["Suppliers"] = new SelectList(_context.RefSuppliers.OrderBy(c => c.Name), "SupplierId", "Name", "SupplierId");
 
             ViewData["CustomerList"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
@@ -105,8 +113,8 @@ namespace ACC_DEV.Controllers
                                  AgentId = a.AgentId,
                                  AgentName = a.AgentName + " - " + b.PortName,
                                  IsActive = a.IsActive
-}).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
-return View(tables);
+                             }).Where(a => a.IsActive.Equals(true)).OrderBy(a => a.AgentName), "AgentId", "AgentName", "AgentId");
+            return View(tables);
 
         }
 

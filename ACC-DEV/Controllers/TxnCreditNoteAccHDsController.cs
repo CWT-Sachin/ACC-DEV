@@ -218,6 +218,58 @@ namespace ACC_DEV.Controllers
             return View(tables);
         }
 
+
+
+        public async Task<IActionResult> RepPrintCreditNoteAdditional(string CreditNoteNo)
+        {
+            if (CreditNoteNo == null || _context.TxnCreditNoteAccHDs == null)
+            {
+                return NotFound();
+            }
+
+            var txnCreditNoteAddHd = await _context.TxnCreditNoteAccHDs
+                .FirstOrDefaultAsync(m => m.CreditNoteNo == CreditNoteNo);
+
+            if (txnCreditNoteAddHd == null)
+            {
+                return NotFound();
+            }
+
+            var strjobNo = txnCreditNoteAddHd.JobNo;
+            var tables = new TxnCreditNoteAccViewModel
+            {
+                TxnCreditNoteAccHDMulti = _context.TxnCreditNoteAccHDs.Where(t => t.CreditNoteNo == CreditNoteNo),
+                TxnCreditNoteAccDtlMulti = _context.TxnCreditNoteAccDtls.Where(t => t.CreditNoteNo == CreditNoteNo),
+                
+            };
+            List<SelectListItem> Currency = new List<SelectListItem>
+                {
+                    new SelectListItem { Value = "USD", Text = "USD" },
+                    new SelectListItem { Value = "LKR", Text = "LKR" }
+                };
+            ViewData["CurrencyList"] = new SelectList(Currency, "Value", "Text", "CurrencyList");
+            List<SelectListItem> Unit = new List<SelectListItem>
+                {
+                    new SelectListItem { Value = "CBM", Text = "CBM" },
+                    new SelectListItem { Value = "BL", Text = "BL" },
+                    new SelectListItem { Value = "CNT", Text = "CNT" }
+                };
+            ViewData["UnitList"] = new SelectList(Unit, "Value", "Text", "UnitList");
+            ViewData["ChargeItemsList"] = new SelectList(_context.Set<RefChargeItem>().Where(a => a.IsActive.Equals(true)).OrderBy(p => p.Description), "ChargeId", "Description", "ChargeId");
+            ViewData["Customer"] = new SelectList(_operationcontext.RefCustomers.OrderBy(c => c.Name), "CustomerId", "Name", "CustomerId");
+            ViewData["ShippingLine"] = new SelectList(_operationcontext.RefShippingLines.OrderBy(c => c.Name), "ShippingLineId", "Name", "ShippingLineId");
+            return View(tables);
+
+        }
+
+
+
+
+
+
+
+
+
         // GET: Credit Sales/Details/5
         public async Task<IActionResult> Details(string id)
         {

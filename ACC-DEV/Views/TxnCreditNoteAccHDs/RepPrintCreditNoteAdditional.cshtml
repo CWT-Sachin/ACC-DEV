@@ -1,0 +1,251 @@
+﻿@model ACC_DEV.ViewModel.TxnCreditNoteAccViewModel
+@{
+    ViewData["Title"] = "RepPrintCreditNoteAdditional";
+
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .header img {
+            width: 80px;
+        }
+
+        .header h1 {
+            margin: 5px 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 2px 0;
+            font-size: 12px;
+        }
+
+    .title {
+        text-align: right;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .details, .charges {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+    }
+
+        .details td {
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        .details .left, .details .right {
+            width: 50%;
+        }
+
+        .charges th, .charges td {
+            padding: 8px;
+            border: 1px solid #000;
+            text-align: right;
+        }
+
+        .charges th {
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+
+        .charges td.left {
+            text-align: left;
+        }
+</style>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+              
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h4 class="m-b-0 text-white">CreditNote Additional - Print</h4>
+                </div>
+                <div class="card-body">
+
+                
+
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="\assets\images\logo-icon.png" alt="FTL LOGO" width="120" height="120" />
+                        </div>
+                        <div class="col-md-3">
+                            <span style="font-size:20px"><b>FTL COLOMBO (PVT) LTD</b></span>
+                            <br />
+                            <span style="font-size:12px">NO 9, BARNES PLACE </span>
+                            <br />
+                            <span style="font-size:12px">COLOMBO 07</span>
+                            <br />
+                            <span style="font-size:12px"> SRI LANKA. </span>
+                            <br />
+                            <span style="font-size:12px"> Tel: +94 112 378500-19 /Fax: +94 114 641910</span>
+                            <br />
+                            <span style="font-size:12px"> Email:</span>
+                            <br />
+                        </div>
+                    </div>
+
+                    <div class="title">CREDIT NOTE</div>
+
+                    <div style="border:1px  solid black; padding: 10px 10px 10px 10px;  border-radius:10px;">
+                        <table class="details">
+                            <tr>
+                                <td class="left">
+                                    <strong>To :</strong><br>
+                                    @if (Model.TxnCreditNoteAccHDMulti.FirstOrDefault()?.AgentNavigation != null)
+
+                                    {
+                                        @Html.DisplayFor(m => m.TxnCreditNoteAccHDMulti.FirstOrDefault().AgentNavigation.AgentName)
+
+                                        <br>
+                                        @Html.DisplayFor(m => m.TxnCreditNoteAccHDMulti.FirstOrDefault().AgentNavigation.Address1)
+
+                                        <br>
+                                        @Html.DisplayFor(m => m.TxnCreditNoteAccHDMulti.FirstOrDefault().AgentNavigation.Address2)
+
+                                        <br>
+                                        @Html.DisplayFor(m => m.TxnCreditNoteAccHDMulti.FirstOrDefault().AgentNavigation.Address3)
+
+                                        <br>
+                                        @Html.DisplayFor(m => m.TxnCreditNoteAccHDMulti.FirstOrDefault().AgentNavigation.TelNo)
+
+                                        <br>
+                                    }
+
+                                    else
+
+                                    {
+                                        <span>Data not found</span>
+                                    }
+                                </td>
+                                <td class="right">
+                                    <strong>Invoice No</strong>      : @Html.DisplayFor(m => Model.TxnCreditNoteAccHDMulti.FirstOrDefault().CreditNoteNo)<br>
+                                    <strong>Date</strong>            : @Html.DisplayFor(m => Model.TxnCreditNoteAccHDMulti.FirstOrDefault().Date)<br>
+                                    <strong>Port Of Loading</strong> : @* @Html.DisplayFor(m => Model.TxnCreditNoteAccHDMulti.FirstOrDefault(). *@)<br>
+                                    <strong>POD</strong>             : HAMBURG, GERMANY<br>
+                                    <strong>ETA</strong>             : 27/04/2024<br>
+                                    <strong>Vessel/Voyage</strong>   : @* @Html.DisplayFor(m => Model.TxnCreditNoteAccHDMulti.FirstOrDefault().) *@<br>
+                                    <strong>Exchange Rate</strong>   : @Html.DisplayFor(m => Model.TxnCreditNoteAccHDMulti.FirstOrDefault().ExchangeRate)<br>
+                                    <strong>Job No</strong>          : @Html.DisplayFor(m => Model.TxnCreditNoteAccHDMulti.FirstOrDefault().JobNo)
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+
+
+
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="border: 1px solid black; padding: 5px; text-align: left;">Charges</th>
+                                <th style="border: 1px solid black; padding: 5px; text-align: right;">Amount in USD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.TxnCreditNoteAccDtlMulti)
+
+                            {
+                                <tr style="height: 30px;">
+                                    <td style="padding: 3px; border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black; text-align: left;">
+                                        @item.Description
+                                    </td>
+                                    <td style="padding: 3px; border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black; text-align: right;">
+                                        @string.Format("{0:#,##0.00}", item.Amount)
+                                    </td>
+                                </tr>
+                            }
+
+                            <tr>
+                                <td style="border-top: 2px solid black; font-weight: bold; border-left: 1px solid black; border-bottom: 1px solid black; text-align: left;">
+                                    Total
+                                </td>
+                                <td style="border-top: 2px solid black; font-weight: bold; border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black; text-align: right;">
+                                    @string.Format("{0:#,##0.00}", Model.TxnCreditNoteAccDtlMulti.Sum(x => x.Amount))
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div class="row" style="margin: 0;">
+
+                        <div class="col-md-3" style="padding: 0; display: flex; flex-direction: column; align-items: flex-start;">
+                            <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 2px;">
+                                <hr style="border: none; border-top: 1px dotted black; margin: 0; width: 100%;" /> <!-- Dotted hr Border (inline CSS) -->
+                                <span style="margin: 0; text-align: center;">FTL COLOMBO (PVT) LTD</span>
+                            </div>
+                        </div>
+
+                      
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6 text-Center">
+    </div>
+    <div class="col-md-3 text-Center">
+        <button id="printButton" onclick="submitForm(this)" class="btn btn-warning"><i class="fa  fa-print"></i>Print - CN Additional</button>
+    </div>
+    <div class="col-md-3 text-Center">
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</div>
+@section Scripts {
+
+    <script>
+        $(document).ready(function () {
+            // Print button click event handler
+            $('#printButton').click(function () {
+                var printContents = $('#printArea').html(); // Get the HTML content of the selected area
+                var originalContents = document.body.innerHTML; // Store the original body content
+
+                // Replace the body content with the selected area content
+                document.body.innerHTML = printContents;
+
+                // Trigger the browser's print dialog
+                window.print();
+
+                // Restore the original body content
+                document.body.innerHTML = originalContents;
+            });
+        });
+    </script>
+}

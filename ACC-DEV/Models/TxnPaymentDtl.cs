@@ -33,5 +33,9 @@ namespace ACC_DEV.Models
 
         [StringLength(50)]
         public string? JobType { get; set; }
+
+        [ForeignKey("DocNo")]
+        [InverseProperty("TxnPaymentDtl")]
+        public virtual RefChartOfAcc? PaymentDtlNavigation { get; set; }
     }
 }
