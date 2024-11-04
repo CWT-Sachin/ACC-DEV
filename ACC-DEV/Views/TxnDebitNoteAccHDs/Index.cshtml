@@ -181,10 +181,11 @@
                                                 <i class="ti-check-box"></i> Approve
                                             </a>
                                             |
-                                            @*                                            <a class="btn btn-sm btn-rounded btn-warning"
-                                        asp-action="RepPrintInvoice" asp-route-InvoiceNo="@item.PurchasVoucherNo">
-                                        <i class="fa fa-print"></i> Print PurchasVoucher
-                                        </a>*@
+                                            |
+                                            <a class="btn btn-sm btn-rounded btn-warning"
+                                               asp-action="RepPrintDebitNoteAdditional" asp-route-DebitNoteNo="@item.DebitNoteNo">
+                                                <i class="fa fa-print"></i> Print DN Add
+                                            </a>
                                         </td>
 
                                     </tr>

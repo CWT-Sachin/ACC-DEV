@@ -190,6 +190,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ACC DEV/ACC-DEV/Views/TxnDebitNoteAccHDs/RepPrintDebitNoteAdditional.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXFJlcFByaW50RGViaXROb3RlQWRkaXRpb25hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ACC DEV/ACC-DEV/Views/TxnDebitNoteAccHDs/RepPrintPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuRGViaXROb3RlQWNjSERzXFJlcFByaW50UGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
