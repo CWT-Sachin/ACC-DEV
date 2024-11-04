@@ -240,7 +240,7 @@ namespace ACC_DEV.Controllers
             var strjobNo = txnDebitNoteAddHd.JobNo;
             var tables = new TxnDebitNoteAccViewModel
             {
-                TxnDebitNoteAccHDMulti = _context.TxnDebitNoteAccHDs.Where(t => t.DebitNoteNo == DebitNoteNo),
+                TxnDebitNoteAccHDMulti = _context.TxnDebitNoteAccHDs.Include(t=> t.AgentNavigation).Where(t => t.DebitNoteNo == DebitNoteNo),
                 TxnDebitNoteAccDtlMulti = _context.TxnDebitNoteAccDtls.Where(t => t.DebitNoteNo == DebitNoteNo),
 
             };

@@ -238,7 +238,7 @@ namespace ACC_DEV.Controllers
             var strjobNo = txnCreditNoteAddHd.JobNo;
             var tables = new TxnCreditNoteAccViewModel
             {
-                TxnCreditNoteAccHDMulti = _context.TxnCreditNoteAccHDs.Where(t => t.CreditNoteNo == CreditNoteNo),
+                TxnCreditNoteAccHDMulti = _context.TxnCreditNoteAccHDs.Include(t => t.AgentNavigation).Where(t => t.CreditNoteNo == CreditNoteNo),
                 TxnCreditNoteAccDtlMulti = _context.TxnCreditNoteAccDtls.Where(t => t.CreditNoteNo == CreditNoteNo),
                 
             };
