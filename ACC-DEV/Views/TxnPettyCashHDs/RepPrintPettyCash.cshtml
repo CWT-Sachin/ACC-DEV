@@ -32,7 +32,7 @@
                         <br />
                         <div class="row ">
                             <div class="col-md-3"> </div>
-                            <div class="col-md-6"><h3><b>Petty Cash Voucher</b></h3></div>
+                            <div class="col-md-6"><h3><b>PETTY CASH VOUCHER</b></h3></div>
                             <div class="col-md-3">
                                 
                             </div>
@@ -56,7 +56,7 @@
                     <div class="col-md-6" style="margin-bottom: 0px;">
                         <div class="row">
                             <div class="col-md-3 p-0">
-                                <span>Document </span>
+                                <span>Document# </span>
                                 <br />
                                 <span>Date</span>
                                 <br />
@@ -66,7 +66,8 @@
                             <div class="col-md-4 p-0">
                                 <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().PettyCashNo)</span>
                                 <br />
-                                <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().Date) </span>
+                               @*  <span>: @Html.DisplayFor(m => Model.TxnPettyCashHDMulti.FirstOrDefault().Date) </span> *@
+                                <span>: @String.Format("{0:dd-MMM-yyyy}", Model.TxnPettyCashHDMulti.FirstOrDefault().Date)</span>
                                 <br />
 
 
@@ -81,9 +82,9 @@
                             <div class="col-md-3 p-0">
 
 
-                                <span>Description</span>
+                                <span>Details</span>
                                 <br />
-                                <span>Creditor Code</span>
+                                <span>Creditor A/C</span>
                                 <br />
 
                                 <span>Amount</span>
@@ -221,6 +222,47 @@
             <i class="fa fa-print"></i> Print PettyCash
         </button>
     </div>
+</div>
+
+<!-- Add a container for the content you want to print -->
+<div id="printArea">
+    <!-- Your printable content goes here -->
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#printButton').click(function () {
+                // Temporarily add the print-only style
+                $('head').append(`
+                    <style id="print-style">
+                            .no-print { display: none !important; }
+                            </style>
+                        `);
+
+                        // Trigger print dialog
+                        window.print();
+
+                        // Remove the print-only style after printing
+                        $('#print-style').remove();
+                    });
+                });
+    </script>
+}
+
+
+
+
+
+@* <div class="row mt-4 no-print">
+    <div class="col-md-6 text-center">
+    </div>
+    <div class="col-md-3 text-center">
+        <button id="printButton" class="btn btn-warning">
+            <i class="fa fa-print"></i> Print PettyCash
+        </button>
+    </div>
 
 </div>
 
@@ -235,7 +277,7 @@
         });
     </script>
 }
-
+ *@
 
 
 
