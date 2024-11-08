@@ -64,34 +64,33 @@ namespace ACC_DEV.Controllers
 
 
         // GET: Print Invoice 
-        public async Task<IActionResult> RepPrintInvoice(string InvoiceNo)
+        public async Task<IActionResult> RepPrintCreditInvoice(string CreditSalesNo)
         {
-            if (InvoiceNo == null || _context.TxnInvoiceHds == null)
+            if (CreditSalesNo == null || _context.TxnCreditSalesHDs == null)
             {
                 return NotFound();
             }
 
-            var txnInvoiceExportHd = await _context.TxnInvoiceHds
-                .FirstOrDefaultAsync(m => m.InvoiceNo == InvoiceNo);
+            var txnCreditSalesHd = await _context.TxnCreditSalesHDs
+                .FirstOrDefaultAsync(m => m.CreditSalesNo == CreditSalesNo);
 
-            if (txnInvoiceExportHd == null)
+            if (txnCreditSalesHd == null)
             {
                 return NotFound();
             }
 
-            var strjobNo = txnInvoiceExportHd.JobNo;
+            var strjobNo = txnCreditSalesHd.JobNo;
 
             var containerNo = _operationcontext.TxnStuffingPlanHds
                 .Where(s => s.JobNumber == strjobNo)
                 .Select(s => s.ContainerNo)
                 .FirstOrDefault();
 
-            var tables = new InvoiceViewModel
+            var tables = new TxnCreditSalesViewModel
             {
-                InvoiceHdMulti = _context.TxnInvoiceHds.Where(t => t.InvoiceNo == InvoiceNo)
-                    .Include(t => t.InvoiceHdAcc),
-                InvoiceDtMulti = _context.TxnInvoiceDtls.Where(t => t.InvoiceNo == InvoiceNo)
-                    .Include(t => t.ChargeItemNavigation),
+                TxnCreditSalesHDMulti = _context.TxnCreditSalesHDs.Where(t => t.CreditSalesNo == CreditSalesNo)
+                    .Include(t => t.CustomerNavigation),
+                TxnCreditSalesDtlMulti = _context.TxnCreditSalesDtls.Where(t => t.CreditSalesNo == CreditSalesNo),
                 ExportJobDtlMulti = _operationcontext.TxnExportJobDtls.Where(t => t.JobNo == strjobNo),
                 ExportJobHdMulti = _operationcontext.TxnExportJobHds
                     .Include(t => t.AgentExportNavigation)
@@ -101,9 +100,9 @@ namespace ACC_DEV.Controllers
                     .Include(t => t.ColoaderExportNavigation)
                     .Include(t => t.VesselExportJobDtlNavigation)
                     .Include(t => t.PODExportJobNavigation)
-                    .Include(t => t.FDNExportJobNavigation)
+                    .Include(t => t.FDNExportJobNavigation)                   
                     .Where(t => t.JobNo == strjobNo),
-                    ContainerNo = containerNo // I Just Set the Container Number 
+                
             };
             List<SelectListItem> Currency = new List<SelectListItem>
                 {

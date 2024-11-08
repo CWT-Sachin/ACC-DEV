@@ -2522,6 +2522,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\TxnCreditInvoiceHds\RepPrintCreditInvoice.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Update="Views\TxnDebitNoteAccHDs\RepPrintDebitNoteAdditional.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

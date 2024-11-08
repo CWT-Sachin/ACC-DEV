@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\ACC DEV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\views\\txnpettycashhds\\repprintpettycash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\views\\txnpettycashhds\\repprintpettycash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\views\\txncreditinvoicehds\\repprintcreditinvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\views\\txncreditinvoicehds\\repprintcreditinvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\viewmodel\\txncreditsalesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\viewmodel\\txncreditsalesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\models\\txncreditsalesdtl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\models\\txncreditsalesdtl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|d:\\acc dev\\acc-dev\\views\\txncreditinvoicehds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E157090-D785-4C3E-9D19-E06038DEC5CF}|ACC-DEV\\ACC-DEV.csproj|solutionrelative:acc-dev\\views\\txncreditinvoicehds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RepPrintPettyCash.cshtml",
-              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnPettyCashHDs\\RepPrintPettyCash.cshtml",
-              "RelativeDocumentMoniker": "ACC-DEV\\Views\\TxnPettyCashHDs\\RepPrintPettyCash.cshtml",
-              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnPettyCashHDs\\RepPrintPettyCash.cshtml*",
-              "RelativeToolTip": "ACC-DEV\\Views\\TxnPettyCashHDs\\RepPrintPettyCash.cshtml*",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAEUAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TxnCreditSalesDtl.cs",
+              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Models\\TxnCreditSalesDtl.cs",
+              "RelativeDocumentMoniker": "ACC-DEV\\Models\\TxnCreditSalesDtl.cs",
+              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Models\\TxnCreditSalesDtl.cs",
+              "RelativeToolTip": "ACC-DEV\\Models\\TxnCreditSalesDtl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:47:36.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TxnCreditSalesViewModel.cs",
+              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\ViewModel\\TxnCreditSalesViewModel.cs",
+              "RelativeDocumentMoniker": "ACC-DEV\\ViewModel\\TxnCreditSalesViewModel.cs",
+              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\ViewModel\\TxnCreditSalesViewModel.cs",
+              "RelativeToolTip": "ACC-DEV\\ViewModel\\TxnCreditSalesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:29:52.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnCreditInvoiceHds\\Index.cshtml",
+              "RelativeDocumentMoniker": "ACC-DEV\\Views\\TxnCreditInvoiceHds\\Index.cshtml",
+              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnCreditInvoiceHds\\Index.cshtml",
+              "RelativeToolTip": "ACC-DEV\\Views\\TxnCreditInvoiceHds\\Index.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAK8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T05:44:37.896Z",
+              "WhenOpened": "2024-11-07T04:28:50.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RepPrintCreditInvoice.cshtml",
+              "DocumentMoniker": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnCreditInvoiceHds\\RepPrintCreditInvoice.cshtml",
+              "RelativeDocumentMoniker": "ACC-DEV\\Views\\TxnCreditInvoiceHds\\RepPrintCreditInvoice.cshtml",
+              "ToolTip": "D:\\ACC DEV\\ACC-DEV\\Views\\TxnCreditInvoiceHds\\RepPrintCreditInvoice.cshtml",
+              "RelativeToolTip": "ACC-DEV\\Views\\TxnCreditInvoiceHds\\RepPrintCreditInvoice.cshtml",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAAK4AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T04:28:15.747Z",
               "EditorCaption": ""
             }
           ]

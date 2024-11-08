@@ -114,6 +114,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0SW52b2ljZUhkc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ACC DEV/ACC-DEV/Views/TxnCreditInvoiceHds/RepPrintCreditInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0SW52b2ljZUhkc1xSZXBQcmludENyZWRpdEludm9pY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ACC DEV/ACC-DEV/Views/TxnCreditNoteAccHDs/Approve.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHhuQ3JlZGl0Tm90ZUFjY0hEc1xBcHByb3ZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
